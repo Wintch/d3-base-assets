@@ -1,0 +1,14 @@
+windowDef Desktop {
+	rect	0 ,0 ,640 ,480 
+	nocursor	1
+	windowDef CursosCenter{
+		rect	305,220,32,32
+		visible		1
+		windowDef crosshairCenter{
+			rect		0 ,0 ,32 ,32  
+			background	"guis/assets/common/crosshaircenter"
+			visible		"gui::combatcursor"
+			matcolor	1, 0, 0, 1
+		}
+	}
+}

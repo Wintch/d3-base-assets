@@ -1,0 +1,14 @@
+windowDef Desktop {
+	rect	0,0,1920,1080
+	backcolor	0,0,0,1
+	menugui	1
+	onESC {
+			set	"cmd"	"startgame" ;		
+	}
+	onTime 100	{
+		set	"cmd"	"play guisounds_IntroSound";
+	}
+	onTime 1400	{
+		set	"cmd"	"startgame" ;
+	}
+}

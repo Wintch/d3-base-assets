@@ -1,6 +1,28 @@
 windowDef Desktop {
-   rect      0, 0, 640, 480
-
-   backcolor 0, 0, 0, 0
-   nocursor  1
+	rect	0 ,0 ,640 ,480 
+	backcolor	0 ,0 ,0 ,0 
+	visible	1
+	nocursor	1
+	windowDef PlayerAmmo{
+		//display players ammo
+		text	"gui::player_allammo"
+		rect	300 ,420 ,40 ,20
+		textscale	0.30
+		textalign	1
+	}
+		windowDef PlayerHealth{
+		//display players health
+		rect		300, 440, 40, 20
+		text		"gui::player_health"
+		forecolor	1, 0, 0, 1
+		textscale	0.30
+		textalign	1
+	}
+		windowDef PlayerArmor{
+		//displays players armor
+		rect		300, 460, 40, 20
+		text		"gui::player_armor"
+		textscale	0.30
+		textalign	1
+	}
 }

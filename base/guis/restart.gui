@@ -1,0 +1,11 @@
+windowDef Desktop {
+	rect	0 ,0 ,640 ,480
+	backcolor	0, 0, 0, 1
+	text	"You are dead, reload the map" // Replace with string
+	font        "fonts/bank"
+	textscale   0.5
+	textalign   1
+	shadow      1
+	forecolor   1, 1, 1, 1
+	menugui	1
+}

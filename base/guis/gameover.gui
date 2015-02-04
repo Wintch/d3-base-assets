@@ -1,0 +1,11 @@
+windowDef EndLevel {
+	text	"You are dead" // Replace with string
+	rect	0 ,0 ,640 ,480 
+	border	"0"
+	backcolor	0 ,0 ,0 ,0.25 
+	forecolor	1 ,1 ,0 ,1 
+	visible	1
+	textscale	1
+	caption	0
+	bordersize	1
+}

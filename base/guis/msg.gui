@@ -1,7 +1,71 @@
-windowDef Desktop
-{
-   rect      0, 0, 640, 480
-
-   backcolor 0, 0, 0, 0
-   menugui   1
+// Message GUI - common GUI for several game messages
+windowDef Desktop {
+	rect	0, 0, 640, 480
+	backcolor	0, 0, 0, 0
+	selected	0
+	menugui	1
+	windowDef commonWindow {
+		rect	120, 100, 400, 200
+		border 1
+		bordersize 1
+		bordercolor	1,0,0,1
+		windowDef titleText {
+			rect	0, 0, 400, 20
+			backcolor	1, 0, 0, 1
+			text    "gui::title"
+			font    "fonts/bank"
+			textalign	1
+			textscale	0.25
+		}
+		windowDef messageText {
+			rect	0, 20, 400, 140
+			backcolor	1, 1, 1, 0.1
+			text    "gui::message"
+			font    "fonts/bank"
+			textscale	0.25
+		}
+		// 3 btns with choices. Not all are visible
+		windowDef leftbtn {
+			rect	40, 160, 80, 20
+			backcolor	0, 0, 1, 1
+			text    "gui::left"
+			font    "fonts/bank"
+			textalign	1
+			textscale	0.25
+			border 1
+			bordersize 1
+			bordercolor	1,1,1,1
+			onActionRelease {
+				set	"cmd"	"left";
+			}
+		}
+		windowDef midbtn {
+			rect	140, 160, 80, 20
+			backcolor	1, 0, 0, 1
+			text    "gui::mid"
+			font    "fonts/bank"
+			textalign	1
+			textscale	0.25
+			border 1
+			bordersize 1
+			bordercolor	1,1,1,1
+			onActionRelease {
+				set	"cmd"	"mid";
+			}
+		}
+		windowDef rightbtn {
+			rect	240, 160, 80, 20
+			backcolor	0, 1, 0, 1
+			text    "gui::right"
+			font    "fonts/bank"
+			textalign	1
+			textscale	0.25
+			border 1
+			bordersize 1
+			bordercolor	1,1,1,1
+			onActionRelease {
+				set	"cmd"	"right";
+			}
+		}
+	}
 }
