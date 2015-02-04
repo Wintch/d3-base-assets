@@ -1,0 +1,39 @@
+// Same default map loader with slight changes to reflect mapname
+windowDef Desktop {
+	menugui	1
+	nocursor	1
+	rect	0,0,640,480
+	onTime 0 {
+			transition "header::backcolor" "0 0 0 1" "1 1 1 1" "1200" ;
+			transition "header::forecolor" "1 1 1 1" "0 0 0 1" "1200" ;
+	}
+	onTime 0 {
+			transition "footer::backcolor" "1 1 1 1" "1 0 0 1" "1200" ;
+			transition "footer::rect" "0 420 0 40" "0 420 640 40" "1200" ;
+	}
+	windowDef header {
+		rect	0,20,640,40
+		textalign	1
+		textaligny	-4
+		text	"D.R.A.P."
+		forecolor	1,1,1,1
+		backcolor	0,0,0,0
+		textscale	0.55
+	}
+	windowDef content {
+		rect	0,220,640,40
+		textalign	1
+		text	"DM1"
+		forecolor	1,1,1,1
+		backcolor	0,0,0,0
+		textscale	0.55
+	}
+	windowDef footer {
+		rect	0,420,640,40
+		backcolor	1,1,1,1
+		text	"L O A D I N G"
+		textalign	1
+		textaligny	-4
+		textscale	0.55
+	}
+}

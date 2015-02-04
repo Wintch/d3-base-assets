@@ -9,7 +9,6 @@ windowDef Desktop {
 		forecolor	1, 0, 0, 1
 		visible	1
 		textscale	0.40
-		font		"fonts/bank"
 		shear 0,0
 	}
 }

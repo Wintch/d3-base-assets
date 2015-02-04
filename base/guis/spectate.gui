@@ -7,7 +7,6 @@ windowDef Desktop {
 	
 	windowDef Spectate0 {
 		text "gui::spectatetext0"
-		font "fonts/bank"
 		rect	0, 350, 640, 40
 		backcolor 0, 0, 0, 0
 		forecolor 1, 1, 1, 0.8
@@ -28,7 +27,6 @@ windowDef Desktop {
 
 	windowDef Spectate1 {
 		text "gui::spectatetext1"
-		font "fonts/bank"
 		rect	0, 400, 640, 40
 		backcolor 0, 0, 0, 0
 		forecolor 1, 1, 1, 0.8

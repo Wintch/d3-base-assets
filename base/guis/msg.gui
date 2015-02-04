@@ -13,7 +13,6 @@ windowDef Desktop {
 			rect	0, 0, 400, 20
 			backcolor	1, 0, 0, 1
 			text    "gui::title"
-			font    "fonts/bank"
 			textalign	1
 			textscale	0.25
 		}
@@ -21,7 +20,6 @@ windowDef Desktop {
 			rect	0, 20, 400, 140
 			backcolor	1, 1, 1, 0.1
 			text    "gui::message"
-			font    "fonts/bank"
 			textscale	0.25
 		}
 		// 3 btns with choices. Not all are visible
@@ -29,7 +27,6 @@ windowDef Desktop {
 			rect	40, 160, 80, 20
 			backcolor	0, 0, 1, 1
 			text    "gui::left"
-			font    "fonts/bank"
 			textalign	1
 			textscale	0.25
 			border 1
@@ -43,7 +40,6 @@ windowDef Desktop {
 			rect	140, 160, 80, 20
 			backcolor	1, 0, 0, 1
 			text    "gui::mid"
-			font    "fonts/bank"
 			textalign	1
 			textscale	0.25
 			border 1
@@ -57,7 +53,6 @@ windowDef Desktop {
 			rect	240, 160, 80, 20
 			backcolor	0, 1, 0, 1
 			text    "gui::right"
-			font    "fonts/bank"
 			textalign	1
 			textscale	0.25
 			border 1

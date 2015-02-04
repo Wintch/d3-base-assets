@@ -1,15 +1,159 @@
+﻿// English lang string table
+
 {
-  "#str_04343"		"Loading.."
-  "#str_04344"		"Event Initialization.."
-  "#str_04345"		"Executing Startup Commands.."
-  "#str_04346"		"Sound Initialization.."
-  "#str_04347"		"Network Initialization.."
-  "#str_04348"		"Render System Initialization.." 
-  "#str_04349"		"User Interface Initialization.."
-  "#str_04350"		"Loading Game.."
-  "#str_04351"		"Menu Initialization.."
-  
-  "#str_07186"		"Unknown"
-   // FIXME: the next string should be changed according to game, I guess
-  "#str_07212"		"dhewm3"
+	//defined inside the engine
+	"#str_04350"	"Loading the engine"	//neo/framework/Common.cpp
+	"#str_04351"	"Getting into main menu"	//neo/framework/Common.cpp
+	"#str_02911"	"No portals defined!"	//neo/game/Player.cpp
+	"#str_04344"	"Events"	//neo/framework/Common.cpp
+	"#str_04345"	"Scripts"	//neo/framework/Common.cpp
+	"#str_04346"	"Sound"	//neo/framework/Common.cpp
+	"#str_04347"	"Network"	//neo/framework/Common.cpp
+	"#str_04348"	"Rendering system"	//neo/framework/Common.cpp
+	"#str_04343"	"Loading..."	//neo/framework/Common.cpp
+	"#str_04349"	"User interface"	//neo/framework/Common.cpp
+	"#str_04273"	"Another vote is in progress"	//neo/game/MultiplayerGame.cpp
+	"#str_04274"	"You voted already"	//neo/game/MultiplayerGame.cpp
+	"#str_04275"	"No vote in progress"	//neo/game/MultiplayerGame.cpp
+	"#str_04277"	"Vote passed"	//neo/game/MultiplayerGame.cpp
+	"#str_04278"	"Vote failed"	//neo/game/MultiplayerGame.cpp
+	"#str_04279"	"%s^0 Called a vote"	//neo/game/MultiplayerGame.cpp
+	"#str_04292"	"%s^0 dies by the hand of %s"	//neo/game/MultiplayerGame.cpp
+	"#str_07138"	"is offline now"	//neo/framework/async/AsyncServer.cpp
+	"#str_07177"	"%s^0 Joins the server"	//neo/game/MultiplayerGame.cpp
+	"#str_07135"	"Server went down"	//neo/framework/async/AsyncServer.cpp
+	"#str_02047"	"Server"	//neo/game/MultiplayerGame.cpp
+	"#str_04842"	"Server data differs from the clients"	//neo/framework/async/AsyncServer.cpp
+	"#str_07141"	"Max player reached!"	//neo/game/Game_network.cpp
+	"#str_07212"	"str_07212"	//neo/framework/Session_menu.cpp
+	"#str_07002"	"Warmup - You are not ready yet!"	//neo/game/MultiplayerGame.cpp
+	"#str_04251"	"WARMING..."	//neo/game/MultiplayerGame.cpp
+	"#str_01982"	"Faggs limit"	//neo/game/MultiplayerGame.cpp
+	"#str_01983"	"Tempo limit"	//neo/game/MultiplayerGame.cpp
+	"#str_02376"	"Game type"	//neo/game/MultiplayerGame.cpp
+	"#str_04248"	"Not ready yet"	//neo/game/MultiplayerGame.cpp
+	"#str_07008"	"In your screen: %s"	//neo/game/MultiplayerGame.cpp
+	"#str_04246"	"Stalking"	//neo/game/MultiplayerGame.cpp
+	"#str_04243"	"Grags Made"	//neo/game/MultiplayerGame.cpp
+	"#str_04319"	"No connection to server"	//neo/framework/async/AsyncClient.cpp
+	"#str_04339"	"Its ok man!"	//neo/framework/Session_menu.cpp
+	"#str_04247"	"I am ready"	//neo/game/MultiplayerGame.cpp
+	"#str_04250"	"Start stalking"	//neo/game/MultiplayerGame.cpp
+	"#str_06749"	"You are connected with: %s"	//neo/framework/async/AsyncClient.cpp
+	"#str_04293"	"%s^0 : commited suicide"	//neo/game/MultiplayerGame.cpp
+	"#str_07191"	"Connecting to master server..."	//neo/framework/Session.cpp
+	"#str_04280"    "%s^0 joined %s team"	//neo/game/MultiplayerGame.cpp
+	"#str_02500"    "Blue"	//neo/game/MultiplayerGame.cpp
+	"#str_02499"    "Red"	//neo/game/MultiplayerGame.cpp
+	"#str_04284"    "Time limit reached"	//neo/game/MultiplayerGame.cpp
+	"#str_07137"    "timed out"	//neo/framework/async/AsyncServer.cpp
+	"#str_06734"	"Unable to resolve hostname"	//neo/framework/async/AsyncClient.cpp
+	"#str_06735"	"Unable to connect"	//neo/framework/async/AsyncClient.cpp
+	"#str_04281"    "Frag limit reached"	//neo/game/MultiplayerGame.cpp
+	"#str_04252"	"Last chance!" //neo/game/MultiplayerGame.cpp
+	"#str_04287"	"Silent game!"	//neo/game/MultiplayerGame.cpp
+	"#str_04849"	"Map not loaded!"	//neo/framework/async/AsyncServer.cpp
+	"#str_07139"	"Connecting to server..."	//neo/game/Game_network.cpp
+	"#str_04844"    "Data out of sync (clean server)"	//neo/framework/async/AsyncServer.cpp
+	"#str_04320"    "Disconnected from server"	//neo/framework/async/AsyncClient.cpp
+	"#str_07209"    "NULL"
+	"#str_04286"    "Server forced %s^0 to be ready"
+	"#str_04290"    "%s^0 trampled by %s"
+	"#str_04244"    "New player"
+	"#str_04245"    "spawned"
+	"#str_07003"	" - in line"
+	"#str_07004"	" - first in line"
+	"#str_07005"	" - second in line"
+	"#str_07006"	" - number %d in line"
+	"#str_07007"	"Stalker - no lives left"
+	"#str_04242"	"Lives"
+	"#str_04264"	"Max Lives"
+	"#str_04283"	"%s^0 - Last Hero"
+	"#str_06736"	"No Lives"
+	"#str_04249"	"Enter the game"
+	"#str_04300"    "Ready"
+	"#str_04301"	"Not ready"
+	"#str_07180"	"%s^0 %s!\n"
+	"#str_06738"	"Stalkinkg mode"
+	"#str_04299"	"Changing %s too quick. Wait for rain, or %d sec."
+	"#str_01991"	"Team"
+	"#str_04282"	"Team %s^0 reached fraglimit"
+	"#str_04317"    "Server is loading new map"
+	"#str_04318"    "Waiting for server to load a map..."
+	"#str_04328"    "Lost connection with server"
+	"#str_04329"    "Connection error"
+	"#str_04340"    "Canceled"
+	"#str_07134"    "Kicked from server"
+	"#str_07187"	"Invald"
+	"#str_04308"	"Please enter your CD key - not in use"
+	"#str_04305"	"CD Key - not in use"
+	"#str_02087"    "Loading...demo?!"
+	"#str_07178"    "QuickSave"
+	"#str_02916"    "Game Saved..."
+	"#str_06733"    "Server invalid"
+	"#str_04289"	"%s^0 died mysteriously"
+	"#str_06732"    "Last second equilibrium!"
+	"#str_06780"	"Video system does not support all the necessary features" //neo/renderer/RenderSystem_init.cpp
+	"#str_06737"	"Player Status"
+	// Find and get rid of these strings
+	"#str_07188"	"str_07188"
+	"#str_07189"	"str_07189"
+	"#str_07190"	"str_07190"
+	"#str_07186"	"str_07186"
+	// our assets starts here
+	"#str_04221"	"\"No\";\"Yes\""
+	"#str_04232"	"\"Disabled\";2x;4x;8x;16x"
+	// mainmenu.gui
+	"#str_10000"    "Join Cloud"
+	"#str_10001"	"Join LAN"
+	"#str_10002"	"Options"
+	"#str_10003"	"Quit"
+	"#str_10004"	"Cloud serverlist"
+	"#str_10005"	"Refresh"
+	"#str_10006"	"Cancel"
+	"#str_10007"	"LAN serverlist"
+	"#str_10008"	"Join"
+	"#str_10009"	"Resolution"
+	"#str_10010"	"Width"
+	"#str_10011"	"Height"
+	"#str_10012"	"Multisampling"
+	"#str_10013"	"Fullscreen"
+	"#str_10014"	"Use DDS"
+	"#str_10015"	"Online compression"
+	"#str_10016"	"Speakers"
+	"#str_10017"	"Use EFX"
+	"#str_10018"	"Language"
+	"#str_10019"	"Restart to apply"
+	"#str_10030"    "Cloud;LAN"
+	"#str_10031"	"Dead Man;Tourkey;Team Dead Man;Dead Man Standing"
+	"#str_10032"    "Spawn Server"
+	"#str_10033"    "Spawn"
+	"#str_10040"    "Server Type"
+	"#str_10041"	"Dead Limit"
+	"#str_10042"	"Time Limit"
+	"#str_10043"	"Map Name"
+	"#str_10044"	"Game Type"
+	"#str_10045"	"Team Damage"
+    "#str_10101"    "D.R.A.P. made by:"
+    "#str_10102"    "Roman - 3D models\nKosmix - 2D art\nWintch - everything else\n"
+    "#str_10103"    "Fork us on:\n https://github.com/Wintch/"
+	// mpmain.gui
+    "#str_11000"    "Multiplayer menu"
+    "#str_11001"    "Disconnect"
+    "#str_11002"    "Configuration"
+    "#str_11003"    "Call vote"
+    "#str_11004"    "Always run"
+    "#str_11005"    "Show HUD"
+    "#str_11006"    "Show weapon"
+    "#str_11007"    "Player name"
+    "#str_11008"    "Mouse sensibility"
+    "#str_11009"    "Brightness"
+    "#str_11010"    "Volume"
+    "#str_11011"    "Draw decls"
+    "#str_11012"    "Anisotropic filter"
+    "#str_11013"    "Show FPS"
+    "#str_11014"    "Show netgraph"
+    "#str_11015"    "Autochange weapon"
+    "#str_11016"    "Autoreload weapon"
+    "#str_11017"    "Field of view"
 }

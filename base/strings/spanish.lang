@@ -1,0 +1,159 @@
+﻿// Spanish lang string table
+
+{
+	//defined inside the engine
+	"#str_04350"	"Cargando el motor grafico"	//neo/framework/Common.cpp
+	"#str_04351"	"Cargando el menu principal"	//neo/framework/Common.cpp
+	"#str_02911"	"No hay portales definidos!"	//neo/game/Player.cpp
+	"#str_04344"	"Eventos"	//neo/framework/Common.cpp
+	"#str_04345"	"Scripts"	//neo/framework/Common.cpp
+	"#str_04346"	"Sonido"	//neo/framework/Common.cpp
+	"#str_04347"	"Red"	//neo/framework/Common.cpp
+	"#str_04348"	"Sistema de render"	//neo/framework/Common.cpp
+	"#str_04343"	"Cargando"	//neo/framework/Common.cpp
+	"#str_04349"	"Interfaz del usuario"	//neo/framework/Common.cpp
+	"#str_04273"	"Otro voto en progreso"	//neo/game/MultiplayerGame.cpp
+	"#str_04274"	"Ya votaste"	//neo/game/MultiplayerGame.cpp
+	"#str_04275"	"No hay votaction activa"	//neo/game/MultiplayerGame.cpp
+	"#str_04277"	"Voto exitoso"	//neo/game/MultiplayerGame.cpp
+	"#str_04278"	"Voto fallido"	//neo/game/MultiplayerGame.cpp
+	"#str_04279"	"%s^0 : llamo a votacion"	//neo/game/MultiplayerGame.cpp
+	"#str_04292"	"%s^0 : murio de la mano de: %s"	//neo/game/MultiplayerGame.cpp
+	"#str_07138"	"se encuentra desconectado"	//neo/framework/async/AsyncServer.cpp
+	"#str_07177"	"%s^0 : se une al servidor"	//neo/game/MultiplayerGame.cpp
+	"#str_07135"	"El servidor se desconecto"	//neo/framework/async/AsyncServer.cpp
+	"#str_02047"	"Servidor"	//neo/game/MultiplayerGame.cpp
+	"#str_04842"	"El contenido del servidor difiere del tuyo"	//neo/framework/async/AsyncServer.cpp
+	"#str_07141"	"Maximo de jugadores en linea alcanzado"	//neo/game/Game_network.cpp
+	"#str_07212"	"-str_07212"	//neo/framework/Session_menu.cpp
+	"#str_07002"	"Precalemtamiento - aun no estas listo"	//neo/game/MultiplayerGame.cpp
+	"#str_04251"	"Precalentando..."	//neo/game/MultiplayerGame.cpp
+	"#str_01982"	"Limite de muertes"	//neo/game/MultiplayerGame.cpp
+	"#str_01983"	"Limite de tiempo"	//neo/game/MultiplayerGame.cpp
+	"#str_02376"	"Tipo de juego"	//neo/game/MultiplayerGame.cpp
+	"#str_04248"	"No estoy listo aun"	//neo/game/MultiplayerGame.cpp
+	"#str_07008"	"En tu pantalla: %s"	//neo/game/MultiplayerGame.cpp
+	"#str_04246"	"Chusmeando"	//neo/game/MultiplayerGame.cpp
+	"#str_04243"	"Cantidad de muertes"	//neo/game/MultiplayerGame.cpp
+	"#str_04319"	"Sin conexion al servidor"	//neo/framework/async/AsyncClient.cpp
+	"#str_04339"	"Esta bien hombre"	//neo/framework/Session_menu.cpp
+	"#str_04247"	"Estoy listo"	//neo/game/MultiplayerGame.cpp
+	"#str_04250"	"Espectar"	//neo/game/MultiplayerGame.cpp
+	"#str_06749"	"Esta conectado con: %s"	//neo/framework/async/AsyncClient.cpp
+	"#str_04293"	"%s^0 : se suicido"	//neo/game/MultiplayerGame.cpp
+	"#str_07191"	"Logueando al master server..."	//neo/framework/Session.cpp
+	"#str_04280"	"%s^0 se une al equipo %s"	//neo/game/MultiplayerGame.cpp
+	"#str_02500"	"Azul"	//neo/game/MultiplayerGame.cpp
+	"#str_02499"	"Rojo"	//neo/game/MultiplayerGame.cpp
+	"#str_04284"	"Limite de tiempo alcanzado\n"	//neo/game/MultiplayerGame.cpp
+	"#str_07137"	"se cayo por timeout"	//neo/framework/async/AsyncServer.cpp
+	"#str_06734"	"No se pudo resolver nombre de host"	//neo/framework/async/AsyncClient.cpp
+	"#str_06735"	"No se logro la conexion"	//neo/framework/async/AsyncClient.cpp
+	"#str_04281"	"Limite de muertes alcanzado"	//neo/game/MultiplayerGame.cpp
+	"#str_04252"	"Ultima chance!"	//neo/game/MultiplayerGame.cpp
+	"#str_04287"	"Que silencio!"	//neo/game/MultiplayerGame.cpp
+	"#str_04849"	"El mapa no fue cargado!"	//neo/framework/async/AsyncServer.cpp
+	"#str_07139"	"Conectandose al servidor..."	//neo/game/Game_network.cpp
+	"#str_04844"	"Datos no sinc. con datos de serv. (serv. puro)"	//neo/framework/async/AsyncServer.cpp
+	"#str_04320"	"Desconectado del servidor"	//neo/framework/async/AsyncClient.cpp
+	"#str_07209"    "Nulo"
+	"#str_04286"	"El servidor ha forzado a %s^0 a estar listo"
+	"#str_04290"	"%s^0 aplastado por %s"
+	"#str_04244"	"Nuevo Jugador"
+	"#str_04245"	"emerge"
+	"#str_07003"    " - en fila"
+	"#str_07004"	" - primero en fila"
+	"#str_07005"	" - segundo en fila"
+	"#str_07006"	" - numero %d en fila"
+	"#str_07007"	"Stalker - no quedan vidas"
+	"#str_04242"	"Vidas"
+	"#str_04264"    "Maximo vidas"
+	"#str_06736"	"Sin vidas"
+	"#str_04283"	"%s^0 - Ultimo Heroe"
+    "#str_04249"    "Entro al juego"
+	"#str_04300"    "Listo"
+    "#str_04301"    "No esta listo"
+    "#str_07180"    "%s^0 %s!\n"
+	"#str_06738"	"Modo Chusmear"
+	"#str_04299"	"Cambiando %s muy rapido. Banca %d sec."
+	"#str_01991"    "Equipo"
+	"#str_04282"	"Equipo %s^0 alcanzo el limite de bajas"
+    "#str_04317"    "El servidor esta cargando un mapa nuevo"
+    "#str_04318"    "Esperando a que el servidor cargue el nuevo mapa..."
+    "#str_04328"    "Se perdio la conexion con el servidor"
+    "#str_04329"    "Error de conexion"
+    "#str_04340"    "Cancelado"
+	"#str_07134"    "Te rajaron del servidor"
+	"#str_07187"	"Invalido"
+	"#str_04308"    "Dame tu CDkey - no se usa"
+    "#str_04305"    "CD Key - no se usa"
+	"#str_02087"    "Cargando...demo?!"
+    "#str_07178"    "Rapiguarda"
+    "#str_02916"    "Partida guardada..."
+	"#str_06733"    "Servidor invalido"
+	"#str_04289"    "%s^0 murio misteriosamente"
+	"#str_06732"    "Equilibrio a ultimo segundo!"
+	"#str_06780"	"El sistema de video no soporta todas las caracteristicas necesarias" //neo/renderer/RenderSystem_init.cpp
+	"#str_06737"	"Estado del jugador"
+	// Find and get rid of theese strings
+	"#str_07188"	"str_07188"
+	"#str_07189"	"str_07189"
+	"#str_07190"	"str_07190"
+	"#str_07186"	"str_07186"
+	// our assets starts here
+	"#str_04221"	"\"No\";\"Si\""
+	"#str_04232"	"\"Deshabilitado\";2x;4x;8x;16x"
+	// mainmenu.gui
+    "#str_10000"    "Jugar en nube"
+    "#str_10001"    "Jugar en LAN"
+    "#str_10002"    "Opciones"
+    "#str_10003"    "Salir"
+    "#str_10004"    "Lista de servidores en la nube"
+    "#str_10005"    "Actualizar"
+    "#str_10006"    "Cancelar"
+    "#str_10007"    "Lista de servidores LAN"
+    "#str_10008"    "Entrar"
+    "#str_10009"    "Resolucion"
+    "#str_10010"    "Ancho"
+    "#str_10011"    "Alto"
+    "#str_10012"    "Antialiasing"
+    "#str_10013"    "Pantalla completa"
+    "#str_10014"    "Usar DDS"
+    "#str_10015"    "Recomprimir texturas"
+    "#str_10016"    "Parlantes"
+    "#str_10017"    "Usar EFX"
+    "#str_10018"    "Idioma"
+    "#str_10019"    "Reinicie para aplicar"
+	"#str_10030"    "Nube;LAN"
+    "#str_10031"    "Hombre muerto;Pavo;Hombre muerto por equipos;Hombre muerto aun parado"
+	"#str_10032"    "Arrancar Servidor"
+	"#str_10033"    "Arrancar"
+	"#str_10040"    "Tipo de servidor"
+    "#str_10041"    "Limite de muertes"
+    "#str_10042"    "Limit de tiempo"
+    "#str_10043"    "Nombre de mapa"
+    "#str_10044"    "Tipo de juego"
+    "#str_10045"    "Danio de companieros"
+	"#str_10101"	"D.R.A.P. se hizo por:"
+	"#str_10102"    "Roman - Modelos 3D\nKosmix - arte 2D\nWintch - todo lo demas\n"
+	"#str_10103"	"Proyecto disponible en:\n https://github.com/Wintch/"
+	// mpmain.gui
+    "#str_11000"    "Menu Multijugador"
+    "#str_11001"    "Desconectarse"
+    "#str_11002"    "Configuracion"
+    "#str_11003"    "Llamar a votacion"
+	"#str_11004"    "Siempre Correr"
+	"#str_11005"    "Mostrar interface"
+	"#str_11006"    "Mostrar Arma"
+	"#str_11007"    "Nombre del jugador"
+	"#str_11008"    "Sensibilidad del mouse"
+	"#str_11009"    "Brillo"
+	"#str_11010"    "Volumen"
+	"#str_11011"    "Dibujar Detalles"
+	"#str_11012"    "Filtro anisotropico"
+	"#str_11013"    "Graficar FPS"
+	"#str_11014"    "Graficar Conexion"
+	"#str_11015"    "Autocambiar arma"
+	"#str_11016"    "Autorecargar arma"
+	"#str_11017"    "Rango de vision"
+}

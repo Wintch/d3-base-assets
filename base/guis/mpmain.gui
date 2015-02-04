@@ -9,7 +9,6 @@ windowDef Desktop{
 	windowDef TitleText{
 		rect	0,20,640,20
 		text	"#str_11000"
-		font	"fonts/bank"
 		textalign	1	// Text in the middle of 640px
 		textscale	0.25
 		forecolor	1,1,1,1
@@ -17,7 +16,6 @@ windowDef Desktop{
 	windowDef SpectateWin {
 		rect	800,80,200,40
 		text	"gui::spectext"
-		font	"fonts/bank"
 		textscale	0.40
 		onTime 0 {
 			transition	rect	"800, 80, 200, 40"	"20, 80, 200, 40"	"200";
@@ -29,7 +27,6 @@ windowDef Desktop{
 	windowDef StateWin {
 		rect	800,120,200,40
 		text	"gui::ui_ready"
-		font	"fonts/bank"
 		textscale	0.40
 		onTime 0 {
 			transition	rect	"800, 120, 200, 40"	"20, 120, 200, 40"	"200";
@@ -42,7 +39,6 @@ windowDef Desktop{
 		rect	800,160,200,40
 		text "#str_11003"
 		textalign   0
-		font	"fonts/bank"
 		textscale	0.40
 		onTime 0{
 			transition	rect	"800, 160, 200, 40"	"20, 160, 200, 40"	"200";
@@ -63,7 +59,6 @@ windowDef Desktop{
 		rect	800,200,200,40
 		text	"#str_11002"
 		textalign   0
-		font	"fonts/bank"
 		textscale	0.40
 		onTime 0{
 			transition	rect	"800, 200, 200, 40"	"20, 200, 200, 40" "200" ;
@@ -84,7 +79,6 @@ windowDef Desktop{
 		rect    800,240,200,40
 		text	"#str_11001"
 		textalign   0
-		font    "fonts/bank"
 		textscale       0.40
 		onTime 0 {
 			transition	rect	"800, 240, 200, 40"	"20, 240, 200, 40"	"200";
@@ -109,85 +103,71 @@ windowDef Desktop{
 			windowDef AlwaysRun {
 				rect	0, 0, 220, 20
 				text	"#str_11004"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef ShowHud {
 				rect	0, 20, 220, 20
 				text	"#str_11005"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef ShowGun {
 				rect	0, 40, 220, 20
 				text	"#str_11006"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef PlayerName {
 				rect	0, 60, 220, 20
 				text	"#str_11007"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef MouseSens {
 				rect	0, 80, 220, 20
 				text	"#str_11008"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef Brightness {
 				rect	0, 100, 220, 20
 				text	"#str_11009"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef VolumeGain {
 				rect	0, 120, 220, 20
 				text	"#str_11010"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef ShowDecals {
 				rect	0, 140, 220, 20
 				text	"#str_11011"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef Anisotropy {
 				rect	0, 160, 220, 20
 				text	"#str_11012"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef ShowFPS {
 				rect	0, 180, 220, 20
 				text	"#str_11013"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef ShowLagometer {
 				rect	0, 200, 220, 20
 				text	"#str_11014"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef AutoSwitchWeapons {
 				rect	0, 220, 220, 20
 				text	"#str_11015"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef AutoReloadWeapons {
 				rect	0, 240, 220, 20
 				text	"#str_11016"
-				font    "fonts/bank"
 				textscale	0.30
 			}
 			windowDef FOV {
 				rect    0, 260, 220, 20
 				text	"#str_11017"
-				font    "fonts/bank"
 				textscale       0.30
 			}
 		}
@@ -204,7 +184,6 @@ windowDef Desktop{
 				choices	"#str_04221" //test
 				cvar	"in_alwaysRun"
 				choiceType	0
-				font	"fonts/bank"
 				textalign	1
 				//forecolor	0.6, 0.8, 0.8, 1
 				textscale       0.30
@@ -214,7 +193,6 @@ windowDef Desktop{
 				choices		"#str_04221"
 				cvar		"g_showHud"
 				choiceType	0
-				font		"fonts/bank"
 				textalign	1
 				//forecolor	0.6, 0.8, 0.8, 1
 				textscale       0.30
@@ -224,7 +202,6 @@ windowDef Desktop{
 				choices		"#str_04221"
 				cvar		"ui_showGun"
 				choiceType	0
-				font		"fonts/bank"
 				textalign	1
 				//forecolor	0.6, 0.8, 0.8, 1
 				textscale       0.30
@@ -233,7 +210,6 @@ windowDef Desktop{
 				rect		0, 60, 160, 20
 				cvar		"ui_name"
 				maxchars 	40 
-				font		"fonts/bank"
 				//textaligny	-6
 				//forecolor	0.6, 0.8, 0.8, 1
 				textscale       0.30
@@ -270,7 +246,6 @@ windowDef Desktop{
 				choices		"#str_04221"
 				cvar		"g_decals"
 				choiceType	0
-				font		"fonts/bank"
 				textalign	1
 				textscale       0.30
 			}
@@ -280,7 +255,6 @@ windowDef Desktop{
 				values	"0;2;4;8;16"
 				cvar		"image_anisotropy"
 				choiceType	1
-				font		"fonts/bank"
 				textalign	1
 				textscale       0.30
 			}
@@ -289,7 +263,6 @@ windowDef Desktop{
 				choices		"#str_04221"
 				cvar		"com_showfps"
 				choiceType	0
-				font		"fonts/bank"
 				textalign	1
 				textscale       0.30
 			}
@@ -298,7 +271,6 @@ windowDef Desktop{
 				choices		"#str_04221"
 				cvar		"net_clientlagometer"
 				choiceType	0
-				font		"fonts/bank"
 				textalign	1
 				textscale       0.30
 			}
@@ -307,7 +279,6 @@ windowDef Desktop{
 				choices		"#str_04221"
 				cvar		"ui_autoswitch"
 				choiceType	0
-				font		"fonts/bank"
 				textalign	1
 				textscale       0.30
 			}
@@ -316,7 +287,6 @@ windowDef Desktop{
 				choices		"#str_04221"
 				cvar		"ui_autoreload"
 				choiceType	0
-				font		"fonts/bank"
 				textalign	1
 				textscale       0.30
 			}

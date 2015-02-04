@@ -22,7 +22,6 @@ WindowDef Desktop {
 		windowDef SpawnServerAct {
 			rect        0, 0, 244, 50
 			text        "spawnserver"
-			font        "fonts/bank"
 			textscale   0.5
 			textalign   1
 			shadow      1
@@ -40,7 +39,6 @@ WindowDef Desktop {
 		windowDef Cloudact {
 			rect        0, 50, 244, 50
 			text        "#str_10000"
-			font        "fonts/bank"
 			textscale   0.5
 			textalign   1
 			shadow      1
@@ -62,7 +60,6 @@ WindowDef Desktop {
 		windowDef LANact {
 			rect        0, 100, 244, 50
 			text        "#str_10001"
-			font        "fonts/bank"
 			textscale   0.5
 			textalign   1
 			shadow      1
@@ -82,7 +79,6 @@ WindowDef Desktop {
 		windowDef Optionsact {
 			rect        0, 150, 244, 50
 			text        "#str_10002"
-			font        "fonts/bank"
 			textscale   0.5
 			textalign   1
 			shadow      1
@@ -101,7 +97,6 @@ WindowDef Desktop {
 		windowDef Quitact {
 			rect        0, 200, 244, 50
 			text        "#str_10003"
-			font        "fonts/bank"
 			textscale   0.5
 			textalign   1
 			shadow      1
@@ -125,7 +120,6 @@ WindowDef Desktop {
 		backcolor       0.5, 0.6, 0.6, 0.3
 		textalign       1
 		text    "#str_10032"
-		font        "fonts/bank"
 		onTime 0 {
 			if ( "gui::currentGameType" == 2 ) {
 				set "teamdamaget::visible"	"1";
@@ -138,7 +132,6 @@ WindowDef Desktop {
 		windowDef CancelServerbtn {
 			rect 10, 340, 100, 20
 			text	"#str_10006"
-			font    "fonts/bank"
 			textscale       0.25
 			onActionRelease	{
 				set "Mainmenu::visible" "1";
@@ -148,7 +141,6 @@ WindowDef Desktop {
 		windowDef SpawnServerOptions {
 			rect    220, 340, 100, 20
 			text    "#str_10033"
-			font    "fonts/bank"
 			textscale       0.25
 			onActionRelease {
 				set	"cmd" "startMultiplayer";
@@ -158,7 +150,6 @@ WindowDef Desktop {
 		editDef si_name {
 			rect	200, 20, 260, 20 // To avoid text scrolling horizontally
 			cvar	"si_name"
-			font	"fonts/bank"
 			maxchars	24
 			textscale	0.25
 			forecolor	1, 1, 1, 1
@@ -171,40 +162,32 @@ WindowDef Desktop {
 			windowDef servertypet {
 				rect	0, 0, 400, 20
 				text	"#str_10040"
-				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef fraglimitt {
 				rect	0, 20, 400, 20
 				text	"#str_10041"
-				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef timelimitt {
 				rect	0, 40, 400, 20
 				text	"#str_10042"
-				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef mapt {
 				rect	0, 60, 400, 20
 				text	"#str_10043"
-				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef gametypet {
 				rect    0, 80, 400, 20
-                                //backcolor       0,1,0,0.6
-                                text	"#str_10044"
-                                font    "fonts/bank"
-                                textscale       0.25
+                text	"#str_10044"
+				textscale       0.25
 			}
 			windowDef teamdamaget {
 				rect    0, 100, 400, 20
-                                //backcolor     0,1,0,0.6
-                                text	"#str_10045"
-                                font    "fonts/bank"
-                                textscale       0.25
+				text	"#str_10045"
+				textscale       0.25
 			}
 		}
 		// Right side
@@ -212,65 +195,59 @@ WindowDef Desktop {
 			rect    200, 40, 200, 300
 			backcolor       1,0,0,0.8
 			choiceDef servertype {
-                                rect	0, 0, 200, 20
-                                choices         "#str_10030"
-                                gui             "server_type"
-                                choiceType      0
-                                font            "fonts/bank"
-                                textscale       0.25
-                                textaligny      -6
-                                forecolor       0.6, 0.8, 0.8, 1
-        	        }
+				rect	0, 0, 200, 20
+				choices         "#str_10030"
+				gui             "server_type"
+				choiceType      0
+				textscale       0.25
+				textaligny      -6
+				forecolor       0.6, 0.8, 0.8, 1
+			}
 			editDef si_fraglimit {
-                                rect            0, 20, 200, 20
-                                cvar            "si_fragLimit"
-                                maxchars        3
-                                font            "fonts/bank"
-                                textscale       0.25
-                                textaligny      -6
-                                forecolor       0.6, 0.8, 0.8, 1
-                	}
+				rect            0, 20, 200, 20
+				cvar            "si_fragLimit"
+					maxchars        3
+					textscale       0.25
+					textaligny      -6
+					forecolor       0.6, 0.8, 0.8, 1
+			}
 			editDef si_timelimit {
-                                rect            0, 40, 200, 20
-                                cvar            "si_timeLimit"
-                                maxchars        2
-                                font            "fonts/bank"
-                                textscale       0.25
-                                textaligny      -6
-                                forecolor       0.6, 0.8, 0.8, 1
-                	}
+				rect            0, 40, 200, 20
+				cvar            "si_timeLimit"
+				maxchars        2
+				textscale       0.25
+				textaligny      -6
+				forecolor       0.6, 0.8, 0.8, 1
+			}
 			choiceDef si_map {
 				rect	0, 60, 200, 20
 				cvar	"si_map"
 				choices	"dm1;dm3;dm5"
 				values	"dm1.map;dm3.map;dm5.map"
 				choiceType	1
-				font	"fonts/bank"
 				textscale	0.25
 			}
 			choiceDef si_gametype {
 				rect    0, 80, 200, 20
-                                values  "Deathmatch;Tourney;Team DM;Last Man"
-                                choices "#str_10031" // Creative translation
-                                // you can use both cvar and gui, gui is in choiceType 0 all the time so it works with scripts
-                                cvar            "si_gameType"
-                                gui             "currentGameType" // To allow hiding Team damage
-                                choiceType      1
-                                font            "fonts/bank"
-                                textscale       0.25
-                                forecolor       0.6, 0.8, 0.8, 1
-                                onAction {
-                                        resetTime "SpawnServerWindow" "0"; // Refresh all the window to 0, so we can disable MP Team damage
-                                }
+				values  "Deathmatch;Tourney;Team DM;Last Man"
+				choices "#str_10031" // Creative translation
+				// you can use both cvar and gui, gui is in choiceType 0 all the time so it works with scripts
+				cvar            "si_gameType"
+				gui             "currentGameType" // To allow hiding Team damage
+				choiceType      1
+				textscale       0.25
+				forecolor       0.6, 0.8, 0.8, 1
+				onAction {
+					resetTime "SpawnServerWindow" "0"; // Refresh all the window to 0, so we can disable MP Team damage
+				}
 			}
 			choiceDef si_teamdamage {
 				rect            0, 100, 200, 20
-                                choices         "#str_04221"
-                                cvar            "si_teamDamage"
-                                choiceType      0
-                                font            "fonts/bank"
-                                textscale       0.25
-                                forecolor       0.6, 0.8, 0.8, 0.4
+				choices         "#str_04221"
+				cvar            "si_teamDamage"
+				choiceType      0
+				textscale       0.25
+				forecolor       0.6, 0.8, 0.8, 0.4
 			}
 		}
 	}
@@ -280,11 +257,9 @@ WindowDef Desktop {
 		backcolor	0.5, 0.6, 0.6, 0.3
 		textalign	1
 		text	"#str_10004"
-		font        "fonts/bank"
 		listDef CloudServerlist {
 			rect            10, 30, 580, 300
 			forecolor       0.6, 0.8, 0.8, 0.8
-			font            "fonts/bank"
 			bordersize      1
 			bordercolor     0.4, 0.6, 0.8, 0.5
 			textscale       0.25
@@ -298,7 +273,6 @@ WindowDef Desktop {
 		windowDef CloudRefresh {
 			rect    280, 340, 100, 30
 			text    "#str_10005"
-			font    "fonts/bank"
 			forecolor	0, 0, 1, 1
 			textalign	1
 			textscale	0.25
@@ -312,7 +286,6 @@ WindowDef Desktop {
 		windowDef CloudCancel {
 			rect    20, 340, 100, 30
 			text	"#str_10006"
-			font	"fonts/bank"
 			forecolor	1, 0, 0, 1
 			textalign	1
 			textscale	0.25
@@ -328,29 +301,25 @@ WindowDef Desktop {
 		backcolor       0.5, 0.6, 0.6, 0.3
 		textalign       1 //center
 		text        "#str_10007"
-		font        "fonts/bank"
 		// Server List
-                listDef LANServerlist {
-                        rect            10, 30, 580, 300
-                        forecolor       1, 1, 1, 1
-                        font            "fonts/bank"
-                        bordersize      1
-                        bordercolor     1, 1, 1, .4
-                        textscale       0.25
-                        listName        "serverlist" // How i supose to name this window?
-						backcolor       0, 0, 0, 0.3
-                        //tabstops        "10, 120, 180, 220, 260" // SERVER NAME, PLAYERS, GAMETYPE, MAP NAME, ping?
-                        //tabAligns       "1, 1, 1, 1, 1"
-
-                        onAction {
-                            //set     "cmd"   "play guisounds_menuclickup ; serverList" ;
-							resetTime "LANjoin" "0" ;
-                        }
-                }
+		listDef LANServerlist {
+			rect            10, 30, 580, 300
+			forecolor       1, 1, 1, 1
+			bordersize      1
+			bordercolor     1, 1, 1, .4
+			textscale       0.25
+			listName        "serverlist" // How i supose to name this window?
+			backcolor       0, 0, 0, 0.3
+			//tabstops        "10, 120, 180, 220, 260" // SERVER NAME, PLAYERS, GAMETYPE, MAP NAME, ping?
+			//tabAligns       "1, 1, 1, 1, 1"
+			onAction {
+				//set     "cmd"   "play guisounds_menuclickup ; serverList" ;
+				resetTime "LANjoin" "0" ;
+			}
+		}
 		windowDef LANrefresh {
 			rect	280, 340, 100, 30
 			text	"#str_10005"
-			font	"fonts/bank"
 			forecolor	0, 0, 1, 1
 			textalign	1
 			textscale	0.25
@@ -364,7 +333,6 @@ WindowDef Desktop {
 		windowDef LANcancel {
 			rect    20, 340, 100, 30
 			text	"#str_10006"
-			font        "fonts/bank"
 			forecolor   1, 0, 0, 1
 			textalign       1
 			textscale       0.25
@@ -376,7 +344,6 @@ WindowDef Desktop {
 		windowDef LANjoin {
 			rect	520, 340, 60, 30
 			text	"#str_10008"
-			font	"fonts/bank"
 			forecolor	1, 0, 0, 1
 			textalign	1
 			textscale	0.25
@@ -400,11 +367,9 @@ WindowDef Desktop {
 		//backcolor	0.5, 0.6, 0.6, 0.3
 		textalign	1 //center
 		text        "#str_10002"
-		font        "fonts/bank"
 		windowDef OptionRestart {
 			rect	0, 240, 180, 20
 			text	"#str_10006"
-			font        "fonts/bank"
 			forecolor   0, 1, 0, 1
 			textalign	0
 			textscale	0.28
@@ -417,13 +382,11 @@ WindowDef Desktop {
 				rect	0, 20, 200, 20
 				text	"#str_10009"
 				textscale	0.30
-				font        "fonts/bank"
 		}
 		windowDef Width {
 			rect    0, 40, 200, 20
 			text    "#str_10010"
 			textscale       0.30
-			font        "fonts/bank"
 			onTime 0 {
 				if ( "gui::r_mode" == "-1" ) {
 					set "visible" "0";
@@ -436,60 +399,50 @@ WindowDef Desktop {
 				rect	0, 60, 200, 20
 				text	"#str_10011"
 				textscale	0.30
-				font        "fonts/bank"
 		}
 		windowDef Multisampling {
 				rect	0, 80, 200, 20
 				text	"#str_10012"
 				textscale	0.30
-				font        "fonts/bank"
 		}
 		windowDef Fullscreen {
 				rect	0, 100, 200, 20
 				text	"#str_10013"
 				textscale	0.30
-				font        "fonts/bank"
 		}
 		windowDef UseDDS {
 				rect	0, 120, 200, 20
 				text	"#str_10014"
 				textscale	0.30
-				font        "fonts/bank"
 		}
 		windowDef onlinecompress {
 				rect	0, 140, 200, 20
 				text	"#str_10015"
 				textscale	0.30
-				font        "fonts/bank"
 		}
 		windowDef snumber {
 				rect    0, 160, 200, 20
 				text    "#str_10016"
 				textscale       0.30
-				font        "fonts/bank"
 		}
 		windowDef sefx {
 				rect    0, 180, 200, 20
 				text    "#str_10017"
 				textscale       0.30
-				font        "fonts/bank"
 		}
 		windowDef language {
 				rect	0, 200, 200, 20
 				text	"#str_10018"
 				textscale	0.30
-				font	"fonts/bank"
 		}
 		windowDef OptionsWindowAct {
-                	rect        300, 0, 120, 300
-                	//backcolor       0.5, 0.6, 0.6, 0.3
+			rect        300, 0, 120, 300
 			choiceDef ResolutionAct {
 				rect	0, 20, 120, 20
 				choices	"1024x768;1280x1024;1366x768;1920x1080;custom"
 				values	"0;1;2;3;-1"
 				cvar	"r_mode"
 				choiceType	1
-				font	"fonts/bank"
 				textscale	0.30
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
@@ -499,8 +452,7 @@ WindowDef Desktop {
 			editDef WidthAct {
 				rect		0, 40, 120, 20
 				cvar		"r_customwidth"
-				maxchars	4 // Never more than 9999x9999 px? 128kb enough 4 everyone?
-				font		"fonts/bank"
+				maxchars	4 // Never more than 9999x9999 px
 				textscale	0.30
 				onAction {
 					set "ResolutionAct::visible" "0" ;
@@ -512,7 +464,6 @@ WindowDef Desktop {
 				rect		0, 60, 120, 20
 				cvar		"r_customheight"
 				maxchars	4
-				font		"fonts/bank"
 				textscale	0.30
 				onAction {
 					set "ResolutionAct::visible" "0" ; //works
@@ -526,7 +477,6 @@ WindowDef Desktop {
 				values		"0;2;4;8" // see above
 				cvar		"r_multisamples"
 				choiceType	1
-				font		"fonts/bank"
 				textscale	0.30
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
@@ -539,7 +489,6 @@ WindowDef Desktop {
 				values		"0;1"
 				cvar		"r_fullscreen"
 				choiceType	1
-				font		"fonts/bank"
 				textscale	0.30
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
@@ -552,7 +501,6 @@ WindowDef Desktop {
 				values		"0;1"
 				cvar		"image_usePrecompressedTextures"
 				choiceType	1
-				font		"fonts/bank"
 				textscale	0.30
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
@@ -566,7 +514,6 @@ WindowDef Desktop {
 				values		"0;1"
 				cvar		"image_useCompression"
 				choiceType	1
-				font		"fonts/bank"
 				textscale	0.30
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
@@ -579,7 +526,6 @@ WindowDef Desktop {
 				values          "2;6"
 				cvar            "s_numberofspeakers"
 				choiceType      1
-				font            "fonts/bank"
 				textscale       0.30
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
@@ -592,7 +538,6 @@ WindowDef Desktop {
 				values          "0;1"
 				cvar            "s_useeaxreverb"
 				choiceType      1
-				font            "fonts/bank"
 				textscale       0.30
 				onAction {
 					set "OptionRestart::text" "#str_10019";
@@ -605,12 +550,11 @@ WindowDef Desktop {
 				values	"english;spanish"
 				cvar	"sys_lang"
 				choiceType      1
-				font            "fonts/bank"
 				textscale       0.30
 				onAction {
-                                        set "OptionRestart::text" "#str_10019" ;
-                                        set "OptionRestart::forecolor"  "1, 0, 0, 1";
-                                }
+					set "OptionRestart::text" "#str_10019" ;
+					set "OptionRestart::forecolor"  "1, 0, 0, 1";
+				}
 			}
 		}
 	}
@@ -625,8 +569,6 @@ WindowDef Desktop {
 			rect	0, 0, 640, 480
 			textalign       1 //center
 			text        "#str_10101"
-			font        "fonts/bank"
-			//forecolor	1, 0, 0, 1
 			visible 1
 			onTime 0 {
 				transition	rect	"40, 480, 560, 400"	"40, 40, 560, 400" "10000" ;
@@ -635,13 +577,11 @@ WindowDef Desktop {
 				rect        0, 40, 560, 400
 				textalign	1	//center
 				text        "#str_10102"
-				font        "fonts/bank"
 			}
 			windowDef Credit2 {
 				rect        0, 300, 560, 400
 				textalign       1       //center
 				text        "#str_10103"
-				font        "fonts/bank"
 			}
 		}
 	}
