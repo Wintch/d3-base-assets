@@ -1,48 +1,53 @@
-D3 Base Assets
+D.R.A.P. Assets
 ==============
 
-This projects aims to create a standalone SDK for games based on the 
-"dhewm3" Doom3 port (though it is useful with other ports as well),
-so the Open Source Doom3 Engine can be used for  games without using
-any proprietary media from the game itself.
+These assets were made for D.R.A.P. - SDK project
+Some information is available at <http://www.indiedb.com/games/drap>
 
-Currently it's rather incomplete, especially the .def files for most
-entities are missing.
-
-The following files are not included and have to be copied from the 
-original doom3 (or the demo) until dhewm3 has a working GLSL backend
-and corresponding shaders that are under a free license:
-
->    glprogs/*
-
-Probably it would also be useful to use some files from def/ to have
-more entities available in the level editor.
-I plan to have recreated versions of them with a free license in the 
-future.
-
-HOWTO use this
+HOWTO
 --------------
 
- * Clone dhewm3, see <https://github.com/dhewm/dhewm3/> (tested revision 
-   df81835de056cd83c1692e0cc2ec432873f7ab2b)
+ * Clone D.R.A.P. engine source from <https://github.com/Wintch/dhewm3>
 
- * Apply standalone.patch (`cd /path/to/dhewm3/ ; patch -p1 < /path/to/standalone/standalone.patch`)
- * Run cmake to create Makefiles
-    - create build dir (in this example: /path/to/build)
-    - `cd /path/to/build`
-    - `cmake -DD3XP=NO -DBASE=NO /path/to/dhewm3/neo/`
-      Note: the given options are just to speed up compiling and you may
-        need additional options to make sure the standalone/ directory
-        is used as data dir (see <https://github.com/dhewm/dhewm3/wiki/FAQ>)
- * Compile dhewm3. (on Linux: execute `make`)
- * Now you can execute dhewm3. You'll get a black screen, because there 
-   is no main menu GUI yet.
-   But console works as expected, so you can load the test map with 
-   `map test` and quit the game with `quit`
+ * Copy corresponding binary files (AVAILABLE SOON) to the same folder your exported "base" is
+ 
+ * Run, play, share and fork. If you find glitches, please report.
+ 
+Licence
+--------------
 
-Contributions are welcome!
+ * Please see COPYING.txt file before using/downloading this assets, as this is work in progress
+and some of these files may be still covered by original Doom3 EULA.
 
+ * If you still don't own the game, you can buy it on Steam <http://store.steampowered.com/app/9050/>
+note that you only need Doom3, not ROE as those assets were not used
 
-Cheers,
+ * This is Non-Profit work, but you can always share a beer and we would appreciate you to link us.
+ 
+Credits
+--------------
 
-Daniel (caedes)
+	Daniel (caedes) - Initial version
+	Wintch - *
+	Roman - 3D modeling, sketches, animation
+	KosmiX - Photorealistic textures
+	Marqs - Sound
+	DimasFN - Level lighting
+
+Testers
+--------------
+
+	Goga
+	JaZZman
+	Alex
+	Ale Palmera
+	La Tia
+	Marian
+	
+Thanks / Mentions
+--------------
+
+	<http://www.thedarkmod.com> - One of the best IDtech4 games, great wiki and community
+	<http://idtechforums.fuzzylogicinc.com> - Community of IDtech based MOD developers
+	<http://www.idsoftware.com> - Big thanks for making their engines free, among other things that you already know
+	<http://www.iddevnet.com> admin - Because of this website availability despite so many years had passed
