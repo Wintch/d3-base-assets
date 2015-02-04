@@ -1,0 +1,56 @@
+//============================================================================================================
+// Basic materials for mapping and sound/particles testing
+//============================================================================================================
+textures/developer/metal {
+	diffusemap	textures/common/metal_d.tga
+	metal
+	description	"Metal"
+}
+
+textures/developer/stone {
+	diffusemap	textures/common/stone_d.tga
+	stone
+	description	"Stone"
+}
+
+textures/developer/flesh {
+	diffusemap	textures/common/flesh_d.tga
+	flesh
+	description	"Flesh"
+}
+
+textures/developer/wood {
+	diffusemap	textures/common/wood_d.tga
+	wood
+	description	"Wood"
+}
+
+textures/developer/cardboard {
+	diffusemap	textures/common/cardboard_d.tga
+	cardboard
+	description	"Cardboard"
+}
+
+textures/developer/liquid {
+	diffusemap	textures/common/liquid_d.tga
+	liquid
+	description	"Liquid"
+}
+
+textures/developer/glass {
+	diffusemap	textures/common/glass_d.tga
+	glass
+	description	"Glass"
+}
+
+textures/developer/plastic {
+	diffusemap	textures/common/plastic_d.tga
+	plastic
+	description	"Plastic"
+}
+
+textures/developer/ricochet {
+	diffusemap	textures/common/ricochet_d.tga
+	ricochet
+	description	"Ricochet"
+}
