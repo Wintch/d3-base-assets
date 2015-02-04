@@ -4,6 +4,7 @@ Files that are or can be still covered by original Doom3 EULA:
 
 	base/glprogs/*
 	base/fonts/*
+	base/models/md5/*
 
 ################################################################################
 

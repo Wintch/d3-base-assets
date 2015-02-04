@@ -1,0 +1,1 @@
+Esto es porque el newshotgun no lleva animacion y el modelo linkea contra esta carpeta....HORRIBLE! Corregir apenas tengas algo de tiempo

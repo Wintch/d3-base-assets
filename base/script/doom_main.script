@@ -1,29 +1,27 @@
-object player {
-  void init();
-  boolean AI_FORWARD;
-  boolean AI_BACKWARD;
-  boolean AI_STRAFE_LEFT;
-  boolean AI_STRAFE_RIGHT;
-  boolean AI_ATTACK_HELD;
-  boolean AI_WEAPON_FIRED;
-  boolean AI_JUMP;
-  boolean AI_DEAD;
-  boolean AI_CROUCH;
-  boolean AI_ONGROUND;
-  boolean AI_ONLADDER;
-  boolean AI_RUN;
-  boolean AI_HARDLANDING;
-  boolean AI_SOFTLANDING;
-  boolean AI_RELOAD;
-  boolean AI_PAIN;
-  boolean AI_TELEPORT;
-  boolean AI_TURN_LEFT;
-  boolean AI_TURN_RIGHT;
-  void RaiseWeapon();
-};
+// base defines and util functions
+#include "script/doom_defs.script"
+#include "script/doom_events.script"
+#include "script/doom_util.script"
+#include "script/weapon_base.script"
+#include "script/ai_base.script"
 
-void player::init() {
-}
+// weapons
+#include "script/weapon_fists.script"
+#include "script/weapon_pistol.script"
+#include "script/weapon_shotgun.script"
+#include "script/weapon_machinegun.script"
+#include "script/weapon_chaingun.script"
+#include "script/weapon_handgrenade.script"
+#include "script/weapon_flashlight.script"
 
-void player::RaiseWeapon() {
+//ai
+#include "script/ai_player.script"
+void doom_main() {
+	sys.print( "Entering doom_main()\n");
+
+	//
+	// Do any script setup here
+	//
+
+	sys.print( "Exiting doom_main()\n" );
 }
