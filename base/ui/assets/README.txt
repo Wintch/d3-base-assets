@@ -1,0 +1,1 @@
+Check /neo/ui/DeviceContext.cpp and remove all this mess
