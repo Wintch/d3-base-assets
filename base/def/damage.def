@@ -1,0 +1,43 @@
+entityDef damage_softfall {
+        "damage"                                                "10"
+        "kickDir"                                               "0 0 -1"
+        "noArmor"                                               "1"
+        "knockback"                                             "0"
+        "kick_time"                                             "100"
+        "kick_amplitude"                                "1"
+        "no_sound"                                              "1"                     // dont play default damage sound
+}
+
+entityDef damage_hardfall {
+        "damage"                                                "30"
+        "kickDir"                                               "0 0 -1"
+        "noArmor"                                               "1"
+        "knockback"                                             "0"
+        "kick_time"                                             "200"
+        "kick_amplitude"                                "1"
+        "no_sound"                                              "1"                     // dont play default damage sound
+}
+
+entityDef damage_fatalfall {
+        "damage"                                                "200"
+        "kickDir"                                               "0 0 -1"
+        "noArmor"                                               "1"
+        "knockback"                                             "0"
+        "kick_time"                                             "300"
+        "kick_amplitude"                                "1"
+        "no_sound"                                              "1"                     // dont play default damage sound
+}
+
+entityDef damage_telefrag {
+        "damage"                                                "200"
+        "noArmor"                                               "1"
+        "noGod"                                                 "1"
+        "noTeam"                                                "1"             // even teammate can telefrag you
+        "telefrag"                                              "1"             // special case messages in MP
+}
+
+entityDef damage_suicide {
+        "damage"                                                "200"
+        "noArmor"                                               "1"
+        "noGod"                                                 "1"
+}

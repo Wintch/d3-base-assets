@@ -1,0 +1,260 @@
+// MP defs, inherits various SP values
+
+entityDef damage_fists_mp {
+	"inherit"		"damage_fists"
+	// "damage"		"20"
+}
+
+entityDef damage_grenadeDirect_mp {
+	"inherit"		"damage_grenadeDirect"
+	"damage"		"110"	// With 100 you can survive? Yes you are!
+}
+
+entityDef damage_grenadeSplash_mp {
+	"inherit"		"damage_grenadeSplash"
+	"damage"		"150"	// 75 is center
+	"radius"		"200"	// 200 is minimum!
+}
+
+entityDef damage_grenadeSplash_inhand_mp {
+	"inherit"					"damage_grenadeSplash_mp"
+	"selfDamageScale"			"20"		// defaults to 0.5 in multiplayer, so override it to full damage so player dies.
+}
+
+entityDef damage_bullet_machinegun_mp {
+	"inherit"		"damage_bullet_machinegun"
+	"damage"		"40"
+}
+
+entityDef damage_bullet_pistol_mp {
+	"inherit"		"damage_bullet_pistol"
+	"damage"		"24"
+}
+
+entityDef damage_shotgun_mp {
+	"inherit"		"damage_shotgun"
+	"damage"		"28"	// changed after crude version test
+}
+
+entityDef damage_softfall_mp {
+	"inherit"	"damage_softfall"
+	"damage"	"10"
+}
+
+entityDef damage_hardfall_mp {
+	"inherit"	"damage_hardfall"
+	"damage"	"30"
+}
+
+entityDef damage_fatalfall_mp {
+	"inherit"	"damage_fatalfall"
+	"damage"	"200"
+}
+
+/***********************************************************************
+	Weapons
+***********************************************************************/
+
+entityDef weapon_pistol_mp {
+	"inherit"			"weapon_pistol"
+}
+
+entityDef projectile_bullet_pistol_mp {
+	"inherit"			"projectile_bullet_pistol"
+	"net_instanthit"	"1"				// predict decals on walls in MP
+	"velocity"			"20000 0 0"		// fast projectiles in MP
+	"mass"				"1"				// lower mass because of the high velocity
+	"tracers"			"0"				// no tracers in MP
+	"push"				"0"				// no additional push in MP
+}
+
+entityDef moveable_item_pistol_mp {
+	"inherit"			"moveable_item_pistol"
+}
+
+entityDef weapon_shotgun_mp {
+	"inherit"			"weapon_shotgun"
+	"inv_ammo_shells"	"12"
+	"spread"			"11"
+}
+
+entityDef projectile_bullet_shotgun_mp {
+	"inherit"			"projectile_bullet_shotgun"
+	"net_instanthit"	"0"				// dont predict decals on walls because the predicted spread is way of
+	"velocity"			"20000 0 0"		// fast projectiles in MP
+	"mass"				"0.5"			// lower mass because of the high velocity
+	"tracers"			"0"				// no tracers in MP
+	"push"				"0"				// no additional push in MP
+}
+
+entityDef moveable_item_shotgun_mp {
+	"inherit"			"moveable_item_shotgun"
+}
+
+entityDef weapon_machinegun_mp {
+	"inherit"			"weapon_machinegun"
+	"spread"			"4"
+	"inv_ammo_clip"		"30"
+}
+
+entityDef projectile_bullet_machinegun_mp {
+	"inherit"			"projectile_bullet_machinegun"
+	"net_instanthit"	"1"				// predict decals on walls in MP
+	"velocity"			"20000 0 0"		// fast projectiles in MP
+	"mass"				"0.5"				// lower mass because of the high velocity
+	"tracers"			"0"				// no tracers in MP
+	"push"				"0"				// no additional push in MP
+}
+
+entityDef moveable_item_machinegun_mp {
+	"inherit"			"moveable_item_machinegun"
+}
+
+entityDef weapon_handgrenade_mp {
+	"inherit"			"weapon_handgrenade"
+}
+
+entityDef projectile_grenade_mp {
+	"inherit"			"projectile_grenade"
+	"push"				"0"				// no additional push in MP
+	"net_fullphysics"	"1"				// predict bouncing, dont simplify the snapshots for this
+}
+
+entityDef moveable_item_grenades_mp {
+	"inherit"			"moveable_item_grenades"
+	"damage"			"80"	//6-8-04 -Tim
+}
+
+/***********************************************************************
+
+ player model
+
+***********************************************************************/
+
+model model_mp_marine {
+	inherit								model_sp_marine
+
+	mesh								models/md5/characters/npcs/playermoves/mpplayer.md5mesh
+	
+	channel torso						( *Waist )
+	channel legs						( *origin -*Waist SPINNER eyecontrol)
+
+	skin								skins/characters/player/marine_mp.skin
+	
+	anim run_forward					models/md5/characters/npcs/playermoves/run_270.md5anim {
+		frame 10						rightfoot
+		frame 19						leftfoot
+	}
+	anim walk							models/md5/characters/npcs/playermoves/jog.md5anim 
+	anim walk_backwards					models/md5/characters/npcs/playermoves/jog_back.md5anim 
+
+	anim walk_strafe_left				models/md5/characters/npcs/playermoves/walk_strafe_left.md5anim 
+
+	anim walk_strafe_right				models/md5/characters/npcs/playermoves/walk_strafe_right.md5anim 
+}
+
+entityDef player_doommarine_mp {
+	"inherit"							"player_base"
+	"model"								"model_mp_marine"
+	"bleed"								"1"
+	"gib"								"1"
+
+	"skin_dropDeath"					"skins/characters/player/marine_mp_death.skin"
+	"skin_invisibility"					"skins/characters/player/marine_mp_invisible"
+
+	"deathSkinTime"						"10"	// how long once dead before setting the dead body contents to 0 //check
+
+	"health"							"110"
+	"pm_walkspeed"						"160"
+	"pm_runspeed"						"270"
+	"maxarmor"							"200"
+	"deplete_armor"						"100"	// deplete the armor when above this
+	//"deplete_health"	"50"	// wtf? This is not working!
+	"deplete_rate"						"1.5"	// every x seconds
+	"deplete_ammount"					"2"		// how much
+	"weapon"							"weapon_pistol,weapon_shotgun,weapon_machinegun,weapon_handgrenade" // all of them
+	"current_weapon"					"3"	// we start with the "weapon" number in hands
+	"ammo_grenades"						"2"	// spawn with 2 grenades
+	"ammo_clip"						"30"	// machinegun starts with 30
+	"ammo_shells"						"6"	// shotgun starts with 6
+	"damage_scale head"					"2"
+	
+	// ignore flashlight when cycling weapons
+	"weapon11_cycle"					"0"
+
+	"snd_teleport_enter"				"player_sounds_teleport_enter"
+	"snd_teleport_exit"					"player_sounds_teleport_exit"
+	"snd_teleport"						"player_sounds_teleport"
+	"snd_berserk_third"					"player_sounds_berserk_third"
+	"snd_hit_feedback"					"player_sounds_hitlo"
+	
+	"fx_spawn"							"fx/teleporterplayer.fx"	//fix this!
+
+    "mtr_icon_lag"						"textures/common/lagsprite" 
+    "mtr_icon_chat"						"textures/common/chatsprite"
+     
+	"snd_voc_are_you_serious"			"voc_are_you_serious"
+	"snd_voc_attack_now"				"voc_attack_now"
+	// "snd_voc_bullshit"					"voc_bullshit"
+	"snd_voc_cancel_that"				"voc_cancel_that"
+	"snd_voc_cover_me"					"voc_cover_me"
+	"snd_voc_die_already"				"voc_die_already"
+	"snd_voc_enemy_has_powerup"			"voc_enemy_has_powerup"
+	"snd_voc_enemy_spotted"				"voc_enemy_spotted"
+	"snd_voc_grab_the_armor"			"voc_grab_the_armor"
+	"snd_voc_great_game"				"voc_great_game"
+	"snd_voc_hack"						"voc_hack"
+	"snd_voc_i_have_extra_weapon"		"voc_i_have_extra_weapon"
+	"snd_voc_i_have_the_armor"			"voc_i_have_the_armor"
+	"snd_voc_i_have_the_powerup"		"voc_i_have_the_powerup"
+	"snd_voc_i_need_a_weapon"			"voc_i_need_a_weapon"
+	"snd_voc_i_need_health"				"voc_i_need_health"
+	"snd_voc_ill_take_that"				"voc_ill_take_that"
+	"snd_voc_im_armed_and_ready"		"voc_im_armed_and_ready"
+	"snd_voc_im_not_ready"				"voc_im_not_ready"
+	"snd_voc_im_taking_fire"			"voc_im_taking_fire"
+	"snd_voc_item_available"			"voc_item_available"
+	"snd_voc_movein"					"voc_movein"
+	"snd_voc_negative"					"voc_negative"
+	"snd_voc_no_way"					"voc_no_way"
+	"snd_voc_on_my_way"					"voc_on_my_way"
+	"snd_voc_overhere"					"voc_overhere"
+	"snd_voc_prepare_for_attack"		"voc_prepare_for_attack"
+	"snd_voc_pull_back"					"voc_pull_back"
+	"snd_voc_roger"						"voc_roger"
+	"snd_voc_that_sucked"				"voc_that_sucked"
+	"snd_voc_yeah_right"				"voc_yeah_right"
+
+	"txt_voc_are_you_serious"			"Are you serious?"
+	"txt_voc_attack_now"				"Attack Now!"
+	"txt_voc_bullshit"					"Bullshit"
+	"txt_voc_cancel_that"				"Cancel that"
+	"txt_voc_cover_me"					"Cover me!"
+	"txt_voc_die_already"				"Die Already!"
+	"txt_voc_enemy_has_powerup"			"Enemy has powerup"
+	"txt_voc_enemy_spotted"				"Enemy spotted"
+	"txt_voc_grab_the_armor"			"Grab the armor"
+	"txt_voc_great_game"				"Great Game"
+	"txt_voc_hack"						"Hack!"
+	"txt_voc_i_have_extra_weapon"		"I have an extra weapon"
+	"txt_voc_i_have_the_armor"			"I have the armor"
+	"txt_voc_i_have_the_powerup"		"I have the powerup"
+	"txt_voc_i_need_a_weapon"			"I need a weapon"
+	"txt_voc_i_need_health"				"I need health"
+	"txt_voc_ill_take_that"				"Ill take that"
+	"txt_voc_im_armed_and_ready"		"Im armed and ready"
+	"txt_voc_im_not_ready"				"Im not ready"
+	"txt_voc_im_taking_fire"			"Taking fire"
+	"txt_voc_item_available"			"Item available"
+	"txt_voc_movein"					"Move in!"
+	"txt_voc_negative"					"Negative"
+	"txt_voc_no_way"					"No way"
+	"txt_voc_on_my_way"					"On my way"
+	"txt_voc_overhere"					"Over here"
+	"txt_voc_prepare_for_attack"		"Prepare for attack"
+	"txt_voc_pull_back"					"Pull back!"
+	"txt_voc_roger"						"Roger"
+	"txt_voc_that_sucked"				"That sucked"
+	"txt_voc_yeah_right"				"Yeah right"
+
+}

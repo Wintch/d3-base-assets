@@ -1,1 +1,35 @@
-entityDef ammo_types { }
+/***********************************************************************
+
+ ammo
+
+***********************************************************************/
+
+// Define the types of ammo that are used in the game.
+// This entityDef is required by the game code.
+// Up to 16 ammo types can be defined.
+entityDef ammo_types {
+	"ammo_none"				"0"	// none
+	"ammo_shells"			"1"	// shotgun
+	"ammo_bullets"			"2"	// pistol
+	//"ammo_rockets"			"3"
+	//"ammo_cells"			"4"
+	"ammo_grenades"			"5"
+	//"ammo_souls"			"6"
+	//"ammo_bfg"				"7"
+	"ammo_clip"				"8"	// machinegun
+	//"ammo_belt"				"9"
+}
+
+// Need to be declared, even empty!
+entityDef ammo_names {
+	//"ammo_none"				"#str_00918"
+	//"ammo_shells"			"#str_07009"
+	//"ammo_bullets"			"#str_07010"
+	//"ammo_rockets"			"#str_07011"
+	//"ammo_cells"			"#str_07012"
+	//"ammo_grenades"			"#str_07013"
+	//"ammo_souls"			"#str_07014"
+	//"ammo_bfg"				"#str_07015"
+	//"ammo_clip"				"#str_07016"
+	//"ammo_belt"				"#str_07017"
+}

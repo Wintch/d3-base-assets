@@ -1,0 +1,24 @@
+// Dont know what for
+mapDef pr1_dm1 {
+        "name"          "pr1_DM1"
+        "Deathmatch"            "1"
+        "Team DM"               "1"
+        "Last Man"              "1"
+        "Tourney"               "1"
+}
+
+mapDef pr1_dm3 {
+	"name"		"pr1_DM3"
+	"Deathmatch"		"1"
+	"Team DM"		"1"
+	"Last Man"		"1"
+	"Tourney"		"1"
+}
+
+mapDef pr1_dm5 {
+        "name"          "pr1_DM5"
+        "Deathmatch"            "1"
+        "Team DM"               "1"
+        "Last Man"              "1"
+        "Tourney"               "1"
+}

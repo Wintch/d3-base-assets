@@ -1,0 +1,63 @@
+/***********************************************************************
+ moveable objects
+***********************************************************************/
+
+entityDef moveable_base {
+	// Basic moveable defs
+	"editor_color"						"0 .5 .8"
+	"editor_mins"						"?"
+	"editor_maxs"						"?"
+	"editor_rotatable"					"1"
+
+	"editor_usage2"						"Moveable object. Will drop to the floor and rest untill activated."
+	"editor_usage3"						"The visual model set with the 'model' key can also be used for"
+	"editor_usage4"						"collision detection. However the model may not be too complex."
+	"editor_usage5"						"max vertices = 32"
+	"editor_usage6"						"max edges = 32"
+	"editor_usage7"						"max polygons = 16"
+	"editor_usage8"						"max edges per polygon = 16"
+	"editor_usage9"						"The collision model must be an enclosed hull. Dangling polygons or"
+	"editor_usage10"					"edges are not allowed. If the visual model is too complex or does"
+	"editor_usage11"					"not meet these requirements it can be contained in a less complex"
+	"editor_usage12"					"model for collision detection. Such a collision model is specified with the"
+	"editor_usage13"					"'clipmodel' key."
+								
+	"editor_var density"				"Volume of the object times the density is the mass."
+	"editor_var friction"				"Friction with contacting surfaces in the range [0-1] where 0 is no friction."
+	"editor_var bouncyness"				"How much the object bounces in the range [0-1] where 0 is no bounce."
+	"editor_var mass"					"Mass of the object (overrides density)."
+	"editor_model clipmodel"			"Model to be used for collision detection."
+	"editor_var clipshrink"				"Shrink the visual model with an epsilon and use it as a clip model."
+	"editor_var allowStep"				"Set to 0 to prevent monsters from ever walking over this object."
+	"editor_var nonsolid"				"Make the object non-solid."
+	"editor_bool nodrop"				"Do not drop to the floor."
+	"editor_bool noimpact"				"Do not activate by the impact of other objects."
+	"editor_bool notpushable"			"Do not allow to be pushed."
+	"editor_bool unbindondeath"			"Unbind entity when health drops down to or below zero."
+	"editor_var health"					"If set the visual model changes to 'broken' when the health drops down to or below zero."
+	"editor_model broken"				"Visual model to be used when the health drops down to or below zero."
+	"editor_bool explode"				"If set to 1 the moveable explodes and is removed when the health drops down to or below zero."
+	"editor_var init_velocity"			"Initial linear velocity set when activated."
+	"editor_var init_avelocity"			"Initial angular velocity set when activated."
+	"editor_var init_velocityDelay"		"Delay in seconds before the initial linear velocity is set after being activated."
+	"editor_var init_avelocityDelay"	"Delay in seconds before the initial angular velocity is set after being activated."
+	"editor_var initialSplineTime"		"Number of milliseconds the moveable should follow the initial spline path."
+	"editor_var damage"					"Damage definition if it damages things it collides with"
+	"editor_var damageWhenActive"		"Only damage when active ( currently for the vagary and influence stuff )"
+	"editor_var fx_collide"				"FX system to start at impact position when object collides."
+
+	"spawnclass"						"idMoveable"
+
+	"density"							"0.5"
+	"friction"							"0.05"
+	"bouncyness"						"0.6"
+	"explode"							"0"
+	"unbindondeath"						"0"
+	"health"							"0"
+	"nodrop"							"0"
+	"noimpact"							"0"
+	"notPushable"						"0"
+	"clipshrink"						"0"
+	"allowStep"							"1"
+	"snd_bounce"						"smallpanel_impact"
+}
