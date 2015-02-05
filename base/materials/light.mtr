@@ -1,0 +1,24 @@
+// Basic Projected Light
+lights/defaultProjectedLight {
+	lightFalloffImage	_noFalloff
+	// by default, stay bright almost all the way to the end
+	{
+		forceHighQuality
+		map textures/light/squarelight1.tga
+		colored
+		zeroClamp
+	}
+}
+
+// Basic Point Light
+lights/defaultPointLight {
+	lightFalloffImage	makeintensity( textures/light/squarelight1a.tga )
+	// this will also be the falloff for any
+	// point light shaders that don't specify one
+	{
+		forceHighQuality
+		map textures/light/squarelight1.tga
+		colored
+		zeroClamp
+	}
+}
