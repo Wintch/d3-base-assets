@@ -1,0 +1,369 @@
+table muzzleflashrandom_sg { { 1.1, 0.9, 0.85, 1.2, 0.7, 1.02, 0.94 } }
+table muzzleflashtable_sg { clamp { 0.45, 1, 0.65, 0.88, 0.55, 0.88, 0.55, 1.0, 1.0, 1, 0.88, 0.75, 0.55, 0.30, 0 } }
+table table8 { snap { 0, 1, 2, 3, 4, 5, 6, 7 } }
+table table32 { snap { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ,24, 25, 26, 27, 28, 29, 30, 31 } }
+table rotate90 { snap { 0, 0.25, 0.5, 0.75 } }
+
+textures/weapon/shotgun_muzzleflash {
+	{
+		//map   _spotlight
+		map textures/light/round
+		zeroClamp
+		colored
+		red     muzzleflashrandom_sg[ time * 3.33 ] * muzzleflashtable_sg[ (time + parm4) * 4 * Parm3 ] * Parm0
+		green   muzzleflashrandom_sg[ time * 3.33 ] * muzzleflashtable_sg[ (time + parm4) * 4 * Parm3 ] * Parm1
+		blue    muzzleflashrandom_sg[ time * 3.33 ] * muzzleflashtable_sg[ (time + parm4) * 4 * Parm3 ] * Parm2
+	}
+}
+
+// wall hole
+textures/weapon/shotgun_bulleth {
+	DECAL_MACRO
+	decalInfo 60 1 ( 1 1 1 1 ) ( 0 0 0 0 )
+	{       
+      	blend	gl_zero, gl_one_minus_src_color
+		map		textures/decals/bulleth_shotgun.tga
+		clamp			// we don't want it to tile if the projection extends past the bounds
+		vertexColor		// oblique projections will be slightly faded down
+	}
+}
+
+// same 4 glass
+textures/weapon/shotgun_imp_glass {
+	DECAL_MACRO
+	decalInfo 60 1 ( 1 1 1 1 ) ( 0 0 0 0 )
+	{       
+      	blend	gl_zero, gl_one_minus_src_color
+		map		textures/decals/shotgun_imp_glass_d
+		clamp			// we don't want it to tile if the projection extends past the bounds
+		vertexColor		// oblique projections will be slightly faded down
+	}
+}
+
+// blood on player
+textures/weapon/shotgun_hurt02 {
+
+	qer_editorimage textures/decals/hurt02.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map	textures/decals/hurt02.tga
+		clamp
+	}
+}
+
+textures/weapon/shotgun_hurtmetal {
+
+	qer_editorimage textures/decals/bullethurt.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map	textures/decals/bullethurt.tga
+		clamp
+	}
+}
+
+textures/weapon/shotgun_imp_metal {
+
+        qer_editorimage textures/decals/shotgun_imp_metal_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/shotgun_imp_metal_d.tga
+                clamp
+        }
+}
+
+textures/weapon/shotgun_imp_ricochet {
+
+        qer_editorimage textures/decals/shotgun_imp_ricochet_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/shotgun_imp_ricochet_d.tga
+                clamp
+        }
+}
+
+textures/weapon/shotgun_imp_cardboard {
+
+        qer_editorimage textures/decals/shotgun_imp_cardboard_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/shotgun_imp_cardboard_d.tga
+                clamp
+        }
+}
+
+textures/weapon/shotgun_imp_wood {
+
+        qer_editorimage textures/decals/shotgun_imp_wood_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/shotgun_imp_wood_d.tga
+                clamp
+        }
+}
+
+textures/weapon/shotgun_imp_stone {
+
+        qer_editorimage textures/decals/shotgun_imp_stone_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/shotgun_imp_stone_d.tga
+                clamp
+        }
+}
+
+textures/weapon/shotgun_imp_plastic {
+
+        qer_editorimage textures/decals/shotgun_imp_plastic_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/shotgun_imp_plastic_d.tga
+                clamp
+        }
+}
+
+// blood on the wall
+textures/weapon/shotgun_dsplat2
+{
+	qer_editorimage	textures/decals/dsplat2.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat2.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/weapon/shotgun_dsplat5 {
+	qer_editorimage	textures/decals/dsplat5.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat5.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/weapon/shotgun_dsplat7 {
+	qer_editorimage	textures/decals/dsplat7.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat7.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/weapon/shotgun_dsplat11 {
+	qer_editorimage	textures/decals/dsplat11.tga
+	nonsolid
+	noimpact
+	blood
+	polygonoffset
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat11.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}
+}
+
+// remove
+textures/weapon/shotgun_genericDamage {
+        noshadows
+        translucent
+        {
+         blend gl_dst_color,gl_zero
+                //blend  blend
+                map    textures/decals/genericdamage.tga
+                colored
+        }
+        {
+                blend   add
+                map     textures/decals/splat14.tga
+                colored
+
+        }
+        {
+                blend   add
+                map     textures/decals/splat8.tga
+                colored
+
+        }
+        {
+                blend  add
+                map    textures/decals/bloodspray.tga
+                colored
+        }
+        {
+                blend  add
+                map    textures/decals/splat2.tga
+                colored
+        }
+        {
+                blend  add
+                map    textures/decals/slash01.tga
+                colored
+        }
+}
+
+//goSG!!!
+particles/weapon_sg/sg_impact1 {
+    {
+	//forceHighQuality
+	blend add
+	map	textures/particles/weapon_sg/sg_impact1_d.tga
+  }
+}
+
+particles/weapon_sg/sg_m_smoke1 {
+    {
+	//forceHighQuality
+	blend add
+	map	textures/particles/weapon_sg/sg_m_smoke1_d.tga
+  }
+}
+
+particles/weapon_sg/sg_blood_drop1 {
+  {
+    blend add
+    map textures/particles/weapon_sg/sg_blood_drop_d.tga
+  }
+}
+
+// Temporal model from moddb
+models/md5/weapons/newshotgun_view/newshotgun {
+	qer_editorimage        models/md5/weapons/newshotgun_view/newshotgun.tga
+	diffusemap             models/md5/weapons/newshotgun_view/newshotgun.tga
+	bumpmap                models/md5/weapons/newshotgun_view/newshotgun_n.tga
+	specularmap            models/md5/weapons/newshotgun_view/newshotgun_s.tga
+}
+
+particles/weapon_sg/sg_ricochet1 {
+  {
+    blend add
+    map textures/particles/weapon_sg/sg_blood_drop_d.tga
+  }
+}
+
+models/weapons/shotgun/w_shotgun2
+{
+                ricochet
+                //noShadows
+        noselfShadow
+                unsmoothedTangents
+        //renderbump  -size 512 512 -colorMap -aa 2 -trace .05  models/weapons/shotgun/w_shotgun2_local.tga models/weapons/shotgun/w_shotgun2_hi.lwo // fails anyway
+
+                diffusemap       textures/weapons/shotgun/w_shotgun2.tga
+                    bumpmap      textures/weapons/shotgun/w_shotgun2_local.tga
+                    specularmap  textures/weapons/shotgun/w_shotgun2_s.tga
+
+}
+
+models/weapons/shotgun/shotgun_mflash2 {
+	qer_editorimage models/weapons/shotgun/shotgun_mflash2.tga
+	sort nearest
+	deform tube
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 5 < 1.0
+		blend add
+		map textures/particles/weapon_sg/shotgun_mflash2_strip.tga
+		scale 1 / 8 , 1
+		scroll table8[ (time + parm4) * 5] , 0
+		clamp
+	}
+}
+
+models/weapons/shotgun/shotgun_mflashb {
+	qer_editorimage models/weapons/shotgun/shotgun_mflashb.tga
+	sort nearest
+	deform sprite
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 7 < 1.0
+		blend add
+		map textures/particles/weapon_sg/rocketlauncher_mflash_strip.tga
+		scale 1 / 32 , 1
+		scroll table32[ (time + parm4) * 7] , 0
+		rotate  rotate90[ parm5 ]
+		clamp
+	}
+}
+
+models/weapons/shotgun/shotgun_mflash
+{
+        qer_editorimage models/weapons/shotgun/shotgun_mflash.tga
+    sort nearest
+        deform sprite
+        {
+                forceHighQuality
+                if ( time + parm4 ) * 6.4 < 1.0
+                blend add
+		map textures/particles/weapon_sg/shotgun_mflash_strip.tga
+                scale 1 / 32 , 1
+                scroll table32[ (time + parm4) * 6.4] , 0
+                rotate  rotate90[ parm5 ]
+                clamp
+        }
+}
+
+//
+models/weapons/shotgun {
+	ricochet
+	noselfShadow
+	qer_editorimage        textures/weapons/shotgun/shotgun_d.tga
+	diffusemap	textures/weapons/shotgun/shotgun_d.tga
+	bumpmap	textures/weapons/shotgun/shotgun_n.tga
+	specularmap	textures/weapons/shotgun/shotgun_s.tga
+}
+
+models/weapons/shotgun_shell {
+	// tiny, dont need normal
+	diffusemap	textures/weapons/shotgun/shotgun_shell_d.tga
+	specularmap	textures/weapons/shotgun/shotgun_shell_s.tga
+}
+
+// delete this!
+models/weapons/shell1/sshell {
+	noShadows
+	diffusemap       textures/weapons/shotgun/sshell.tga
+	bumpmap          textures/weapons/shotgun/sshell_local.tga
+	specularmap   textures/weapons/shotgun/sshell_s.tga
+}

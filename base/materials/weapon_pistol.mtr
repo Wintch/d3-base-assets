@@ -1,0 +1,448 @@
+table muzzleflashrandom_pi { { 1.1, 0.9, 0.85, 1.2, 0.7, 1.02, 0.94 } }
+table muzzleflashtable_pi { clamp { 0.45, 1, 0.65, 0.88, 0.55, 0.88, 0.55, 1.0, 1.0, 1, 0.88, 0.75, 0.55, 0.30, 0 } }
+table table12_pi { snap { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 } }
+table rotate90_pi { snap { 0, 0.25, 0.5, 0.75 } }
+table table4_pi { snap { 0, 1, 2, 3 } }
+table light_particle { { 1.1, 0.9, 0.85, 1.2, 0.7, 1.02, 0.94 } }
+
+textures/weapon/pistol_muzzleflash {
+        {
+                map   _spotlight // FIX!
+                //map textures/light/round
+                zeroClamp
+                colored
+
+                red     muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm0
+                green   muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm1
+                blue    muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm2
+        }
+}
+
+// Impact hole
+textures/weapon/pistol_bulleth {
+	DECAL_MACRO
+	decalInfo 60 1 ( 1 1 1 1 ) ( 0 0 0 0 )
+	{       
+      	blend	gl_zero, gl_one_minus_src_color
+		map		textures/decals/bulleth_pistol.tga
+		clamp			// we don't want it to tile if the projection extends past the bounds
+		vertexColor		// oblique projections will be slightly faded down
+	}
+}
+
+textures/weapon/pistol_imp_glass
+{
+	DECAL_MACRO
+	decalInfo 60 1 ( 1 1 1 1 ) ( 0 0 0 0 )
+	{       
+      	blend	gl_zero, gl_one_minus_src_color
+		map	 textures/decals/pistol_imp_glass_d.tga
+		clamp			// we don't want it to tile if the projection extends past the bounds
+		vertexColor		// oblique projections will be slightly faded down
+	}
+	//polygonOffset
+	qer_editorimage	textures/decals/pistol_imp_glass_d.tga
+}
+
+// remove
+textures/weapon/pistol_genericdamage {
+        noshadows
+        translucent
+        {
+         blend gl_dst_color,gl_zero
+                //blend  blend
+                map    textures/decals/genericdamage.tga
+                colored
+        }
+        {
+                blend   add
+                map     textures/decals/splat14.tga
+                colored
+
+        }
+        {
+                blend   add
+                map     textures/decals/splat8.tga
+                colored
+
+        }
+        {
+                blend  add
+                map    textures/decals/bloodspray.tga
+                colored
+        }
+        {
+                blend  add
+                map    textures/decals/splat2.tga
+                colored
+        }
+        {
+                blend  add
+                map    textures/decals/slash01.tga
+                colored
+        }
+}
+
+textures/weapon/pistol_hurt02 {
+
+	qer_editorimage textures/decals/hurt02.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map	textures/decals/hurt02.tga
+		clamp
+	}
+}
+
+textures/weapon/pistol_imp_metal {
+
+	qer_editorimage textures/decals/pistol_imp_metal_d.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map	textures/decals/pistol_imp_metal_d.tga
+		clamp
+	}
+}
+
+textures/weapon/pistol_imp_ricochet {
+
+	qer_editorimage textures/decals/pistol_imp_ricochet_d.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map     textures/decals/pistol_imp_ricochet_d.tga
+		clamp
+	}
+}
+
+textures/weapon/pistol_imp_cardboard {
+
+        qer_editorimage textures/decals/pistol_imp_cardboard_d.tga
+        DECAL_MACRO
+        
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/pistol_imp_cardboard_d.tga
+                clamp   
+        }       
+}
+
+textures/weapon/pistol_imp_wood {
+
+        qer_editorimage textures/decals/pistol_imp_wood_d.tga
+        DECAL_MACRO
+        
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/pistol_imp_wood_d.tga
+                clamp   
+        }       
+}
+
+textures/weapon/pistol_imp_stone {
+
+        qer_editorimage textures/decals/pistol_imp_stone_d.tga
+        DECAL_MACRO
+        
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/pistol_imp_stone_d.tga
+                clamp   
+        }       
+}
+
+textures/weapon/pistol_imp_plastic {
+
+        qer_editorimage textures/decals/pistol_imp_plastic_d.tga
+        DECAL_MACRO
+        
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/pistol_imp_plastic_d.tga
+                clamp   
+        }       
+}
+
+// blood on the wall
+textures/weapon/pistol_dsplat2 {
+	qer_editorimage	textures/decals/dsplat2.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat2.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/weapon/pistol_dsplat5 {
+	qer_editorimage	textures/decals/dsplat5.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat5.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/weapon/pistol_dsplat7 {
+	qer_editorimage	textures/decals/dsplat7.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat7.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+//sangre en la pared
+textures/weapon/pistol_dsplat11 {
+	qer_editorimage	textures/decals/dsplat11.tga
+	nonsolid
+	noimpact
+	blood
+	polygonoffset
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat11.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}
+}
+
+textures/weapon/pistol_muzzlesmoke {
+	//qer_editorimage	textures/decals/dsplat11.tga
+	nonsolid
+	noimpact
+	blood
+	polygonoffset
+	DECAL_MACRO
+	decalInfo 10 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat11.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}
+}
+
+// Pistol muzzle
+models/weapons/pistol/pistol_mflash {
+        deform sprite
+        sort nearest
+        {
+                forceHighQuality
+                if ( time + parm4 ) * 8 < 1.0
+                blend add
+                map textures/particles/weapon_pistol/pistol_flash1.tga
+                scale 1 / 12 , 1
+                scroll table12_pi[ (time + parm4) * 8 ] , 0
+                rotate  rotate90_pi[ parm5 ]
+        }
+}
+
+models/weapons/pistol/pistol_mflash2 {
+        deform tube
+        sort nearest
+        {
+                forceHighQuality
+                if ( time + parm4 ) * 7 < 1.0
+                blend add
+                map textures/particles/weapon_pistol/pistol_flash2.tga
+                scale 1 / 4 , 1
+                scroll table4_pi[ (time + parm4) * 7] , 0
+        }
+}
+
+// Go pistol!
+particles/weapon_pistol/pistol_impact1
+{
+  {
+    blend add
+    map textures/particles/weapon_pistol/pistol_smoke_d.tga
+  }
+}
+
+particles/weapon_pistol/pistol_m_smoke1
+{
+  {
+    blend add
+    map textures/particles/weapon_pistol/pistol_m_smoke_d.tga
+  }
+}
+
+particles/weapon_pistol/pistol_blood_drop1
+{
+  {
+    blend add
+    map textures/particles/weapon_pistol/pistol_blood_drop_d.tga
+  }
+}
+
+particles/weapon_pistol/pistol_projectile_light
+{
+  {
+    zeroClamp
+    map	textures/light/round
+    red	light_particle[time*7]*Parm0
+    green	light_particle[time*7]*Parm1
+    blue	light_particle[time*7]*Parm2 
+  }
+}
+// Temporal pistol from moddb
+models/weapons/baretta/pistol
+{
+	qer_editorimage          textures/weapons/pistol/pistol_D.tga
+	diffusemap               textures/weapons/pistol/pistol_D.tga
+	bumpmap                  textures/weapons/pistol/pistol_N.tga
+	specularmap              textures/weapons/pistol/pistol_S.tga
+}
+
+particles/weapon_pistol/pistol_ricochet1
+{
+  {
+    blend add
+    map textures/particles/weapon_pistol/pistol_blood_drop_d.tga
+  }
+}
+
+// Because of: models/md5/weapons/pistol_world/worldpistol.md5mesh
+models/weapons/pistol/w_pistol {
+	ricochet
+	noselfShadow
+	//renderbump  -size 128 128 -aa 4  models/weapons/pistol/w_pistol_local.tga models/weapons/pistol/w_pistol_hi.lwo // not true even for D3
+	diffusemap	textures/weapons/pistol/w_pistol.tga
+	bumpmap	textures/weapons/pistol/w_pistol_local.tga
+	specularmap	textures/weapons/pistol/w_pistol_s.tga
+}
+
+models/weapons/pistol {
+	ricochet
+	noselfShadow
+	//renderbump  -size 128 128 -aa 4  models/weapons/pistol/w_pistol_local.tga models/weapons/pistol/w_pistol_hi.lwo // not true even for D3
+	diffusemap	textures/weapons/pistol/pistol_d.tga
+	bumpmap	textures/weapons/pistol/pistol_n.tga
+	specularmap	textures/weapons/pistol/pistol_s.tga
+}
+
+models/weapons/pistol/pistol_shell {
+	// object too small 4 normal map. Dont touch specular! Is good!
+	diffusemap	textures/weapons/pistol/pistol_shell_d.tga
+	specularmap	textures/weapons/pistol/pistol_shell_s.tga
+}
+
+/*
+	Material Impact effects
+*/
+
+particles/weapon_pistol/imp_none {
+	nonsolid
+	noshadows
+	{
+		blend add
+		map	textures/particles/weapon_pistol/imp_none_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_flesh1 {
+	nonsolid
+	noshadows
+	{
+		blend add
+		map	textures/particles/weapon_pistol/imp_flesh1_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_cardboard1 {
+	nonsolid
+	noshadows
+	{
+		blend add
+		map	textures/particles/weapon_pistol/imp_cardboard1_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_glass1 {
+	nonsolid
+	noshadows
+	{
+		blend add
+		map	textures/particles/weapon_pistol/imp_glass1_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_liquid1 {
+	nonsolid
+	noshadows
+	{
+		blend add
+		map	textures/particles/weapon_pistol/imp_liquid1_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_metal1 {
+	nonsolid
+	noshadows
+	{
+		blend filter
+		map	textures/particles/weapon_pistol/imp_metal1_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_plastic1 {
+	nonsolid
+	noshadows
+	{
+		blend add
+		map	textures/particles/weapon_pistol/imp_plastic1_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_ricochet1 {
+	nonsolid
+	noshadows
+	{
+		blend add
+		map	textures/particles/weapon_pistol/imp_ricochet1_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_stone1 {
+	nonsolid
+	noshadows
+	{
+		blend add
+		map	textures/particles/weapon_pistol/imp_stone1_d.tga
+	}
+}
+
+particles/weapon_pistol/imp_wood1 {
+	nonsolid
+	noshadows
+	{
+		blend filter
+		map	textures/particles/weapon_pistol/imp_wood1_d.tga
+	}
+}

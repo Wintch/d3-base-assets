@@ -1,0 +1,171 @@
+table fireballtable_hg { { .7,.8,1,1,1,1,1,1,.8,1,1,1,.8,.8,1,.7,1,.7,1,.7,.8,1,1,1,.7,.7  } }
+table muzzleflashrandom_hg { { 1.1, 0.9, 0.85, 1.2, 0.7, 1.02, 0.94 } }
+table muzzleflashtable_hg { clamp { 0.45, 1, 0.65, 0.88, 0.55, 0.88, 0.55, 1.0, 1.0, 1, 0.88, 0.75, 0.55, 0.30, 0 } }
+table eyestable { { .3, 1, .9, .8, .5, .6, .5, .2, .7, .8, .3, .9, .3, .1, .5, .9, .2, .8 } }
+
+// remove
+textures/weapon/handgrenade_hurt02
+{
+
+	qer_editorimage textures/decals/hurt02.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map	textures/decals/hurt02.tga
+		clamp
+	}
+}
+
+// Marks of the floor
+textures/weapon/handgrenade_ballburn01 {
+	qer_editorimage textures/decals/ballburn01.tga
+
+	DECAL_MACRO
+	decalInfo 10 10 ( 1 1 1 10 ) ( -5 -5 -5 0 )		// fade rgb down fast (clamps to 0), but leave alpha clamped at 1 for the first nine seconds
+	{       
+      	blend		gl_zero, gl_one_minus_src_alpha
+		map			makealpha(textures/decals/ballburn01.tga)
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor
+	}
+	{
+      	blend	add  
+		map		textures/decals/ballburn01_fx.tga
+		blue	fireballtable_hg[ time * .2 ]		// all marks will be flickering the same, unfortunately
+		green	fireballtable_hg[ time * .2 ]
+		red		fireballtable_hg[ time * .1 ]
+		vertexColor
+	}
+
+
+}
+
+textures/weapon/handgrenade_muzzleflash {
+        {
+                //map   _spotlight
+                map textures/light/round
+                zeroClamp
+                colored
+
+                red     muzzleflashrandom_hg[ time * 3.33 ] * muzzleflashtable_hg[ (time + parm4) * 4 * Parm3 ] * Parm0
+                green   muzzleflashrandom_hg[ time * 3.33 ] * muzzleflashtable_hg[ (time + parm4) * 4 * Parm3 ] * Parm1
+                blue    muzzleflashrandom_hg[ time * 3.33 ] * muzzleflashtable_hg[ (time + parm4) * 4 * Parm3 ] * Parm2
+        }
+}
+
+// Grenade explosion effects
+
+particles/weapon_grenade/grenade_explosion1 {
+  {
+    forceHighQuality	// For players trying to avoid smoke by setting low graphix
+    blend add
+    map	textures/particles/weapon_grenade/grenade_explode_d.tga
+  }
+}
+
+// grenade explosion smoke
+particles/weapon_grenade/grenade_explosion2 {
+  //diffusemap	textures/particles/weapon_grenade/grenade_smoke_d.tga
+  {
+    //forceHighQuality
+    blend add
+    map	textures/particles/weapon_grenade/grenade_smoke_d.tga
+  }
+}
+
+// grenade explosion deformation
+particles/weapon_grenade/grenade_explosion3 {
+	//qer_editorimage textures/dm1/water_decal1_e.tga
+        //noshadows
+        //water
+        //diffusemap textures/dm1/water_decal1_d.tga
+        {
+                vertexProgram heatHazeWithMask.vfp
+                vertexParm 0.1 time * 0.2 , time * 0.3 //diagonal, vertical, horizontal speeds
+                vertexParm 1 6.9 //distortion amount
+                fragmentProgram heatHazeWithMask.vfp
+                fragmentMap 0 _currentRender
+                fragmentMap 1 textures/sfx/vp1.tga
+                fragmentMap 2 textures/particles/weapon_grenade/grenade_destortion_s.tga //turbulence map
+        }
+}
+
+//grenade trail smoke
+particles/weapon_grenade/grenade_trail1
+{
+  //diffusemap	textures/particles/weapon_grenade/grenade_smoke_d.tga
+  {
+    //forceHighQuality
+    blend add
+    map	textures/particles/weapon_grenade/grenade_trail_d.tga
+  }
+}
+
+particles/weapon_grenade/grenade_wound1
+{
+  {
+    blend add
+    map textures/particles/weapon_grenade/grenade_explode_d.tga
+  }
+}
+
+particles/weapon_grenade/grenade_ricochet1
+{
+  {
+    blend add
+    map textures/particles/weapon_grenade/grenade_explode_d.tga
+  }
+}
+
+particles/weapon_grenade/grenade_squirt1
+{
+  {
+    blend add
+    map textures/particles/weapon_grenade/grenade_explode_d.tga
+  }
+}
+
+models/weapons/grenades/grenades3fx
+{
+                translucent
+        noselfShadow
+
+
+        {
+                blend gl_dst_color,gl_zero
+                cubeMap         env/nade
+                texgen          reflect
+        }
+        {
+        Blend add
+                Map textures/weapons/grenade/grenades3fx.tga
+                rgb eyestable[ time * 1 ]
+
+        }
+
+
+}
+
+models/weapons/grenades/grenades3 {
+        noselfShadow
+                unsmoothedTangents
+        //renderbump  -size 1024 1024 -trace 0.1 -colorMap -aa 2  models/weapons/grenades/grenades3_local.tga models/weapons/grenades/grenades3_hi.lwo
+
+                diffusemap      textures/weapons/grenade/grenades3.tga
+                {
+                  blend bumpmap
+          map  addnormals( textures/weapons/grenade/grenades3_local.tga, heightmap( textures/weapons/grenade/grenades3_h.tga, 7 ) )
+
+        }
+
+           specularmap   textures/weapons/grenade/grenades3_s.tga
+}
+
+models/weapons/grenade {
+	//qer_editorimage        textures/weapons/shotgun/shotgun_shell_d.tga
+	diffusemap	textures/weapons/grenade/grenade_d.tga
+	bumpmap	textures/weapons/grenade/grenade_n.tga
+	specularmap	textures/weapons/grenade/grenade_s.tga
+}

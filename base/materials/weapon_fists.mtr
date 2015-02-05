@@ -1,0 +1,75 @@
+// Player blood
+textures/weapon/fists_hurt02
+{
+
+	qer_editorimage textures/decals/hurt02.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map	textures/decals/hurt02.tga
+		clamp
+	}
+}
+
+textures/weapon/fists_genericdamage
+{
+        noshadows
+        translucent
+        {
+         blend gl_dst_color,gl_zero
+                //blend  blend
+                map    textures/decals/genericdamage.tga
+                colored
+        }
+		
+        {
+                blend   add
+                map     textures/decals/splat14.tga
+                colored
+
+        }
+        {
+                blend   add
+                map     textures/decals/splat8.tga
+                colored
+
+        }
+        {
+                blend  add
+                map    textures/decals/bloodspray.tga
+                colored
+        }
+        {
+                blend  add
+                map    textures/decals/splat2.tga
+                colored
+        }
+        {
+                blend  add
+                map    textures/decals/slash01.tga
+                colored
+        }
+}
+
+particles/weapon_fists/fists_blood_drop1 {
+	diffusemap      textures/characters/fists_d.tga
+}
+
+models/weapons/hands/hand {
+	noSelfShadow
+	noshadows
+	diffusemap      textures/characters/fists_d.tga
+	specularmap     textures/characters/fists_s.tga
+	bumpmap	textures/characters/fists_n.tga
+}
+
+models/weapons/berserk/fist {
+	// remove later
+	noSelfShadow
+	noshadows
+	diffusemap      textures/characters/fists_d.tga
+	specularmap     textures/characters/fists_s.tga
+	bumpmap	textures/characters/fists_n.tga
+}

@@ -1,0 +1,384 @@
+table muzzleflashrandom_mg { { 1.1, 0.9, 0.85, 1.2, 0.7, 1.02, 0.94 } }
+table muzzleflashtable_mg { clamp { 0.45, 1, 0.65, 0.88, 0.55, 0.88, 0.55, 1.0, 1.0, 1, 0.88, 0.75, 0.55, 0.30, 0 } }
+table guiLightTable_mg { { 1, 1, 0.6 } }
+table table12_mg { snap { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 } }
+table rotate90_mg { snap { 0, 0.25, 0.5, 0.75 } }
+table table4_mg { snap { 0, 1, 2, 3 } }
+
+textures/weapon/machinegun_muzzleflash {
+        {
+                //map   _spotlight
+                map textures/light/round
+                zeroClamp
+                colored
+
+                red     muzzleflashrandom_mg[ time * 3.33 ] * muzzleflashtable_mg[ (time + parm4) * 4 * Parm3 ] * Parm0
+                green   muzzleflashrandom_mg[ time * 3.33 ] * muzzleflashtable_mg[ (time + parm4) * 4 * Parm3 ] * Parm1
+                blue    muzzleflashrandom_mg[ time * 3.33 ] * muzzleflashtable_mg[ (time + parm4) * 4 * Parm3 ] * Parm2
+        }
+}
+
+// Impact hole
+textures/weapon/machinegun_bulleth {
+	DECAL_MACRO
+	decalInfo 60 1 ( 1 1 1 1 ) ( 0 0 0 0 )
+	{       
+      	blend	gl_zero, gl_one_minus_src_color
+		map		textures/decals/bulleth_machinegun.tga
+		clamp			// we don't want it to tile if the projection extends past the bounds
+		vertexColor		// oblique projections will be slightly faded down
+	}
+}
+
+textures/weapon/machinegun_imp_glass {
+	DECAL_MACRO
+	decalInfo 60 1 ( 1 1 1 1 ) ( 0 0 0 0 )
+	{       
+      	blend	gl_zero, gl_one_minus_src_color
+		map	 textures/decals/machinegun_imp_glass_d.tga
+		clamp			// we don't want it to tile if the projection extends past the bounds
+		vertexColor		// oblique projections will be slightly faded down
+	}
+	//polygonOffset
+	qer_editorimage	textures/decals/machinegun_img_glass_d.tga
+}
+
+textures/weapon/machinegun_imp_metal {
+
+        qer_editorimage textures/decals/machinegun_imp_metal_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/machinegun_imp_metal_d.tga
+                clamp
+        }
+}
+
+textures/weapon/machinegun_imp_ricochet {
+
+        qer_editorimage textures/decals/machinegun_imp_ricochet_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/machinegun_imp_ricochet_d.tga
+                clamp
+        }
+}
+
+textures/weapon/machinegun_imp_cardboard {
+
+        qer_editorimage textures/decals/machinegun_imp_cardboard_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/machinegun_imp_cardboard_d.tga
+                clamp
+        }
+}
+
+textures/weapon/machinegun_imp_wood {
+
+        qer_editorimage textures/decals/machinegun_imp_wood_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/machinegun_imp_wood_d.tga
+                clamp
+        }
+}
+
+textures/weapon/machinegun_imp_stone {
+
+        qer_editorimage textures/decals/machinegun_imp_stone_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/machinegun_imp_stone_d.tga
+                clamp
+        }
+}
+
+textures/weapon/machinegun_imp_plastic {
+
+        qer_editorimage textures/decals/machinegun_imp_plastic_d.tga
+        DECAL_MACRO
+
+        {
+                if ( parm7 == 0 )
+                blend gl_dst_color,gl_zero
+                map     textures/decals/machinegun_imp_plastic_d.tga
+                clamp
+        }
+}
+
+// remove this
+textures/weapon/machinegun_genericdamage {
+        noshadows
+        translucent
+        {
+         blend gl_dst_color,gl_zero
+                //blend  blend
+                map    textures/decals/genericdamage.tga
+                colored
+        }
+        {
+                blend   add
+                map     textures/decals/splat14.tga
+                colored
+
+        }
+        {
+                blend   add
+                map     textures/decals/splat8.tga
+                colored
+
+        }
+        {
+                blend  add
+                map    textures/decals/bloodspray.tga
+                colored
+        }
+        {
+                blend  add
+                map    textures/decals/splat2.tga
+                colored
+        }
+        {
+                blend  add
+                map    textures/decals/slash01.tga
+                colored
+        }
+}
+
+textures/weapon/machinegun_hurt02 {
+
+	qer_editorimage textures/decals/hurt02.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map	textures/decals/hurt02.tga
+		clamp
+	}
+}
+
+textures/weapon/machinegun_hurtmetal {
+
+	qer_editorimage textures/decals/bullethurt.tga
+	DECAL_MACRO
+
+	{
+		if ( parm7 == 0 )
+		blend gl_dst_color,gl_zero
+		map	textures/decals/bullethurt.tga
+		clamp
+	}
+}
+
+// Blood on the wall
+textures/weapon/machinegun_dsplat2 {
+	qer_editorimage	textures/decals/dsplat2.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat2.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+// blood on the wall
+textures/weapon/machinegun_dsplat5 {
+	qer_editorimage	textures/decals/dsplat5.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat5.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/weapon/machinegun_dsplat7 {
+	qer_editorimage	textures/decals/dsplat7.tga
+	nonsolid
+	noimpact
+	blood
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat7.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/weapon/machinegun_dsplat11 {
+	qer_editorimage	textures/decals/dsplat11.tga
+	nonsolid
+	noimpact
+	blood
+	polygonoffset
+	DECAL_MACRO
+	decalInfo 60 5 ( 1 1 1 1 ) ( 0 0 0 0 ){       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat11.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		vertexColor	// oblique projections will be slightly faded down
+	}
+}
+
+// Muzzle flashes
+models/weapons/machinegun/machinegun_mflash {
+	deform sprite
+	sort nearest
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 8 < 1.0
+		blend add
+		map	textures/particles/weapon_mg/mg_flash1.tga
+		scale 1 / 12 , 1
+		scroll table12_mg[ (time + parm4) * 8 ] , 0
+		rotate	rotate90_mg[ parm5 ]
+	}
+}
+
+models/weapons/machinegun/machinegun_mflash2 {
+	deform tube
+	sort nearest
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 7 < 1.0
+		blend add
+		map textures/particles/weapon_mg/mg_flash2.tga
+		scale 1 / 4 , 1
+		scroll table4_mg[ (time + parm4) * 7] , 0
+	}
+}
+
+models/weapons/machinegun/machinegun_mflashb {
+	deform sprite
+	sort nearest
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 7 < 1.0
+		blend add
+		map textures/particles/weapon_mg/mg_flash1.tga
+		scale 1 / 12 , 1
+		scroll table12_mg[ (time + parm4) * 7 ] , 0
+		rotate	rotate90_mg[ parm5 ]
+	}
+}
+
+models/weapons/machinegun/machinegun_mflash2b {
+	deform tube
+	sort nearest
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 6 < 1.0
+		blend add
+		map textures/particles/weapon_mg/mg_flash2.tga
+		scale 1 / 4 , 1
+		scroll table4_mg[ (time + parm4) * 6] , 0
+	}
+}
+
+// Ready, set MG!
+particles/weapon_mg/mg_impact1 {
+  {
+      //forceHighQuality
+      blend add
+      map	textures/particles/weapon_mg/mg_impact1_d.tga
+  }
+}
+
+particles/weapon_mg/mg_impact2 {
+  {
+      //forceHighQuality
+      blend add
+      map	textures/particles/weapon_mg/mg_impact2_d.tga
+  }
+}
+
+particles/weapon_mg/mg_m_smoke1 {
+  {
+    blend add
+    map	textures/particles/weapon_mg/mg_m_smoke_d.tga
+  }
+}
+
+particles/weapon_mg/mg_blood_drop1 {
+  {
+    blend add
+    map textures/particles/weapon_mg/mg_blood_drop_d.tga
+  }
+}
+
+// Temporal model from moddb
+models/weapons/p90/P90
+{
+	qer_editorimage          textures/weapons/machinegun/P90.tga
+	diffusemap               textures/weapons/machinegun/P90.tga
+	bumpmap                  textures/weapons/machinegun/P90_n.tga
+	specularmap              textures/weapons/machinegun/P90_s.tga
+}
+
+particles/weapon_mg/mg_ricochet1 {
+	{
+		blend	add
+		map	textures/particles/weapon_mg/mg_m_smoke_d.tga
+	}
+}
+
+//
+models/weapons/machinegun {
+	ricochet
+	noselfShadow
+	//qer_editorimage          textures/weapons/machinegun/machinegun_d.tga
+	diffusemap               textures/weapons/machinegun/machinegun_d.tga
+	bumpmap                  textures/weapons/machinegun/machinegun_n.tga
+	specularmap              textures/weapons/machinegun/machinegun_s.tga
+}
+
+models/weapons/machinegun_shell {
+	// on so tiny objects, texture resolution can be minimal. Also normal mal makes no sence, but specular is a good idea
+	diffusemap               textures/weapons/machinegun/machinegun_shell_d.tga
+	specularmap              textures/weapons/machinegun/machinegun_shell_s.tga
+}
+
+// placebo, remove it after MD5 rework
+models/weapons/machinegun/m_gui {
+        qer_editorimage textures/weapons/machinegun/m_gui.tga
+        //guiSurf       guis/weapons/machinegun.gui
+        guiSurf entity
+        //translucent
+}
+
+// because of skins/skins_characters_player.skin?
+models/weapons/machinegun/machinegun {
+	noselfShadow
+	unsmoothedTangents
+	diffusemap      textures/weapons/machinegun/machinegun.tga
+	{
+		blend bumpmap
+		map  addnormals( textures/weapons/machinegun/machinegun_local.tga, heightmap( textures/weapons/machinegun/machinegun_h.tga, 6 ) )
+	}
+	specularmap   textures/weapons/machinegun/machinegun_s.tga
+}
