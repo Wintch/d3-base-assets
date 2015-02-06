@@ -1,0 +1,38 @@
+fist_raise {
+	minDistance	5
+	maxDistance	30
+	volume		0
+	sound/weapons/fists/raise_fists_01.ogg	
+}
+
+fist_impact_flesh {
+	minDistance	2
+	maxDistance	30
+	volume		0
+	//no_dups
+	sound/weapons/fists/fist_impact_01.ogg
+}
+
+fist_impact {
+	minDistance	2
+	maxDistance	30
+	volume		0
+	//no_dups
+	sound/weapons/fists/default_punch_01.ogg
+}
+
+fist_gorepunch {
+	minDistance	2
+	maxDistance	30
+	volume		0
+	//no_dups
+	sound/weapons/fists/gorepunch_01.ogg
+}
+
+fist_whoosh {
+	minDistance	2
+	maxDistance	15
+	volume		0
+	//no_dups
+	sound/weapons/fists/whoosh_01.ogg
+}

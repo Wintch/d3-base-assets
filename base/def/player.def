@@ -692,13 +692,15 @@ entityDef player_base {
 	"weapon5_allowempty"				"0"
 	
 	// gives an error in SP when commited
+	/*
 	"def_weapon11"						"weapon_flashlight"
 	"weapon11_best"						"0"
 	"weapon11_cycle"					"1"
 	"weapon11_toggle"					"1"
 	"weapon11_allowempty"				"1"
+	*/
 	
-	"max_ammo_shells"					"12" // shotgun, --- to have full 3 cannon charges is 4*3=12
+	"max_ammo_shells"					"12" // shotgun, --- to have full 4 cannon charges is 4*3=12
 	"max_ammo_bullets"					"45" // pistol --- to have full x charges / 15x3 or 45 rounds
 	"max_ammo_grenades"					"4" // grenade --- normal grenade quantity? 2 or 4
 	//"max_ammo_souls"					"5"							// number of kills required to charge the soul cube
@@ -709,9 +711,8 @@ entityDef player_base {
 	// default weapons
 	// seperate multiple weapons with commas (no spaces).
 	// NOTE: default ammo must be specified explicitly.
-	"weapon"							"weapon_fists,weapon_pistol,weapon_flashlight,weapon_machinegun,weapon_shotgun"
-	"weapon_nightmare"                                    "weapon_fists,weapon_pistol,weapon_flashlight,weapon_machinegun,weapon_shotgun"
-	//"weapon_nightmare"					"weapon_fists,weapon_pistol,weapon_flashlight,weapon_pda,weapon_soulcube"
+	"weapon"	"weapon_fists,weapon_pistol,weapon_machinegun,weapon_shotgun"
+	"weapon_nightmare"	"weapon_fists,weapon_pistol,weapon_machinegun,weapon_shotgun"
 	"current_weapon"					"2"
 	
 	"pm_jumpheight"						"48"

@@ -1,0 +1,247 @@
+voc_are_you_serious {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_are_you_serious.ogg
+}
+
+voc_attack_now {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_attack_now.ogg
+}
+
+voc_bullshit {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	
+	sound/voice/voc_bullshit.ogg
+}
+
+voc_cancel_that {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_cancel_that.ogg
+}
+
+voc_cover_me {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_cover_me.ogg
+}
+
+voc_die_already {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_die_already.ogg
+}
+
+voc_enemy_has_powerup {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_enemy_has_powerup.ogg
+}
+
+voc_enemy_spotted {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_enemy_spotted.ogg
+}
+
+voc_grab_the_armor {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_grab_the_armor.ogg
+}
+
+voc_great_game {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_great_game.ogg
+}
+
+voc_hack {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_hack.ogg
+}
+
+voc_i_have_extra_weapon {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	
+	sound/voice/voc_i_have_extra_weapon.ogg
+}
+
+voc_i_have_the_armor {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_i_have_the_armor.ogg
+}
+
+voc_i_have_the_powerup {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_i_have_the_powerup.ogg
+}
+
+voc_i_need_a_weapon {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	
+	sound/voice/voc_i_need_a_weapon.ogg
+}
+
+voc_i_need_health {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_i_need_health.ogg
+}
+
+voc_ill_take_that {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	
+	sound/voice/voc_ill_take_that.ogg
+}
+
+voc_im_armed_and_ready {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_im_armed_and_ready.ogg
+}
+
+voc_im_not_ready {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_im_not_ready.ogg
+}
+
+voc_im_taking_fire {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_im_taking_fire.ogg
+}
+
+voc_item_available {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_item_available.ogg
+}
+
+voc_movein {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_movein.ogg
+}
+
+voc_negative {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_negative.ogg
+}
+
+voc_no_way {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_no_way.ogg
+}
+
+voc_on_my_way {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_on_my_way.ogg
+}
+
+voc_overhere {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_overhere.ogg
+}
+
+voc_prepare_for_attack {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_prepare_for_attack.ogg
+}
+
+voc_pull_back {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_pull_back.ogg
+}
+
+voc_roger {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_roger.ogg
+}
+
+voc_that_sucked {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_that_sucked.ogg
+}
+
+voc_yeah_right {
+	minDistance 2
+	maxDistance	15
+	volume	0
+
+	sound/voice/voc_yeah_right.ogg
+}

@@ -269,10 +269,9 @@ particles/weapon_sg/sg_blood_drop1 {
 
 // Temporal model from moddb
 models/md5/weapons/newshotgun_view/newshotgun {
-	qer_editorimage        models/md5/weapons/newshotgun_view/newshotgun.tga
-	diffusemap             models/md5/weapons/newshotgun_view/newshotgun.tga
-	bumpmap                models/md5/weapons/newshotgun_view/newshotgun_n.tga
-	specularmap            models/md5/weapons/newshotgun_view/newshotgun_s.tga
+	diffusemap	textures/weapons/shotgun/newshotgun_d.tga
+	bumpmap	textures/weapons/shotgun/newshotgun_n.tga
+	specularmap	textures/weapons/shotgun/newshotgun_s.tga
 }
 
 particles/weapon_sg/sg_ricochet1 {

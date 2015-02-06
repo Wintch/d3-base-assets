@@ -1,0 +1,55 @@
+bullet_impact_metal {
+	minDistance	1
+	maxDistance	25
+	volume		-3
+	sound/impacts/metal_02.ogg
+}
+
+bullet_impact_stone {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/stone_01.ogg
+}
+
+bullet_impact_wood {
+	minDistance	2
+	maxDistance	25
+	volume		0
+	sound/impacts/wood_01.ogg
+}
+
+bullet_impact_cardboard {
+	minDistance	1
+	maxDistance	25
+	volume		3
+	sound/impacts/cardboard_01.ogg
+}
+
+bullet_impact_glass {
+	minDistance	3
+	maxDistance	25
+	volume		2
+	sound/impacts/glass_01.ogg
+}
+
+bullet_impact_liquid {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/liquid_01.ogg
+}
+
+bullet_impact_plastic {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/plastic_01.ogg
+}
+
+bullet_impact_flesh {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/flesh_04.ogg
+}
