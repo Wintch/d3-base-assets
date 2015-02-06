@@ -1,28 +1,99 @@
+// Player HUD, showed in MP game
 windowDef Desktop {
-	rect	0 ,0 ,640 ,480 
+	rect	0 ,0 ,640 ,480
 	backcolor	0 ,0 ,0 ,0 
 	visible	1
 	nocursor	1
-	windowDef PlayerAmmo{
-		//display players ammo
-		text	"gui::player_allammo"
-		rect	300 ,420 ,40 ,20
-		textscale	0.30
-		textalign	1
+	// hack
+	windowDef crosshairCenter {
+		rect            305, 220, 32, 32
+		background      "guis/assets/crosshaircenter.tga"
+		visible 1
+		matcolor        1, 0, 0, 1 // Red is a good color for DM
 	}
-		windowDef PlayerHealth{
-		//display players health
-		rect		300, 440, 40, 20
-		text		"gui::player_health"
-		forecolor	1, 0, 0, 1
-		textscale	0.30
-		textalign	1
+	// Lagometer
+	windowDef Lagometer {
+		rect            8, 375, 68,54
+		background      "guis/assets/lagometer.tga"
+		visible	1
 	}
-		windowDef PlayerArmor{
-		//displays players armor
-		rect		300, 460, 40, 20
-		text		"gui::player_armor"
-		textscale	0.30
-		textalign	1
+	// Events
+	onNamedEvent updateAmmo {
+		if ("gui::player_clip_low" == 1) {
+			set	"PlayerAmmo::forecolor" "1 0.4 0 1" ;
+		} else {
+			set	"PlayerAmmo::forecolor" "1 1 1 1" ;
+		}
+		if ("gui::player_clip_empty" == 1) {
+			set	"PlayerAmmo::forecolor" "1 0 0 1" ;
+		}
+		if ("gui::player_ammo_empty" == 1) {
+			set	"PlayerAmmo::forecolor" "1 0 0 1" ;
+		}
+	}
+	onNamedEvent updateArmorHealthAir {
+		if ("gui::player_armor"  > 0) {
+			set     "PlayerHealth::forecolor" "0.3 0.4 0.4 1" ;
+		}
+		if ("gui::player_armor"  <= 0) {
+			set     "PlayerHealth::forecolor" "0.6 0.5 0.2 1" ;
+		}
+		if ("gui::player_health"  > 35) {
+			set     "PlayerHealth::forecolor" "0.5 0.7 0.7 1" ;
+			set	"crosshairCenter::matcolor" "1 1 1 1";
+			set	"Desktop::backcolor" "0 0 0 0" ;
+		}
+		if ("gui::player_health"  <= 35) {
+			set     "PlayerHealth::forecolor" "1 0.1 0 1" ;
+			set     "crosshairCenter::matcolor" "1 0 0 1" ;
+		}
+		if ("gui::player_health"  <= 0) {
+			// Can be negative
+			set     "PlayerHealth::forecolor" "0 0 0 1" ;
+			set     "Desktop::backcolor" "1 0 0 0.4" ;
+			set     "crosshairCenter::matcolor" "1 0 0 0" ;
+		}
+    }
+	// Main window
+	windowDef MainWindow {
+		rect    0 ,400 ,640 ,80
+		windowDef TimerWin {
+			// Windows users look always to the right bottom side for the clock
+			rect	440, 20, 180, 20
+			text    "gui::timer"
+			shadow  1
+			forecolor 1, 1, 1, 1
+			textalign	2
+		}
+		windowDef PlayerAmmo {
+			// display players ammo
+			text	"gui::player_allammo"
+			rect	300 ,0 ,40 ,20 
+			visible	1
+			textscale	0.30
+			textalign	1
+		}
+		windowDef PlayerHealth {
+			//display players health
+			rect		300, 20, 40, 20
+			text		"gui::player_health"
+			textscale	0.30
+			textalign	1
+		}
+		windowDef PlayerArmor {
+			//displays players armor
+			rect		300, 40, 40, 20
+			text		"gui::player_armor"
+			textscale	0.30
+			textalign	1
+		}
+		windowDef Warmup {
+			text            "gui::warmuptext"
+			rect            0, 60, 640, 20
+			textalign       1
+			textscale       0.25
+			visible         "gui::warmup"
+			shadow          1
+	    }
 	}
 }

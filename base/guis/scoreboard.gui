@@ -1,22 +1,23 @@
 windowDef Desktop{
 	rect	0,0,640,480
 	backcolor	0, 0, 0, 0.4
-	//menugui	1
-	/*
-	if ( "gui::team" == 0 ) {
-			set "Desktop::redalpha"	"0,1"
-	} else {
-			set "Desktop::redalpha"	"0,9"
-	}
-	*/
 	nocursor	1
 	windowDef TitleText{
 		rect	0,20,640,20
 		text    "gui::gameinfo"
+		//text	"gui::player1_ping"
 		textalign	1
+		font	"fonts/bank"
 		textscale	0.25
 		forecolor	1,1,1,1
 	}
+	windowDef BarSelf {
+                rect            38, ( 81 + ( "gui::rank_self" - 1 ) * 20 ), 449, 20
+                bordercolor     0, 1, 0, 1
+		backcolor	1,1,1,0.3
+                //bordersize      1
+        }
+
 	windowDef playerlist{
 		//only 4 players have build in value, we are expanding this to 10, or 12?
 		rect	40,60,560,200
@@ -25,27 +26,36 @@ windowDef Desktop{
 			windowDef FieldName {
 				text	"Name"
 				rect	20,0,200,20
-				backcolor	1,1,1,0.5
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef FieldPing {
 				text	"Ping"
 				rect	220,0,40,20
+				//forecolor	1,1,1,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef FieldScore {
 				text	"Score"
 				rect	260,0,80,20
+				//visible	("gui::gameinfo" != 0)
+				//forecolor	1,1,1,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef FieldTDMtscore {
 				text	"TTS"
 				rect	360,0,40,20
+				//forecolor	1,1,1,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef FieldTDMscore {
 				text	"TS"
 				rect	400,0,40,20
+				//forecolor	1,1,1,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 		}
@@ -55,13 +65,14 @@ windowDef Desktop{
 			windowDef PlayerNumber1 {
 				text	"1"
 				rect	0,0,20,20
-				forecolor	1,0,0,1
+				backcolor       "gui::rank1_color1", "gui::rank1_color2", "gui::rank1_color3", 0.5
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef PlayerName1 {
 				text	"gui::player1"
 				rect	20,0,200,20
-				forecolor	1,1,1,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef PlayerPing1 {
@@ -69,24 +80,28 @@ windowDef Desktop{
 				rect	220,0,40,20
 				textalign	1
 				forecolor	1,0,0,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef PlayerScore1 {
 				text	"gui::player1_score"
 				rect	260,0,80,20
 				forecolor	1,1,1,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef PlayerTDMtscore1 {
 				text	"gui::player1_tdm_tscore"
 				rect	360,0,40,20
 				forecolor	1,1,1,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 			windowDef PlayerTDMscore1 {
 				text    "gui::player1_tdm_score"
 				rect    400,0,40,20
 				forecolor	1,1,1,1
+				font	"fonts/bank"
 				textscale	0.25
 			}
 		}
@@ -96,13 +111,14 @@ windowDef Desktop{
 			windowDef PlayerNumber2 {
 				text    "2"
 				rect    0,0,20,20
-				forecolor       1,0,0,1
+				backcolor       "gui::rank2_color1", "gui::rank2_color2", "gui::rank2_color3", 0.5
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerName2 {
 				text    "gui::player2"
 				rect    20,0,200,20
-				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerPing2 {
@@ -110,24 +126,28 @@ windowDef Desktop{
 				rect    220,0,40,20
 				textalign       1
 				forecolor       1,0,0,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerScore2 {
 				text    "gui::player2_score"
 				rect    260,0,80,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerTDMtscore2 {
 				text    "gui::player2_tdm_tscore"
 				rect    360,0,40,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerTDMscore2 {
 				text    "gui::player2_tdm_score"
 				rect    400,0,40,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 		}
@@ -136,14 +156,16 @@ windowDef Desktop{
 			visible         ("gui::rank3" != 0)
 			windowDef PlayerNumber3 {
 				text    "3"
+				backcolor       "gui::rank3_color1", "gui::rank3_color2", "gui::rank3_color3", 0.5
 				rect    0,0,20,20
-				forecolor       1,0,0,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerName3 {
 				text    "gui::player3"
 				rect    20,0,200,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerPing3 {
@@ -151,24 +173,28 @@ windowDef Desktop{
 				rect    220,0,40,20
 				textalign       1
 				forecolor       1,0,0,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerScore3 {
 				text    "gui::player3_score"
 				rect    260,0,60,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerTDMtscore3 {
 				text    "gui::player3_tdm_tscore"
 				rect    360,0,40,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerTDMscore3 {
 				text    "gui::player3_tdm_score"
 				rect    400,0,40,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}
 		}
@@ -178,13 +204,15 @@ windowDef Desktop{
 			windowDef PlayerNumber4 {
 				text    "4"
 				rect    0,0,20,20
-				forecolor       1,0,0,1
+				backcolor       "gui::rank4_color1", "gui::rank4_color2", "gui::rank4_color3", 0.5
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerName4 {
 				text    "gui::player4"
 				rect    20,0,200,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerPing4 {
@@ -192,24 +220,28 @@ windowDef Desktop{
 				rect    220,0,40,20
 				textalign       1
 				forecolor       1,0,0,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerScore4 {
 				text    "gui::player4_score"
 				rect    260,0,60,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerTDMtscore4 {
 				text    "gui::player4_tdm_tscore"
 				rect    360,0,40,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 			windowDef PlayerTDMscore4 {
 				text    "gui::player4_tdm_score"
 				rect    400,0,40,20
 				forecolor       1,1,1,1
+				font    "fonts/bank"
 				textscale       0.25
 			}       
 		}
@@ -219,12 +251,20 @@ windowDef Desktop{
 		windowDef FragLimit{
 			rect	0, 20, 160, 20
 			text	"gui::livesinfo"
+			font		"fonts/bank"
+			//shadow		1
 			textscale	0.28
+			//textalign	0
+			//forecolor	0.6, 0.8, 0.8, 1
 		}
 		windowDef TimeInfo{
 			rect	0, 40, 160, 20
 			text	"gui::timeinfo"
+			font		"fonts/bank"
+			//shadow		1
 			textscale	0.28
+			//textalign	0
+			//forecolor	0.6, 0.8, 0.8, 1
 		}
 	}
 }
