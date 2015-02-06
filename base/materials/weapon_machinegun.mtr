@@ -375,10 +375,7 @@ models/weapons/machinegun/m_gui {
 models/weapons/machinegun/machinegun {
 	noselfShadow
 	unsmoothedTangents
-	diffusemap      textures/weapons/machinegun/machinegun.tga
-	{
-		blend bumpmap
-		map  addnormals( textures/weapons/machinegun/machinegun_local.tga, heightmap( textures/weapons/machinegun/machinegun_h.tga, 6 ) )
-	}
+	diffusemap      textures/weapons/machinegun/machinegun_d.tga
+	bumpmap	textures/weapons/machinegun/machinegun_n.tga
 	specularmap   textures/weapons/machinegun/machinegun_s.tga
 }

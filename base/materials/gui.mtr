@@ -1,0 +1,33 @@
+console {
+	{
+		map	guis/assets/console.tga
+		linear          // no mip maps
+		//scroll        time * 0 , time * .5
+	}
+}
+
+splashScreen {
+	{
+		forceHighQuality
+		blend blend
+		map	guis/assets/launch.tga
+	}
+}
+
+// Slider for mpmain.gui
+guis/assets/slider_bar {
+        {
+                blend blend
+                map guis/assets/slider_bar.tga
+                colored
+        }
+}
+
+// Slider background for mpmain.gui
+guis/assets/slider_bg {
+	{
+		blend blend
+		map guis/assets/slider_bg.tga
+		colored
+	}
+}
