@@ -6,26 +6,19 @@ player_shotgun_raise  {
 	sound/weapons/shotgun/shotgun_use_01.ogg
 }
 
-monster_shotgun_fire {
-	minDistance	2
-	maxDistance	30
-	volume		3
-	sound/weapons/shotgun/fire/sgfire_01.ogg
-}
-
 player_shotgun_fire {
 	minDistance	10
 	maxDistance	30
 	volume		9
 	//no_dups
-	sound/weapons/shotgun/wetfire.wav
+	sound/weapons/shotgun/fire_01.ogg
 }
 
 player_shotgun_pump  {
 	minDistance	10
 	maxDistance	30
 	volume		0
-	sound/weapons/shotgun/shotgun_cock_01.ogg
+	sound/weapons/shotgun/pump_01.ogg
 }
 
 // shotgun on its side
@@ -33,7 +26,7 @@ player_shotgun_reload_start {
 	minDistance	10
 	maxDistance	30
 	volume		3
-	sound/weapons/shotgun/reload/sgreload_start_01.ogg
+	sound/weapons/shotgun/reload_start_01.ogg
 }
 
 // each shell being loaded
@@ -41,7 +34,7 @@ player_shotgun_reload  {
 	minDistance	10
 	maxDistance	30
 	volume		2
-	sound/weapons/shotgun/reload/sgreload_addshell_01.ogg
+	sound/weapons/shotgun/reload_addshell_01.ogg
 }
 
 // the last cocking sound
@@ -56,13 +49,12 @@ player_shotgun_empty  {
 	minDistance	10
 	maxDistance	30
 	volume		5
-	sound/weapons/shotgun/dryfire_01.ogg
+	sound/weapons/shotgun/empty_01.ogg
 }
 
 player_shotgun_putaway  {
 	minDistance	10
 	maxDistance	30
 	volume		-6
-	//attention!
-	sound/weapons/shotgun/dryfire_01.ogg
+	sound/weapons/shotgun/putaway_01.ogg
 }

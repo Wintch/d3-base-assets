@@ -3,7 +3,15 @@ player_handgrenade_throw {
 	minDistance	1
 	maxDistance	25
 	volume		-5
-	sound/weapons/grenades/gren_throw_mix.ogg
+	sound/weapons/grenades/throw_01.ogg
+}
+
+player_handgrenade_explode {
+	// Check it later!
+	minDistance     1
+	maxDistance     25
+	volume          -5
+	sound/weapons/grenades/explode_01.ogg
 }
 
 player_handgrenade_bounce {
@@ -11,13 +19,13 @@ player_handgrenade_bounce {
 	maxDistance	20
 	volume		-3
 	no_dups
-	sound/weapons/grenades/bounce1.ogg
-	sound/weapons/grenades/bounce2.ogg
+	sound/weapons/grenades/bounce_01.ogg
+	sound/weapons/grenades/bounce_02.ogg
 }
 
 player_grenade_use {
 	minDistance	1
 	maxDistance	15
 	volume		0
-	sound/weapons/grenades/gren_use.ogg
+	sound/weapons/grenades/use_01.ogg
 }

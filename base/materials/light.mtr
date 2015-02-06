@@ -22,3 +22,26 @@ lights/defaultPointLight {
 		zeroClamp
 	}
 }
+
+// Ambient light will do non-directional bump mapping, and won't have specular lighting or shadows
+lights/ambientLight {
+	// Basic ambient light, pure white image. Colored to let you tune it's color from editor
+	ambientLight
+	lightFalloffImage	textures/light/ambientlight1.tga	//z axis image
+	{
+		forceHighQuality
+		map textures/light/ambientlight1.tga	//x.y axis image
+		colored
+		zeroClamp
+	}
+}
+
+// Used for weapons. Bright spot while shooting
+_spotlight {
+        {
+                forceHighQuality
+                map     _spotlight
+                zeroClamp
+                colored
+        }
+}

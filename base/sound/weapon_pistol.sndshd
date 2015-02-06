@@ -3,48 +3,40 @@ player_pistol_raise  {
 	minDistance	10
 	maxDistance	30
 	volume		-1
-	sound/xian/weapons/pistol/up_01.ogg
+	sound/weapons/pistol/raise_01.ogg
 }
 
 player_pistol_raise_01 {
 	minDistance	10
 	maxDistance	30
 	volume		1
-	sound/weapons/pistol/pistol_use_01.ogg
-}
-
-monster_pistol_fire {
-	minDistance	5
-	maxDistance	30
-	volume		0
-	sound/weapons/pistol/fire/pfire_01.ogg
+	sound/weapons/pistol/raise_02.ogg
 }
 
 player_pistol_fire {
 	minDistance	10
 	maxDistance	30
 	volume		13
-	sound/weapons/pistol/pistol_shot_02a.wav
+	sound/weapons/pistol/fire_01.ogg
 }
 
 player_pistol_reload {
 	minDistance	10
 	maxDistance	30
 	volume		4.5
-	sound/weapons/pistol/pistol_reload_01.ogg
+	sound/weapons/pistol/reload_01.ogg
 }
 
 player_pistol_empty {
 	minDistance	10
 	maxDistance	30
 	volume		6
-	sound/weapons/pistol/dryfire/pdf_01.ogg
+	sound/weapons/pistol/empty_01.ogg
 }
 
 player_pistol_putaway  {
 	minDistance	10
 	maxDistance	30
 	volume		-6
-	//attention!
-	sound/weapons/pistol/dryfire/pdf_01.ogg
+	sound/weapons/pistol/putaway_01.ogg
 }

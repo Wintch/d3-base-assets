@@ -3,43 +3,42 @@ player_machinegun_raise  {
 	minDistance	10
 	maxDistance	30
 	volume	0
-	sound/weapons/machinegun/mg_use_01.ogg
+	sound/weapons/machinegun/raise_01.ogg
 }
 
 player_machinegun_mech {
 	minDistance	5
 	maxDistance	30
 	volume	4
-	sound/weapons/machinegun/mg_mech_01.ogg
+	sound/weapons/machinegun/mech_01.ogg
 }
 
 player_machinegun_fire {
 	minDistance	5
 	maxDistance	30
 	volume	14
-
-	sound/weapons/machinegun/mg_fire_01.wav
+	sound/weapons/machinegun/fire_01.ogg
 }
 
 player_machinegun_empty  {
 	minDistance	10
 	maxDistance	30
 	volume		0
-	sound/weapons/machinegun/dryfire/mgdf_01.ogg
+	sound/weapons/machinegun/empty_01.ogg
 }
 
 player_machinegun_reload {
 	minDistance	10
 	maxDistance	30
 	volume		2.5
-	sound/weapons/machinegun/mg_reload_01.ogg
+	sound/weapons/machinegun/reload_01.ogg
 }
 
 player_machinegun_putaway  {
 	minDistance	10
 	maxDistance	30
 	volume		-6
-	sound/weapons/machinegun/mg_use_01.ogg
+	sound/weapons/machinegun/putaway_01.ogg
 }
 
 player_machinegun_lowammo  {
@@ -47,5 +46,5 @@ player_machinegun_lowammo  {
 	maxDistance	30
 	volume	 	12
 	private
-	sound/weapons/machinegun/lowammo3.ogg
+	sound/weapons/machinegun/lowammo_01.ogg
 }
