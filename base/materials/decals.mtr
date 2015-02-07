@@ -1,0 +1,23 @@
+table tunnelVisionSolidAlpha { clamp { 1, 0 } }
+
+textures/decals/tunnel {
+	noshadows
+	translucent
+	//qer_editorimage	textures/decals/tunnel.tga
+	{
+		alpha	tunnelVisionSolidAlpha[ parm3 ] - (time-parm0)*0.25
+		blend	blend
+		centerscale	0.65+0.05*sinTable[time], 0.65+0.05*sinTable[time]
+		rotate time * -.01
+		map	textures/decals/tunnel.tga
+		clamp
+	}
+	{
+		alpha	tunnelVisionSolidAlpha[ parm3 ] - (time-parm0)*0.25
+		blend	blend
+		centerscale	0.65+0.05*sinTable[time], 0.65+0.05*sinTable[time]
+		rotate time * .006
+		map	textures/decals/tunnel.tga
+		clamp
+	}
+}

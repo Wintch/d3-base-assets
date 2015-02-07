@@ -1,0 +1,17 @@
+textures/player/mp_head {
+	diffusemap	textures/characters/mp_head_d.tga
+	bumpmap	textures/characters/mp_head_n.tga
+	specularmap   textures/characters/mp_head_s.tga
+}
+
+textures/player/mp_body {
+	diffusemap	textures/characters/mp_body_d.tga
+	bumpmap	textures/characters/mp_body_n.tga
+	specularmap   textures/characters/mp_body_s.tga
+}
+
+textures/player/mp_skeleton {
+	diffusemap	textures/characters/mp_skeleton_d.tga
+	bumpmap	textures/characters/mp_skeleton_n.tga
+	specularmap   textures/characters/mp_skeleton_s.tga
+}
