@@ -20,6 +20,7 @@ textures/dm5/cobblestone8 {
 }
 
 textures/dm5/platform1 {
+	metal
 	diffusemap	textures/dm5/platform1_d.tga
 	specularmap	textures/dm5/platform1_s.tga
 	bumpmap	textures/dm5/platform1_n.tga
@@ -27,6 +28,7 @@ textures/dm5/platform1 {
 }
 
 textures/dm5/platform2 {
+	metal
 	diffusemap	textures/dm5/platform2_d.tga
 	specularmap	textures/dm5/platform2_s.tga
 	bumpmap	textures/dm5/platform2_n.tga

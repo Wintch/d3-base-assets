@@ -34,6 +34,7 @@ WindowDef Desktop {
 				transition "forecolor" "0.3 0 0 1" "1 1 1 1" "1600";
 				set "Mainmenu::visible"	"0";
 				set "SpawnServerWindow::visible"	"1";
+				set	"cmd"	"play guisounds_menuclickup";
 			}
 		}
 		windowDef Cloudact {
@@ -55,6 +56,7 @@ WindowDef Desktop {
 				set "LANWindow::visible"        "0";
 				set "gui::lanSet"	"0";
 				set "cmd"	"UpdateServers";
+				set	"cmd"	"play guisounds_menuclickup";
 			}
 		}
 		windowDef LANact {
@@ -74,6 +76,7 @@ WindowDef Desktop {
 				set "LANWindow::visible"        "1";
 				set "gui::lanSet"       "1" ;
 				set "cmd"       "UpdateServers" ;
+				set	"cmd"	"play guisounds_menuclickup";
 			}
 		}
 		windowDef Optionsact {
@@ -111,6 +114,7 @@ WindowDef Desktop {
 				set "Mainmenu::visible" "0";
 				//resetTime	"TitleWindow"	"0";
 				set "TitleWindow::visible" "1";
+				set	"cmd"	"play gui_actmenu";
 			}
 		}
 	}
@@ -136,6 +140,7 @@ WindowDef Desktop {
 			onActionRelease	{
 				set "Mainmenu::visible" "1";
 				set "SpawnServerWindow::visible"	"0";
+				set	"cmd"	"play guisounds_menuclickdown";
 			}
 		}
 		windowDef SpawnServerOptions {
@@ -339,6 +344,7 @@ WindowDef Desktop {
 			onAction {
 				set "Mainmenu::visible" "1";
 				set "LANWindow::visible" "0";
+				set	"cmd"	"play guisounds_menuclickdown";
 			}
 		}
 		windowDef LANjoin {
@@ -376,6 +382,7 @@ WindowDef Desktop {
 			onActionRelease {
 				set "Mainmenu::visible" "1";
 				set "OptionsWindow::visible" "0";
+				set	"cmd"	"play guisounds_menuclickdown";
 			}
 		}
 		windowDef Resolution {

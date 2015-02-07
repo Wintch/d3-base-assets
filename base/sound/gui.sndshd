@@ -1,0 +1,31 @@
+guisounds_menuclickup {
+	description     "Gui Audio"
+	minDistance     4
+	maxDistance     15
+	volume          0
+	sound/gui/menuclickup.ogg
+}
+
+guisounds_menuclickdown {
+	description     "Gui Audio"
+	minDistance     4
+	maxDistance     15
+	volume          0
+	sound/gui/menuclickdown.ogg
+}
+
+gui_actmenu {
+	description     "Gui Audio"
+	minDistance     4
+	maxDistance     15
+	volume          0
+	sound/gui/gui_actmenu.ogg
+}
+
+gui_intromusic {
+	description     "Gui Music"
+	minDistance     4
+	maxDistance     15
+	volume          0
+	sound/gui/gui_intromusic.ogg
+}

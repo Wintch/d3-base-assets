@@ -10,12 +10,11 @@
 #include "script/weapon_pistol.script"
 #include "script/weapon_shotgun.script"
 #include "script/weapon_machinegun.script"
-//#include "script/weapon_chaingun.script"
 #include "script/weapon_handgrenade.script"
-//#include "script/weapon_flashlight.script"
 
-//ai
+// ai
 #include "script/ai_player.script"
+
 void doom_main() {
 	sys.print( "Entering doom_main()\n");
 

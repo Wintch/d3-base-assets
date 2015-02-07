@@ -5,10 +5,10 @@ windowDef Desktop {
 	onESC {
 			set	"cmd"	"startgame" ;		
 	}
-	onTime 100	{
-		set	"cmd"	"play guisounds_IntroSound";
+	onTime 1000	{
+		set	"cmd"	"play gui_intromusic";
 	}
-	onTime 1400	{
+	onTime 4500	{
 		set	"cmd"	"startgame" ;
 	}
 }
