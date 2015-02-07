@@ -15,3 +15,39 @@ textures/player/mp_skeleton {
 	bumpmap	textures/characters/mp_skeleton_n.tga
 	specularmap   textures/characters/mp_skeleton_s.tga
 }
+
+models/monsters/skeleton/skeleton01head {
+	unsmoothedTangents
+	flesh
+	clamp
+	{	// burning corpse effect
+		if	parm7			// only when dead	
+		// make a burned away alpha test for the normal skin
+		blend	gl_zero, gl_one			// don't draw anything
+		map	textures/characters/dis2.tga	// replace this with a monster-specific texture
+	}
+	{
+		blend diffusemap
+		map	textures/characters/mp_skeletonhead_d.tga
+	}
+    specularmap	textures/characters/mp_skeletonhead_s.tga
+	bumpmap		textures/characters/mp_skeletonhead_n.tga
+}
+
+models/monsters/skeleton/skeleton01 {
+	unsmoothedTangents
+	flesh
+	clamp
+	{	// burning corpse effect
+		if	parm7			// only when dead
+		// make a burned away alpha test for the normal skin
+		blend	gl_zero, gl_one			// don't draw anything
+		map	textures/characters/mp_skeleton_d.tga	// replace this with a monster-specific texture
+	}
+	{
+		blend diffusemap	
+		map	textures/characters/mp_skeleton_d.tga
+	}
+	specularmap 	textures/characters/mp_skeleton_s.tga
+	bumpmap	textures/characters/mp_skeleton_n.tga
+}

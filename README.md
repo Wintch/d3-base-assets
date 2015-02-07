@@ -8,9 +8,8 @@ HOWTO
 --------------
 
  * Clone D.R.A.P. engine source from <https://github.com/Wintch/dhewm3>
-
- * Copy corresponding binary files (AVAILABLE SOON) to the same folder your exported "base" is
- 
+ * Compile the source or just download compiled binary files from <https://github.com/Wintch/drap>
+ * Copy corresponding binary files to the same folder your exported "base" is (This repository)
  * Run, play, share and fork. If you find glitches, please report.
  
 Licence
