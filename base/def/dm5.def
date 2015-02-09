@@ -1,0 +1,12 @@
+
+mapDef dm5 {
+	"name"		"DM5"
+	"Deathmatch"		"1"
+	"Team DM"		"1"
+	"Last Man"		"1"
+	"Tourney"		"1"
+	"size3"		"56202444"
+	"size2"		"56202444"
+	"size1"		"56202444"
+	"size0"		"56202444"
+}

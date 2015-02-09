@@ -1,14 +1,26 @@
 windowDef Desktop {
-	rect	0,0,1920,1080
+	rect	0,0,640,480
 	backcolor	0,0,0,1
-	menugui	1
+	menugui	0
 	onESC {
 			set	"cmd"	"startgame" ;		
 	}
 	onTime 1000	{
 		set	"cmd"	"play gui_intromusic";
 	}
-	onTime 4500	{
-		set	"cmd"	"startgame" ;
+	//onTime 4500	{
+	//	set	"cmd"	"startgame" ;
+	//}
+	windowDef IntroLoop
+	{
+		rect	0,0,640,480
+		visible	1
+		background	"gui/intro/introloop"
+		matcolor	1,1,1,1
+		notime 1
+
+		//onTime 0 {
+		//	resetCinematics ;
+		//}
 	}
 }

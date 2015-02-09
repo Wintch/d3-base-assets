@@ -169,3 +169,9 @@ models/weapons/grenade {
 	bumpmap	textures/weapons/grenade/grenade_n.tga
 	specularmap	textures/weapons/grenade/grenade_s.tga
 }
+
+models/weapons/view_grenade {
+	diffusemap	textures/weapons/grenade/grenade_d.tga
+	bumpmap	textures/weapons/grenade/grenade_n.tga
+	specularmap	textures/weapons/grenade/grenade_s.tga
+}

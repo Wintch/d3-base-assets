@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "448.56 85.7909 148.415"
-"editor_drLastCameraAngle" "-60.9 102.3 0"
+"editor_drLastCameraPos" "443.366 106.47 33.3742"
+"editor_drLastCameraAngle" "-72.9 105.6 0"
 // primitive 0
 {
 brushDef3
@@ -177,11 +177,11 @@ brushDef3
 brushDef3
 {
 ( 0 0 1 -8 ) ( ( 0.078125 0 0.15625 ) ( 0 0.078125 107.140625 ) ) "textures/dm5/cobblestone8" 0 0 0
-( 0 1 0 -190 ) ( ( 0.625 0 38.875 ) ( 0 0.625 0 ) ) "textures/common/caulk" 0 0 0
-( 1 0 0 -458 ) ( ( 0.625 0 1.25 ) ( 0 0.625 0 ) ) "textures/common/caulk" 0 0 0
-( 0 0 -1 0 ) ( ( 0.625 0 1.25 ) ( 0 0.625 38.875 ) ) "textures/common/caulk" 0 0 0
-( 0 -1 0 -49 ) ( ( 0.625 0 25.125 ) ( 0 0.625 0 ) ) "textures/common/caulk" 0 0 0
-( -1 0 0 419 ) ( ( 0.625 0 62.75 ) ( 0 0.625 0 ) ) "textures/common/caulk" 0 0 0
+( 0 1 0 -190 ) ( ( 0.3125 0 19.4375 ) ( 0 0.3125 0 ) ) "textures/dm5/cobblestone8" 0 0 0
+( 1 0 0 -458 ) ( ( 0.3125 0 0.625 ) ( 0 0.3125 0 ) ) "textures/dm5/cobblestone8" 0 0 0
+( 0 0 -1 0 ) ( ( 0.3125 0 0.625 ) ( 0 0.3125 19.4375 ) ) "textures/dm5/cobblestone8" 0 0 0
+( 0 -1 0 -49 ) ( ( 0.3125 0 12.5625 ) ( 0 0.3125 0 ) ) "textures/dm5/cobblestone8" 0 0 0
+( -1 0 0 419 ) ( ( 0.3125 0 31.375 ) ( 0 0.3125 0 ) ) "textures/dm5/cobblestone8" 0 0 0
 }
 }
 // primitive 15

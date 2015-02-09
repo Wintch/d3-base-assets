@@ -1,6 +1,6 @@
 CM "1.00"
 
-1097204702
+1097204196
 
 collisionModel "worldMap" {
 	vertices { /* numVertices = */ 112
@@ -382,7 +382,7 @@ collisionModel "worldMap" {
 	4 ( -182 -187 192 -191 ) ( -1 0 0 ) -467 ( 467 -48 0 ) ( 467 191 8 ) "textures/common/caulk"
 	4 ( -181 185 186 187 ) ( 0 1 0 ) 191 ( 467 191 0 ) ( 506 191 8 ) "textures/common/caulk"
 	4 ( 181 182 183 184 ) ( 0 0 1 ) 8 ( 467 -48 8 ) ( 506 191 8 ) "textures/developer/flesh"
-	4 ( -169 173 174 175 ) ( 0 1 0 ) 190 ( 419 190 0 ) ( 458 190 8 ) "textures/common/caulk"
+	4 ( -169 173 174 175 ) ( 0 1 0 ) 190 ( 419 190 0 ) ( 458 190 8 ) "textures/dm5/cobblestone8"
 	4 ( 152 -149 -148 153 ) ( 1 0 0 ) 408 ( 408 -47 0 ) ( 408 192 8 ) "textures/common/caulk"
 	4 ( -146 -151 156 -155 ) ( -1 0 0 ) -365 ( 365 -47 0 ) ( 365 192 8 ) "textures/common/caulk"
 	4 ( -145 149 150 151 ) ( 0 1 0 ) 192 ( 365 192 0 ) ( 408 192 8 ) "textures/common/caulk"
@@ -405,9 +405,9 @@ collisionModel "worldMap" {
 	4 ( 68 -65 -64 69 ) ( 1 0 0 ) 576 ( 576 -64 0 ) ( 576 -56 376 ) "textures/layout/wall02"
 	4 ( -22 -21 -15 24 ) ( 0 -1 0 ) 56 ( 576 -56 0 ) ( 584 -56 376 ) "textures/layout/wall02"
 	4 ( 190 -189 -183 191 ) ( 0 -1 0 ) 48 ( 467 -48 0 ) ( 506 -48 8 ) "textures/common/caulk"
-	4 ( -170 -175 180 -179 ) ( -1 0 0 ) -419 ( 419 -49 0 ) ( 419 190 8 ) "textures/common/caulk"
-	4 ( 178 -177 -171 179 ) ( 0 -1 0 ) 49 ( 419 -49 0 ) ( 458 -49 8 ) "textures/common/caulk"
-	4 ( 176 -173 -172 177 ) ( 1 0 0 ) 458 ( 458 -49 0 ) ( 458 190 8 ) "textures/common/caulk"
+	4 ( -170 -175 180 -179 ) ( -1 0 0 ) -419 ( 419 -49 0 ) ( 419 190 8 ) "textures/dm5/cobblestone8"
+	4 ( 178 -177 -171 179 ) ( 0 -1 0 ) 49 ( 419 -49 0 ) ( 458 -49 8 ) "textures/dm5/cobblestone8"
+	4 ( 176 -173 -172 177 ) ( 1 0 0 ) 458 ( 458 -49 0 ) ( 458 190 8 ) "textures/dm5/cobblestone8"
 	4 ( 169 170 171 172 ) ( 0 0 1 ) 8 ( 419 -49 8 ) ( 458 190 8 ) "textures/dm5/cobblestone8"
 	4 ( 154 -153 -147 155 ) ( 0 -1 0 ) 47 ( 365 -47 0 ) ( 408 -47 8 ) "textures/common/caulk"
 	4 ( 142 -141 -135 143 ) ( 0 -1 0 ) 47 ( 318 -47 0 ) ( 359 -47 8 ) "textures/common/caulk"

@@ -31,3 +31,10 @@ guis/assets/slider_bg {
 		colored
 	}
 }
+
+gui/intro/introloop {
+	translucent {
+		videomap loop video/introloop.roq
+		linear
+	}
+}

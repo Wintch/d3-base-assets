@@ -1,14 +1,15 @@
 table dm5_platform1 { { .8, .7, .9, .7, .7, .7, .9, .7, .9 } }
 
 textures/dm5/sky {
-        qer_editorimage	textures/dm5/env_sky_forward.tga
-        forceOpaque                             // so transparent windows can draw on top of it, otherwise leaks
-        {
-                blend           add             // so transparent windows can draw on top of it
-                cameraCubeMap   textures/dm5/env_sky.tga
-                texgen          skybox
-                texgen                  wobblesky 1.5 .5 .2
-        }
+	noimpact
+	qer_editorimage	textures/dm5/env_sky_forward.tga
+	forceOpaque                             // so transparent windows can draw on top of it, otherwise leaks
+	{
+		blend           add             // so transparent windows can draw on top of it
+		cameraCubeMap   textures/dm5/env_sky.tga
+		texgen          skybox
+		texgen                  wobblesky 1.5 .5 .2
+	}
 }
 
 textures/dm5/cobblestone8 {

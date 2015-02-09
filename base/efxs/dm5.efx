@@ -1,0 +1,5 @@
+// Only one location
+Version 1 // To avoid an error message
+reverb "mainroom" {
+	"room"	-1000 // No reverb at all
+}
