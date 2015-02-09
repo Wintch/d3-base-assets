@@ -1,0 +1,2 @@
+- When player dies, the T-pose is used instead of switching to skeleton animation/model
+- Connecting to LAN server is a bit tricky, make sure you are selecting the server

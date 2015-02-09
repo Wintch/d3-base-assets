@@ -245,3 +245,74 @@ voc_yeah_right {
 
 	sound/voice/voc_yeah_right.ogg
 }
+
+// To avoid feedback folder being used
+sound/feedback/one {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/one.ogg
+}
+
+sound/feedback/two {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/two.ogg
+}
+
+sound/feedback/three {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/three.ogg
+}
+
+sound/feedback/fight {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/fight.ogg
+}
+
+sound/feedback/sudden_death {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/sudden_death.ogg
+}
+
+sound/feedback/voc_youlose {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/voc_youlose.ogg
+}
+
+sound/feedback/voc_youwin {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/voc_youwin.ogg
+}
+
+sound/feedback/vote_failed {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/vote_failed.ogg
+}
+
+sound/feedback/vote_now {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/vote_now.ogg
+}
+
+sound/feedback/vote_passed {
+	minDistance 2
+	maxDistance	15
+	volume	0
+	sound/voice/vote_passed.ogg
+}
