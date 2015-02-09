@@ -3,31 +3,25 @@ windowDef Desktop {
 	nocursor	1
 	// Events
 	onNamedEvent hitTime {
-                set "hitOn::visible" "1" ;
-                resetTime "hitOn" "0" ;
-        }
+		set "hitOn::visible" "1" ;
+		resetTime "hitOn" "0" ;
+	}
 	windowDef CursorCenter{
 		rect	305,220,32,32
 		visible		1
-		/*windowDef crosshairCenter{
-			rect		0 ,0 ,32 ,32  
-			background	"guis/assets/crosshaircenter.tga"
-			visible		"gui::combatcursor" // for SP
-			matcolor	1, 0, 0, 1 // Red is a good color for DM
-		*/}
-	        windowDef hitOn {
-        		rect    0,0,32,32
-                	notime  1
-	                visible 0
-        	        windowDef crosshairCenterHit {
-	        	        rect            0 ,0 ,32 ,32
-                        	background      "guis/assets/crosshaircenter_hit.tga"
-	                        visible         "gui::combatcursor" // for SP
-        	                matcolor        1, 1, 1, 1
-	                }
-	                onTime 100 {
-        	        	set "hitOn::visible" "0" ;
-                	}
+		windowDef hitOn {
+			rect    0,0,32,32
+			notime  1
+			visible 0
+			windowDef crosshairCenterHit {
+				rect            0 ,0 ,32 ,32
+				background      "guis/assets/crosshaircenter_hit.tga"
+				visible         "gui::combatcursor" // for SP
+				matcolor        1, 1, 1, 1
+			}
+			onTime 100 {
+				set "hitOn::visible" "0" ;
+			}
 		}
 	}
 }

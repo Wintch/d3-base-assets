@@ -62,7 +62,7 @@ entityDef weapon_handgrenade {
 
 	"snd_acquire"				"player_grenade_use"
 	"snd_respawn"				"sound_weapon_respawn"
-	"snd_explode"				"rocket_impact"
+	"snd_explode"				"player_handgrenade_explode"
 
 	// skin_invisible not defined, weapon code will call UpdateSkin on weapon script
 	"skin_nade"					"skins/models/weapons/nade"
@@ -215,7 +215,7 @@ entityDef projectile_grenade {
 
 	"snd_impact"				"player_handgrenade_bounce"
 	"snd_bounce"				"player_handgrenade_bounce"
-	"snd_explode"				"rocket_impact"
+	"snd_explode"				"player_handgrenade_explode"
 	"snd_throw"					"player_handgrenade_throw"	// For precache -- referenced in the script
 }
 

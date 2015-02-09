@@ -3,14 +3,14 @@ player_pistol_raise  {
 	minDistance	10
 	maxDistance	30
 	volume		-1
-	sound/weapons/pistol/raise_01.ogg
+	sound/weapons/pistol/raise.ogg
 }
 
 player_pistol_raise_01 {
 	minDistance	10
 	maxDistance	30
 	volume		1
-	sound/weapons/pistol/raise_02.ogg
+	sound/weapons/pistol/raise2.ogg
 }
 
 player_pistol_fire {

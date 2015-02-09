@@ -343,7 +343,6 @@ models/weapons/shotgun/shotgun_mflash
         }
 }
 
-//
 models/weapons/shotgun {
 	ricochet
 	noselfShadow
@@ -357,12 +356,4 @@ models/weapons/shotgun_shell {
 	// tiny, dont need normal
 	diffusemap	textures/weapons/shotgun/shotgun_shell_d.tga
 	specularmap	textures/weapons/shotgun/shotgun_shell_s.tga
-}
-
-// delete this!
-models/weapons/shell1/sshell {
-	noShadows
-	diffusemap       textures/weapons/shotgun/sshell.tga
-	bumpmap          textures/weapons/shotgun/sshell_local.tga
-	specularmap   textures/weapons/shotgun/sshell_s.tga
 }

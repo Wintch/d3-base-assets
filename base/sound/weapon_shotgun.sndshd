@@ -3,7 +3,7 @@ player_shotgun_raise  {
 	minDistance	10
 	maxDistance	30
 	volume		3
-	sound/weapons/shotgun/shotgun_use_01.ogg
+	sound/weapons/shotgun/raise_01.ogg
 }
 
 player_shotgun_fire {
@@ -26,7 +26,7 @@ player_shotgun_reload_start {
 	minDistance	10
 	maxDistance	30
 	volume		3
-	sound/weapons/shotgun/reload_start_01.ogg
+	sound/weapons/shotgun/reload_start.ogg
 }
 
 // each shell being loaded
@@ -34,7 +34,7 @@ player_shotgun_reload  {
 	minDistance	10
 	maxDistance	30
 	volume		2
-	sound/weapons/shotgun/reload_addshell_01.ogg
+	sound/weapons/shotgun/addshell.ogg
 }
 
 // the last cocking sound
@@ -42,7 +42,7 @@ player_shotgun_reload_end  {
 	minDistance	10
 	maxDistance	30
 	volume		-4
-	sound/weapons/shotgun/shotgun_end_reload.ogg
+	sound/weapons/shotgun/reload_end.ogg
 }
 
 player_shotgun_empty  {

@@ -1,3 +1,29 @@
+textures/common/lagsprite {
+    qer_editorimage textures/common/lag.tga
+    noShadows
+    nonsolid
+    noimpact
+    deform sprite
+    {
+        colored
+            blend blend
+            map textures/common/lag.tga
+    }
+}
+
+textures/common/chatsprite {
+    qer_editorimage textures/common/chat.tga
+    noShadows
+    nonsolid
+    noimpact
+    deform sprite
+    {
+        colored
+            blend blend
+            map textures/common/chat.tga
+    }
+}
+
 textures/player/mp_head {
 	diffusemap	textures/characters/mp_head_d.tga
 	bumpmap	textures/characters/mp_head_n.tga

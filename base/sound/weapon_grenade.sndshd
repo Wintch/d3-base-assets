@@ -7,7 +7,6 @@ player_handgrenade_throw {
 }
 
 player_handgrenade_explode {
-	// Check it later!
 	minDistance     1
 	maxDistance     25
 	volume          -5

@@ -39,6 +39,7 @@ windowDef Desktop{
 		rect	800,160,200,40
 		text "#str_11003"
 		textalign   0
+		visible 0 // Until it is finished
 		textscale	0.40
 		onTime 0{
 			transition	rect	"800, 160, 200, 40"	"20, 160, 200, 40"	"200";

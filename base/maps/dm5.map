@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "-981.933 324.558 -161.064"
-"editor_drLastCameraAngle" "13.5 278.4 0"
+"editor_drLastCameraPos" "-177.622 -409.587 460.115"
+"editor_drLastCameraAngle" "-49.9949 89.7 0"
 // primitive 0
 {
 brushDef3
@@ -333,11 +333,11 @@ brushDef3
 "name" "light_3"
 "_color" "0.76 0.00 0.00"
 "light_center" "0 0 0"
-"light_radius" "255 254 225"
+"light_radius" "62 254 225"
 "nodiffuse" "0"
 "noshadows" "0"
 "nospecular" "0"
-"origin" "-511 -512 77"
+"origin" "-598 -512 77"
 "parallel" "0"
 }
 // entity 6
@@ -836,20 +836,6 @@ brushDef3
 // entity 45
 {
 "classname" "light"
-"name" "light_39"
-"_color" "0.00 1.00 0.06"
-"bind" "bobo_1b"
-"light_center" "0 0 0"
-"light_radius" "96 128 96"
-"nodiffuse" "0"
-"noshadows" "1"
-"nospecular" "0"
-"origin" "-288 -64 -96"
-"parallel" "0"
-}
-// entity 46
-{
-"classname" "light"
 "name" "light_40"
 "_color" "0.00 0.10 1.00"
 "bind" "bobo_1b"
@@ -861,7 +847,7 @@ brushDef3
 "origin" "-64 160 -96"
 "parallel" "0"
 }
-// entity 47
+// entity 46
 {
 "classname" "light"
 "name" "light_41"
@@ -875,7 +861,7 @@ brushDef3
 "origin" "160 -64 -96"
 "parallel" "0"
 }
-// entity 48
+// entity 47
 {
 "classname" "light"
 "name" "light_42"
@@ -884,7 +870,7 @@ brushDef3
 "light_radius" "192 192 256"
 "origin" "0 -512 128"
 }
-// entity 49
+// entity 48
 {
 "classname" "light"
 "name" "light_43"
@@ -897,7 +883,7 @@ brushDef3
 "origin" "385 -1410 94"
 "parallel" "0"
 }
-// entity 50
+// entity 49
 {
 "classname" "light"
 "name" "light_44"
@@ -910,7 +896,7 @@ brushDef3
 "origin" "-736 -512 -96"
 "parallel" "0"
 }
-// entity 51
+// entity 50
 {
 "classname" "light"
 "name" "light_45"
@@ -923,7 +909,7 @@ brushDef3
 "origin" "-288 -512 -96"
 "parallel" "0"
 }
-// entity 52
+// entity 51
 {
 "classname" "light"
 "name" "light_46"
@@ -936,7 +922,7 @@ brushDef3
 "origin" "-512 -287 -96"
 "parallel" "0"
 }
-// entity 53
+// entity 52
 {
 "classname" "light"
 "name" "light_47"
@@ -949,61 +935,61 @@ brushDef3
 "origin" "-512 -736 -96"
 "parallel" "0"
 }
-// entity 54
+// entity 53
 {
 "classname" "weapon_pistol_mp"
 "name" "weapon_pistol_mp_1"
 "origin" "448 -1344 -50"
 }
-// entity 55
+// entity 54
 {
 "classname" "weapon_shotgun_mp"
 "name" "weapon_shotgun_mp_1"
 "origin" "320 -1472 -48"
 }
-// entity 56
+// entity 55
 {
 "classname" "weapon_handgrenade_mp"
 "name" "weapon_handgrenade_mp_1"
 "origin" "320 -1346 -48"
 }
-// entity 57
+// entity 56
 {
 "classname" "weapon_pistol_mp"
 "name" "weapon_pistol_mp_2"
 "origin" "-1472 -1346 -50"
 }
-// entity 58
+// entity 57
 {
 "classname" "weapon_handgrenade_mp"
 "name" "weapon_handgrenade_mp_2"
 "origin" "-1344 -1472 -48"
 }
-// entity 59
+// entity 58
 {
 "classname" "weapon_shotgun_mp"
 "name" "weapon_shotgun_mp_2"
 "origin" "-1344 -1344 -48"
 }
-// entity 60
+// entity 59
 {
 "classname" "weapon_shotgun_mp"
 "name" "weapon_shotgun_mp_4"
 "origin" "-1470 322 -48"
 }
-// entity 61
+// entity 60
 {
 "classname" "weapon_pistol_mp"
 "name" "weapon_pistol_mp_4"
 "origin" "-1346 322 -50"
 }
-// entity 62
+// entity 61
 {
 "classname" "weapon_handgrenade_mp"
 "name" "weapon_handgrenade_mp_4"
 "origin" "-1344 448 -48"
 }
-// entity 63
+// entity 62
 {
 "classname" "light"
 "name" "light_48"
@@ -1012,7 +998,7 @@ brushDef3
 "light_radius" "192 192 256"
 "origin" "-514 -4 128"
 }
-// entity 64
+// entity 63
 {
 "classname" "light"
 "name" "light_49"
@@ -1021,7 +1007,7 @@ brushDef3
 "light_radius" "192 192 257"
 "origin" "-512 -1024 129"
 }
-// entity 65
+// entity 64
 {
 "classname" "light"
 "name" "light_50"
@@ -1035,7 +1021,7 @@ brushDef3
 "origin" "-512 -160 -96"
 "parallel" "0"
 }
-// entity 66
+// entity 65
 {
 "classname" "light"
 "name" "light_51"
@@ -1049,21 +1035,21 @@ brushDef3
 "origin" "-672 0 -96"
 "parallel" "0"
 }
-// entity 67
+// entity 66
 {
 "classname" "light"
 "name" "light_52"
 "_color" "0.00 1.00 0.01"
 "bind" "bobo2b"
-"light_center" "0 0 0"
-"light_radius" "84 64 96"
+"light_center" "-121 0 16"
+"light_radius" "131 64 96"
 "nodiffuse" "0"
-"noshadows" "1"
+"noshadows" "0"
 "nospecular" "0"
-"origin" "-340 0 -96"
+"origin" "-256 0 -96"
 "parallel" "0"
 }
-// entity 68
+// entity 67
 {
 "classname" "light"
 "name" "light_53"
@@ -1077,7 +1063,7 @@ brushDef3
 "origin" "-512 160 -96"
 "parallel" "0"
 }
-// entity 69
+// entity 68
 {
 "classname" "light"
 "name" "light_54"
@@ -1091,7 +1077,7 @@ brushDef3
 "origin" "-672 -1024 -96"
 "parallel" "0"
 }
-// entity 70
+// entity 69
 {
 "classname" "light"
 "name" "light_55"
@@ -1105,7 +1091,7 @@ brushDef3
 "origin" "-352 -1024 -96"
 "parallel" "0"
 }
-// entity 71
+// entity 70
 {
 "classname" "light"
 "name" "light_56"
@@ -1119,7 +1105,7 @@ brushDef3
 "origin" "-512 -864 -96"
 "parallel" "0"
 }
-// entity 72
+// entity 71
 {
 "classname" "light"
 "name" "light_57"
@@ -1133,35 +1119,35 @@ brushDef3
 "origin" "-512 -1184 -96"
 "parallel" "0"
 }
-// entity 73
+// entity 72
 {
 "classname" "func_bobbing"
 "name" "bobo_1a"
 "model" "models/dm5/platform1.ase"
 "origin" "-64 -960 -96"
 }
-// entity 74
+// entity 73
 {
 "classname" "func_bobbing"
 "name" "bobo_1d"
 "model" "models/dm5/platform1.ase"
 "origin" "-960 -960 -96"
 }
-// entity 75
+// entity 74
 {
 "classname" "func_bobbing"
 "name" "bobo_1c"
 "model" "models/dm5/platform1.ase"
 "origin" "-960 -64 -96"
 }
-// entity 76
+// entity 75
 {
 "classname" "func_bobbing"
 "name" "bobo_1b"
 "model" "models/dm5/platform1.ase"
 "origin" "-64 -64 -96"
 }
-// entity 77
+// entity 76
 {
 "classname" "func_bobbing"
 "name" "bobo2a"
@@ -1170,7 +1156,7 @@ brushDef3
 "origin" "0 -512 -96"
 "phase" "0.5"
 }
-// entity 78
+// entity 77
 {
 "classname" "func_bobbing"
 "name" "bobo2b"
@@ -1179,7 +1165,7 @@ brushDef3
 "origin" "-512 0 -96"
 "phase" "0.5"
 }
-// entity 79
+// entity 78
 {
 "classname" "func_bobbing"
 "name" "bobo2c"
@@ -1188,7 +1174,7 @@ brushDef3
 "origin" "-1024 -512 -96"
 "phase" "0.5"
 }
-// entity 80
+// entity 79
 {
 "classname" "func_bobbing"
 "name" "bobo2d"
@@ -1197,13 +1183,13 @@ brushDef3
 "origin" "-512 -1024 -96"
 "phase" "0.5"
 }
-// entity 81
+// entity 80
 {
 "classname" "info_location"
 "name" "space"
 "origin" "310 433 -11"
 }
-// entity 82
+// entity 81
 {
 "classname" "light"
 "name" "light_58"
@@ -1217,21 +1203,47 @@ brushDef3
 "parallel" "0"
 "texture" "lights/ambientlight"
 }
-// entity 83
+// entity 82
 {
 "classname" "weapon_shotgun_mp"
 "name" "weapon_shotgun_mp_3"
 "origin" "446 448 -48"
 }
-// entity 84
+// entity 83
 {
 "classname" "weapon_pistol_mp"
 "name" "weapon_pistol_mp_3"
 "origin" "318 446 -50"
 }
-// entity 85
+// entity 84
 {
 "classname" "weapon_handgrenade_mp"
 "name" "weapon_handgrenade_mp_3"
 "origin" "446 320 -48"
+}
+// entity 85
+{
+"classname" "light"
+"name" "light_59"
+"origin" "-87 -96 41"
+"light_center" "281 123 142"
+"light_radius" "347 338 164"
+"_color" "0.91 0.42 0.98"
+"parallel" "0"
+"nospecular" "0"
+"nodiffuse" "0"
+"noshadows" "0"
+}
+// entity 86
+{
+"classname" "light"
+"name" "light_39"
+"_color" "0.04 0.00 0.76"
+"light_center" "0 0 0"
+"light_radius" "62 254 225"
+"nodiffuse" "0"
+"noshadows" "0"
+"nospecular" "0"
+"origin" "-492 -513 77"
+"parallel" "0"
 }
