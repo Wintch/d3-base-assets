@@ -160,4 +160,5 @@
     "#str_11015"    "Autochange weapon"
     "#str_11016"    "Autoreload weapon"
     "#str_11017"    "Field of view"
+	"#str_11018"    "Shadows"
 }

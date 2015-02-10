@@ -107,6 +107,7 @@ models/weapons/view_grenade {
 }
 
 models/weapons/grenades/grenades3 {
+	// still invisible
 	noselfShadow
 	diffusemap      textures/weapons/grenade/grenades3_d.tga
 	bumpmap	textures/weapons/grenade/grenades3_n.tga

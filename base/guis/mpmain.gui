@@ -171,15 +171,17 @@ windowDef Desktop{
 				text	"#str_11017"
 				textscale       0.30
 			}
+			windowDef shadows {
+				rect    0, 280, 220, 20
+				text	"#str_11018"
+				textscale       0.30
+			}
 		}
 		windowDef ConfValues {
 			// window for configuration values
 			rect	220,0,200,400
 			visible	1
 			forecolor	0,1,0,0
-			//bordercolor	1,1,1,1	//debug
-			//bordersize	1	//debug
-			//backcolor	0,0,1,0.1	//debug
 			choiceDef AlwaysRun {
 				rect	0, 0, 80, 20
 				choices	"#str_04221" //test
@@ -300,6 +302,14 @@ windowDef Desktop{
 				cvar    "g_fov"
 				thumbShader     "guis/assets/slider_bar"
 				background	"guis/assets/slider_bg"
+			}
+			choiceDef AutoReloadWeapons {
+				rect	0, 280, 40, 20
+				choices		"#str_04221"
+				cvar		"r_shadows"
+				choiceType	0
+				textalign	1
+				textscale       0.30
 			}
 		}
 	}
