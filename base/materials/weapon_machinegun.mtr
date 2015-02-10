@@ -350,7 +350,6 @@ particles/weapon_mg/mg_ricochet1 {
 models/weapons/machinegun {
 	ricochet
 	noselfShadow
-	//qer_editorimage          textures/weapons/machinegun/machinegun_d.tga
 	diffusemap               textures/weapons/machinegun/machinegun_d.tga
 	bumpmap                  textures/weapons/machinegun/machinegun_n.tga
 	specularmap              textures/weapons/machinegun/machinegun_s.tga
@@ -375,4 +374,17 @@ models/weapons/machinegun/machinegun {
 	diffusemap      textures/weapons/machinegun/machinegun_d.tga
 	bumpmap	textures/weapons/machinegun/machinegun_n.tga
 	specularmap   textures/weapons/machinegun/machinegun_s.tga
+}
+
+models/weapons/machinegun/machinegun_invis {
+	// weapons.skin file
+	noselfShadow
+	unsmoothedTangents
+	bumpmap	textures/weapons/machinegun/machinegun_n.tga
+	translucent
+	{
+		blend specularmap
+		map	textures/weapons/invis_s.tga
+		translate       time * 0 , time * 0.6
+	}
 }

@@ -138,7 +138,7 @@
     "#str_10044"    "Tipo de juego"
     "#str_10045"    "Danio de companieros"
 	"#str_10101"	"D.R.A.P. se hizo por:"
-	"#str_10102"    "Roman - Modelos 3D\nKosmix - arte 2D\nWintch - todo lo demas\n"
+	"#str_10102"    "Roman - Modelos 3D\nKosmix - arte 2D\nDimasFN - Iluminacion de niveles\nWintch - todo lo demas\n"
 	"#str_10103"	"Proyecto disponible en:\n https://github.com/Wintch/"
 	// mpmain.gui
     "#str_11000"    "Menu Multijugador"

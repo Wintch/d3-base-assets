@@ -52,7 +52,7 @@ particles/weapon_grenade/grenade_explosion3 {
                 vertexParm 1 6.9 //distortion amount
                 fragmentProgram heatHazeWithMask.vfp
                 fragmentMap 0 _currentRender
-                fragmentMap 1 textures/sfx/vp1.tga
+                fragmentMap 1 textures/particles/weapon_grenade/vp1.tga
                 fragmentMap 2 textures/particles/weapon_grenade/grenade_destortion_s.tga //turbulence map
         }
 }

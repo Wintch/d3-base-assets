@@ -278,6 +278,17 @@ models/weapons/pistol/w_pistol {
 	specularmap	textures/weapons/pistol/w_pistol_s.tga
 }
 
+models/weapons/pistol/w_pistol_invis {
+	noselfShadow
+	bumpmap	textures/weapons/pistol/w_pistol_local.tga
+	translucent
+	{
+		blend specularmap
+		map     textures/weapons/invis_s.tga
+		translate       time * 0 , time * 0.6
+	}
+}
+
 models/weapons/pistol {
 	// used in mp and sp as a model on the floor
 	ricochet

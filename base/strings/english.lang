@@ -139,7 +139,7 @@
 	"#str_10044"	"Game Type"
 	"#str_10045"	"Team Damage"
     "#str_10101"    "D.R.A.P. made by:"
-    "#str_10102"    "Roman - 3D models\nKosmix - 2D art\nWintch - everything else\n"
+    "#str_10102"    "Roman - 3D models\nKosmix - 2D art\nDimasFN - Level lighting\nWintch - everything else\n"
     "#str_10103"    "Fork us on:\n https://github.com/Wintch/"
 	// mpmain.gui
     "#str_11000"    "Multiplayer menu"

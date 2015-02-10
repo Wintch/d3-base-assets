@@ -86,3 +86,15 @@ models/characters/player/arm2 {
 	bumpmap	textures/characters/arm2_n.tga
 	specularmap	textures/characters/arm2_s.tga
 }
+
+models/characters/player/arm2_invis {
+	noselfShadow
+	noShadows
+	bumpmap	textures/characters/arm2_n.tga
+	translucent
+	{
+		blend specularmap
+		map	textures/weapons/invis_s.tga
+		translate       time * 0 , time * 0.6
+	}
+}

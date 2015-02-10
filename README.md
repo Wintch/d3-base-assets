@@ -27,11 +27,11 @@ Credits
 --------------
 
 	Daniel (caedes) - Initial version
-	Wintch - *
-	Roman - 3D modeling, sketches, animation
-	KosmiX - Photorealistic textures
+	Roman - 3D modelling, sketches, animation
+	KosmiX - Photo-realistic textures
 	Marqs - Sound
-	DimasFN - Level lighting
+	DimasFN - Level lighting tips
+	Wintch - Everything else
 
 Testers
 --------------
