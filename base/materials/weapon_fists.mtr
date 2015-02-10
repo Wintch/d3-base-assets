@@ -56,20 +56,3 @@ textures/weapon/fists_genericdamage
 particles/weapon_fists/fists_blood_drop1 {
 	diffusemap      textures/characters/fists_d.tga
 }
-
-models/weapons/hands/hand {
-	noSelfShadow
-	noshadows
-	diffusemap      textures/characters/fists_d.tga
-	specularmap     textures/characters/fists_s.tga
-	bumpmap	textures/characters/fists_n.tga
-}
-
-models/weapons/berserk/fist {
-	// remove later
-	noSelfShadow
-	noshadows
-	diffusemap      textures/characters/fists_d.tga
-	specularmap     textures/characters/fists_s.tga
-	bumpmap	textures/characters/fists_n.tga
-}

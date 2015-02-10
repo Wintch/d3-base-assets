@@ -281,18 +281,14 @@ particles/weapon_sg/sg_ricochet1 {
   }
 }
 
-models/weapons/shotgun/w_shotgun2
-{
-                ricochet
-                //noShadows
-        noselfShadow
-                unsmoothedTangents
-        //renderbump  -size 512 512 -colorMap -aa 2 -trace .05  models/weapons/shotgun/w_shotgun2_local.tga models/weapons/shotgun/w_shotgun2_hi.lwo // fails anyway
-
-                diffusemap       textures/weapons/shotgun/w_shotgun2.tga
-                    bumpmap      textures/weapons/shotgun/w_shotgun2_local.tga
-                    specularmap  textures/weapons/shotgun/w_shotgun2_s.tga
-
+models/weapons/shotgun/w_shotgun2 {
+	ricochet
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	diffusemap       textures/weapons/shotgun/w_shotgun2.tga
+	bumpmap      textures/weapons/shotgun/w_shotgun2_local.tga
+	specularmap  textures/weapons/shotgun/w_shotgun2_s.tga
 }
 
 models/weapons/shotgun/shotgun_mflash2 {

@@ -1,37 +1,11 @@
 ################################################################################
 
-Files that are or can be still covered by original Doom3 EULA:
+Files that ARE or CAN be still covered by original Doom3 EULA:
 
 	base/glprogs/*
 	base/fonts/*
 	base/models/md5/*
 
-################################################################################
-
-The following license applies to:
-
-    textures/layout/*.tga
-
- Copyright (C) 2009 Stefan "ReFlex" Lautner
-     Licensed under DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE version 2,
-     see above for license text.
-
-################################################################################
-
-The following license applies to:
-
-    textures/common/caulk.tga
-    textures/common/cushion.tga
-    textures/common/full_clip.tga
-    textures/common/mirror.tga
-    textures/common/nodraw.tga
-    textures/common/player_clip.tga
-    textures/common/slick.tga
-    textures/triggers/trigger.tga
-    
- Copyright (C) 2000 William Joseph, under Public Domain 
-     (according to Xreal, http://xreal.svn.sourceforge.net/viewvc/xreal/trunk/xreal/base/MEDIA.txt)
-	 
 ################################################################################
 
 The following license applies to the rest of assets (files):

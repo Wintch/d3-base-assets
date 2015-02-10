@@ -301,8 +301,7 @@ particles/weapon_pistol/pistol_blood_drop1
   }
 }
 
-particles/weapon_pistol/pistol_projectile_light
-{
+particles/weapon_pistol/pistol_projectile_light {
   {
     zeroClamp
     map	textures/light/round
@@ -312,12 +311,12 @@ particles/weapon_pistol/pistol_projectile_light
   }
 }
 // Temporal pistol from moddb
-models/weapons/baretta/pistol
-{
-	qer_editorimage          textures/weapons/pistol/pistol_D.tga
-	diffusemap               textures/weapons/pistol/pistol_D.tga
-	bumpmap                  textures/weapons/pistol/pistol_N.tga
-	specularmap              textures/weapons/pistol/pistol_S.tga
+models/weapons/baretta/pistol {
+	noselfShadow
+	noShadows
+	diffusemap               textures/weapons/pistol/pistol2_d.tga
+	bumpmap                  textures/weapons/pistol/pistol2_n.tga
+	specularmap              textures/weapons/pistol/pistol2_s.tga
 }
 
 particles/weapon_pistol/pistol_ricochet1
@@ -332,7 +331,6 @@ particles/weapon_pistol/pistol_ricochet1
 models/weapons/pistol/w_pistol {
 	ricochet
 	noselfShadow
-	//renderbump  -size 128 128 -aa 4  models/weapons/pistol/w_pistol_local.tga models/weapons/pistol/w_pistol_hi.lwo // not true even for D3
 	diffusemap	textures/weapons/pistol/w_pistol.tga
 	bumpmap	textures/weapons/pistol/w_pistol_local.tga
 	specularmap	textures/weapons/pistol/w_pistol_s.tga
@@ -341,7 +339,6 @@ models/weapons/pistol/w_pistol {
 models/weapons/pistol {
 	ricochet
 	noselfShadow
-	//renderbump  -size 128 128 -aa 4  models/weapons/pistol/w_pistol_local.tga models/weapons/pistol/w_pistol_hi.lwo // not true even for D3
 	diffusemap	textures/weapons/pistol/pistol_d.tga
 	bumpmap	textures/weapons/pistol/pistol_n.tga
 	specularmap	textures/weapons/pistol/pistol_s.tga

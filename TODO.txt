@@ -11,8 +11,6 @@
 
  * Music is missing, listen to http://dnbradio.com instead :)
 
-Everything in this SDK should be under a free license that also allows commercial
+Everything in this SDK MUST be under a free license that also allows commercial
 use, e.g. WTFPL (http://sam.zoy.org/wtfpl/), a BSD-like license or a permissive
 CC License (e.g. http://creativecommons.org/licenses/by/3.0/deed.en_US).
-GPL may also be ok, but I'm trying to avoid that to make using the included assets
-easier for projects that use other non-free assets.

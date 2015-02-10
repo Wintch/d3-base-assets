@@ -77,3 +77,12 @@ models/monsters/skeleton/skeleton01 {
 	specularmap 	textures/characters/mp_skeleton_s.tga
 	bumpmap	textures/characters/mp_skeleton_n.tga
 }
+
+models/characters/player/arm2 {
+	noselfShadow
+	noShadows
+	clamp
+	diffusemap	textures/characters/arm2_d.tga
+	bumpmap	textures/characters/arm2_n.tga
+	specularmap	textures/characters/arm2_s.tga
+}

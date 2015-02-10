@@ -148,21 +148,6 @@ models/weapons/grenades/grenades3fx
 
 }
 
-models/weapons/grenades/grenades3 {
-        noselfShadow
-                unsmoothedTangents
-        //renderbump  -size 1024 1024 -trace 0.1 -colorMap -aa 2  models/weapons/grenades/grenades3_local.tga models/weapons/grenades/grenades3_hi.lwo
-
-                diffusemap      textures/weapons/grenade/grenades3.tga
-                {
-                  blend bumpmap
-          map  addnormals( textures/weapons/grenade/grenades3_local.tga, heightmap( textures/weapons/grenade/grenades3_h.tga, 7 ) )
-
-        }
-
-           specularmap   textures/weapons/grenade/grenades3_s.tga
-}
-
 models/weapons/grenade {
 	//qer_editorimage        textures/weapons/shotgun/shotgun_shell_d.tga
 	diffusemap	textures/weapons/grenade/grenade_d.tga
@@ -171,6 +156,8 @@ models/weapons/grenade {
 }
 
 models/weapons/view_grenade {
+	noselfShadow
+	noShadows
 	diffusemap	textures/weapons/grenade/grenade_d.tga
 	bumpmap	textures/weapons/grenade/grenade_n.tga
 	specularmap	textures/weapons/grenade/grenade_s.tga
