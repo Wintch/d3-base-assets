@@ -1,48 +1,18 @@
-table fireballtable_hg { { .7,.8,1,1,1,1,1,1,.8,1,1,1,.8,.8,1,.7,1,.7,1,.7,.8,1,1,1,.7,.7  } }
 table muzzleflashrandom_hg { { 1.1, 0.9, 0.85, 1.2, 0.7, 1.02, 0.94 } }
 table muzzleflashtable_hg { clamp { 0.45, 1, 0.65, 0.88, 0.55, 0.88, 0.55, 1.0, 1.0, 1, 0.88, 0.75, 0.55, 0.30, 0 } }
 table eyestable { { .3, 1, .9, .8, .5, .6, .5, .2, .7, .8, .3, .9, .3, .1, .5, .9, .2, .8 } }
 
-// remove
-textures/weapon/handgrenade_hurt02
-{
-
-	qer_editorimage textures/decals/hurt02.tga
-	DECAL_MACRO
-
-	{
-		if ( parm7 == 0 )
-		blend gl_dst_color,gl_zero
-		map	textures/decals/hurt02.tga
-		clamp
-	}
-}
-
 // Marks of the floor
 textures/weapon/handgrenade_ballburn01 {
-	qer_editorimage textures/decals/ballburn01.tga
-
-	DECAL_MACRO
-	decalInfo 10 10 ( 1 1 1 10 ) ( -5 -5 -5 0 )		// fade rgb down fast (clamps to 0), but leave alpha clamped at 1 for the first nine seconds
-	{       
-      	blend		gl_zero, gl_one_minus_src_alpha
-		map			makealpha(textures/decals/ballburn01.tga)
-		clamp		// we don't want it to tile if the projection extends past the bounds
-		vertexColor
-	}
+	qer_editorimage textures/decals/grenade_explosion_d.tga
 	{
-      	blend	add  
-		map		textures/decals/ballburn01_fx.tga
-		blue	fireballtable_hg[ time * .2 ]		// all marks will be flickering the same, unfortunately
-		green	fireballtable_hg[ time * .2 ]
-		red		fireballtable_hg[ time * .1 ]
-		vertexColor
+      	blend	add
+		map		textures/decals/grenade_explosion_d.tga
 	}
-
-
 }
 
 textures/weapon/handgrenade_muzzleflash {
+	//how a grenade would have this?
         {
                 //map   _spotlight
                 map textures/light/round
@@ -56,7 +26,6 @@ textures/weapon/handgrenade_muzzleflash {
 }
 
 // Grenade explosion effects
-
 particles/weapon_grenade/grenade_explosion1 {
   {
     forceHighQuality	// For players trying to avoid smoke by setting low graphix
@@ -77,10 +46,6 @@ particles/weapon_grenade/grenade_explosion2 {
 
 // grenade explosion deformation
 particles/weapon_grenade/grenade_explosion3 {
-	//qer_editorimage textures/dm1/water_decal1_e.tga
-        //noshadows
-        //water
-        //diffusemap textures/dm1/water_decal1_d.tga
         {
                 vertexProgram heatHazeWithMask.vfp
                 vertexParm 0.1 time * 0.2 , time * 0.3 //diagonal, vertical, horizontal speeds
@@ -149,7 +114,6 @@ models/weapons/grenades/grenades3fx
 }
 
 models/weapons/grenade {
-	//qer_editorimage        textures/weapons/shotgun/shotgun_shell_d.tga
 	diffusemap	textures/weapons/grenade/grenade_d.tga
 	bumpmap	textures/weapons/grenade/grenade_n.tga
 	specularmap	textures/weapons/grenade/grenade_s.tga

@@ -357,20 +357,15 @@ models/weapons/machinegun {
 }
 
 models/weapons/machinegun_shell {
-	// on so tiny objects, texture resolution can be minimal. Also normal mal makes no sence, but specular is a good idea
+	// on so tiny objects, texture resolution can be minimal. Also normal map makes no sense, but specular is a good idea
 	diffusemap               textures/weapons/machinegun/machinegun_shell_d.tga
 	specularmap              textures/weapons/machinegun/machinegun_shell_s.tga
 }
 
 // placebo, remove it after MD5 rework
-/*
 models/weapons/machinegun/m_gui {
-        qer_editorimage textures/weapons/machinegun/m_gui.tga
-        //guiSurf       guis/weapons/machinegun.gui
-        guiSurf entity
-        //translucent
+	diffusemap	textures/common/nodraw
 }
-*/
 
 // because of skins/skins_characters_player.skin?
 models/weapons/machinegun/machinegun {
