@@ -46,7 +46,7 @@ entityDef weapon_handgrenade {
 	"inv_weapon"				"weapon_handgrenade"
 	"inv_ammo_grenades" 		"5"
 	"inv_item"					"5"
-	"icon"						"guis/assets/hud/wpn_4"
+	//"icon"						"guis/assets/hud/wpn_4"
 
 	"weapon_scriptobject"		"weapon_handgrenade"
 	"def_projectile"			"projectile_grenade"
@@ -94,7 +94,8 @@ model worldmodel_handgrenade {
 	skin						skins/models/weapons/nade.skin
 
 	anim idle 					models/md5/weapons/grenade_world/grenade_idle.md5anim
-	anim fire					models/md5/weapons/grenade_world/grenade_throw.md5anim {
+	anim fire					models/md5/weapons/grenade_world/grenade_throw.md5anim
+	{
 		frame 44				object_call GrenadeNoNade
 		frame 69				object_call	GrenadeNade
 	}

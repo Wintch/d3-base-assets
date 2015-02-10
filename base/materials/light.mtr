@@ -40,8 +40,18 @@ lights/ambientLight {
 _spotlight {
         {
                 forceHighQuality
-                map     _spotlight
+                map     textures/light/round.tga
                 zeroClamp
                 colored
         }
+}
+
+itemHighlightShell {
+	nonSolid
+	{
+		blend add
+		cubeMap         env/itemhighlightshell
+		texgen          reflect
+		rgb                     parm4
+	}
 }

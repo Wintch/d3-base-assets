@@ -18,7 +18,7 @@
 	"#str_04277"	"Vote passed"	//neo/game/MultiplayerGame.cpp
 	"#str_04278"	"Vote failed"	//neo/game/MultiplayerGame.cpp
 	"#str_04279"	"%s^0 Called a vote"	//neo/game/MultiplayerGame.cpp
-	"#str_04292"	"%s^0 dies by the hand of %s"	//neo/game/MultiplayerGame.cpp
+	"#str_04292"	"%s^0 pwned by %s"	//neo/game/MultiplayerGame.cpp
 	"#str_07138"	"is offline now"	//neo/framework/async/AsyncServer.cpp
 	"#str_07177"	"%s^0 Joins the server"	//neo/game/MultiplayerGame.cpp
 	"#str_07135"	"Server went down"	//neo/framework/async/AsyncServer.cpp

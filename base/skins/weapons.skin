@@ -1,0 +1,53 @@
+skin skins/fists_invis {
+	models/weapons/berserk/fist      models/weapons/berserk/fist_invis
+}
+
+skin skins/pistol_invis {
+	// Defined in weapon_fists.def
+	models/weapons/pistol/pistol models/weapons/pistol/pistol_invis
+	models/characters/player/arm2   models/characters/player/arm2_invis
+	models/weapons/pistol/w_pistol models/weapons/pistol/w_pistol_invis
+}
+
+skin skins/shotgun_invis {
+	models/weapons/shotgun/shotgun2 models/weapons/shotgun/shotgun2_invis
+	models/characters/player/arm2   models/characters/player/arm2_invis
+	models/weapons/shotgun/w_shotgun2 models/weapons/shotgun/w_shotgun2_invis
+	models/weapons/shell1/sshell models/weapons/shell1/sshell_invis
+}
+
+skin skins/machinegun_invis {
+	models/weapons/machinegun/machinegun models/weapons/machinegun/machinegun_invis
+	models/characters/player/arm2   models/characters/player/arm2_invis
+	models/weapons/machinegun/w_machinegun models/weapons/machinegun/w_machinegun_invis
+}
+
+// Grenades
+skin skins/grenade_invis {
+	models/weapons/grenades/grenades models/weapons/grenades/grenades_invis
+	models/weapons/grenades/grenades2 models/weapons/grenades/grenades2_invis
+	models/weapons/grenades/grenades3 models/weapons/grenades/grenades3_invis
+	models/characters/player/arm2   models/characters/player/arm2_invis
+	models/weapons/grenades/grenades_world models/weapons/grenades/grenades_world_invis
+	models/weapons/grenades/grenades3fx models/weapons/grenades/grenades3fx_invis
+}
+
+skin skins/models/weapons/nade {
+}
+
+skin skins/models/weapons/nade_invis {
+	models/weapons/grenades/grenades3 models/weapons/grenades/grenades3_invis
+	models/characters/player/arm2 models/characters/player/arm2_invis
+	models/weapons/grenades/grenades3fx models/weapons/grenades/grenades3fx_invis
+}
+
+skin skins/models/weapons/nonade {
+	models/weapons/grenades/grenades3 textures/common/nodraw
+	models/weapons/grenades/grenades3fx textures/common/nodraw
+}
+
+skin skins/models/weapons/nonade_invis {
+	models/weapons/grenades/grenades3 textures/common/nodraw
+	models/weapons/grenades/grenades3fx textures/common/nodraw
+	models/characters/player/arm2 models/characters/player/arm2_invis
+}

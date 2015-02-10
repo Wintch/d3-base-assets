@@ -18,7 +18,7 @@
 	"#str_04277"	"Voto exitoso"	//neo/game/MultiplayerGame.cpp
 	"#str_04278"	"Voto fallido"	//neo/game/MultiplayerGame.cpp
 	"#str_04279"	"%s^0 : llamo a votacion"	//neo/game/MultiplayerGame.cpp
-	"#str_04292"	"%s^0 : murio de la mano de: %s"	//neo/game/MultiplayerGame.cpp
+	"#str_04292"	"%s^0 : cogio por sorpresa a: %s"	//neo/game/MultiplayerGame.cpp
 	"#str_07138"	"se encuentra desconectado"	//neo/framework/async/AsyncServer.cpp
 	"#str_07177"	"%s^0 : se une al servidor"	//neo/game/MultiplayerGame.cpp
 	"#str_07135"	"El servidor se desconecto"	//neo/framework/async/AsyncServer.cpp
@@ -38,7 +38,7 @@
 	"#str_04319"	"Sin conexion al servidor"	//neo/framework/async/AsyncClient.cpp
 	"#str_04339"	"Esta bien hombre"	//neo/framework/Session_menu.cpp
 	"#str_04247"	"Estoy listo"	//neo/game/MultiplayerGame.cpp
-	"#str_04250"	"Espectar"	//neo/game/MultiplayerGame.cpp
+	"#str_04250"	"Chusmear"	//neo/game/MultiplayerGame.cpp
 	"#str_06749"	"Esta conectado con: %s"	//neo/framework/async/AsyncClient.cpp
 	"#str_04293"	"%s^0 : se suicido"	//neo/game/MultiplayerGame.cpp
 	"#str_07191"	"Logueando al master server..."	//neo/framework/Session.cpp
