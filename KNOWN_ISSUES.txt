@@ -1,4 +1,3 @@
-* When player dies, the T-pose is used instead of switching to ragdoll
 * Connecting to LAN server is a bit tricky, make sure you are selecting the server. Use console when possible
 * Latin American keyboard layout disables the console usage
 * Some assets are missing (were not rewritten or merged yet)

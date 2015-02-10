@@ -92,27 +92,6 @@ particles/weapon_grenade/grenade_squirt1
   }
 }
 
-models/weapons/grenades/grenades3fx
-{
-                translucent
-        noselfShadow
-
-
-        {
-                blend gl_dst_color,gl_zero
-                cubeMap         env/nade
-                texgen          reflect
-        }
-        {
-        Blend add
-                Map textures/weapons/grenade/grenades3fx.tga
-                rgb eyestable[ time * 1 ]
-
-        }
-
-
-}
-
 models/weapons/grenade {
 	diffusemap	textures/weapons/grenade/grenade_d.tga
 	bumpmap	textures/weapons/grenade/grenade_n.tga
@@ -125,4 +104,11 @@ models/weapons/view_grenade {
 	diffusemap	textures/weapons/grenade/grenade_d.tga
 	bumpmap	textures/weapons/grenade/grenade_n.tga
 	specularmap	textures/weapons/grenade/grenade_s.tga
+}
+
+models/weapons/grenades/grenades3 {
+	noselfShadow
+	diffusemap      textures/weapons/grenade/grenades3_d.tga
+	bumpmap	textures/weapons/grenade/grenades3_n.tga
+    specularmap   textures/weapons/grenade/grenades3_s.tga
 }
