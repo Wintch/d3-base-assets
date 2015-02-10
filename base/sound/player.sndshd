@@ -244,7 +244,7 @@ player_sounds_death {
 	maxDistance 10
 	volume 2
 	plain
-	sound/player/death/death_01.ogg
+	sound/player/death_01.ogg
 }
 
 player_sounds_doublevision {
