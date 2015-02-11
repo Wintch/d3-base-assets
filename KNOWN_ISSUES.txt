@@ -1,6 +1,7 @@
  * Connecting to LAN server is a bit tricky, make sure you are selecting the server. Use console when possible
  * Serverlist on LAN search is only visible for some time, use the console to see the scanned IPs and "connect IP" to any
  * Dedicated server is not working properly. Only listen servers are fine at the moment
+ * Lagometer is not working (can't be enabled on client site)
  * Latin American keyboard layout disables the console usage
  * Some assets are missing (were not rewritten or merged yet)
  * Grenades decals sometimes are not shown

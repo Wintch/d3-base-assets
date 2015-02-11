@@ -10,6 +10,8 @@
    (maybe one of the GLSL implementations + shaders could be improved)
 
  * Music is missing, listen to http://dnbradio.com instead :)
+ 
+ * Key binding is missing in GUI
 
 Everything in this SDK MUST be under a free license that also allows commercial
 use, e.g. WTFPL (http://sam.zoy.org/wtfpl/), a BSD-like license or a permissive
