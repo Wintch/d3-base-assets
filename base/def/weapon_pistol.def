@@ -98,9 +98,9 @@ entityDef weapon_pistol {
 	"snd_acquire"				"sound_weapon_acquire"
 	"snd_respawn"				"sound_weapon_respawn"
 	
-	"skin_invisible"			"skins/pistol_invis"
+	//"skin_invisible"			"skins/pistol_invis"
 	
-	"spread"					"3" //bullet spread. 10 is "no le pego a nada" :)
+	"spread"					"3" // bullet spread
 }
 
 entityDef moveable_item_pistol {

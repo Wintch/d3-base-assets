@@ -93,6 +93,7 @@ particles/weapon_grenade/grenade_squirt1
 }
 
 models/weapons/grenade {
+	noselfShadow
 	diffusemap	textures/weapons/grenade/grenade_d.tga
 	bumpmap	textures/weapons/grenade/grenade_n.tga
 	specularmap	textures/weapons/grenade/grenade_s.tga
@@ -107,7 +108,7 @@ models/weapons/view_grenade {
 }
 
 models/weapons/grenades/grenades3 {
-	// still invisible
+	// Only working with skin
 	noselfShadow
 	diffusemap      textures/weapons/grenade/grenades3_d.tga
 	bumpmap	textures/weapons/grenade/grenades3_n.tga

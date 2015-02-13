@@ -44,8 +44,7 @@ skin skins/characters/player/marine_mp_yellow {
 	textures/player/mp_skeleton textures/common/nodraw
 }
 
-skin skins/characters/player/skeleton_mp {
-	// not defined
+skin skins/characters/player/marine_mp_yellow_death {
 	textures/player/mp_head textures/common/nodraw
 	textures/player/mp_body textures/common/nodraw
 }

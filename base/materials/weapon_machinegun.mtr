@@ -332,8 +332,8 @@ particles/weapon_mg/mg_blood_drop1 {
 }
 
 // Temporal model from moddb
-models/weapons/p90/P90
-{
+models/weapons/p90/P90 {
+	noselfShadow
 	diffusemap               textures/weapons/machinegun/P90.tga
 	bumpmap                  textures/weapons/machinegun/P90_n.tga
 	specularmap              textures/weapons/machinegun/P90_s.tga
@@ -361,9 +361,9 @@ models/weapons/machinegun_shell {
 	specularmap              textures/weapons/machinegun/machinegun_shell_s.tga
 }
 
-// placebo, remove it after MD5 rework
+//placebo, remove it after MD5 rework
 models/weapons/machinegun/m_gui {
-	diffusemap	textures/common/nodraw
+	guiSurf entity
 }
 
 // because of skins/skins_characters_player.skin?

@@ -6,8 +6,7 @@ table rotate90 { snap { 0, 0.25, 0.5, 0.75 } }
 
 textures/weapon/shotgun_muzzleflash {
 	{
-		//map   _spotlight
-		map textures/light/round
+		map textures/light/round.tga
 		zeroClamp
 		colored
 		red     muzzleflashrandom_sg[ time * 3.33 ] * muzzleflashtable_sg[ (time + parm4) * 4 * Parm3 ] * Parm0
@@ -271,6 +270,7 @@ particles/weapon_sg/sg_blood_drop1 {
 // models/md5/weapons/newshotgun_world/newshotgun_world.md5mesh
 // models/md5/weapons/newshotgun_view/newshotgun.md5mesh
 models/md5/weapons/newshotgun_view/newshotgun {
+	noselfShadow
 	diffusemap	textures/weapons/shotgun/newshotgun_d.tga
 	bumpmap	textures/weapons/shotgun/newshotgun_n.tga
 	specularmap	textures/weapons/shotgun/newshotgun_s.tga
@@ -314,27 +314,24 @@ models/weapons/shotgun/shotgun_mflashb {
 	}
 }
 
-models/weapons/shotgun/shotgun_mflash
-{
-        qer_editorimage models/weapons/shotgun/shotgun_mflash.tga
+models/weapons/shotgun/shotgun_mflash {
     sort nearest
-        deform sprite
-        {
-                forceHighQuality
-                if ( time + parm4 ) * 6.4 < 1.0
-                blend add
+	deform sprite
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 6.4 < 1.0
+		blend add
 		map textures/particles/weapon_sg/shotgun_mflash_strip.tga
-                scale 1 / 32 , 1
-                scroll table32[ (time + parm4) * 6.4] , 0
-                rotate  rotate90[ parm5 ]
-                clamp
-        }
+		scale 1 / 32 , 1
+		scroll table32[ (time + parm4) * 6.4] , 0
+		rotate  rotate90[ parm5 ]
+		clamp
+	}
 }
 
 models/weapons/shotgun {
 	ricochet
 	noselfShadow
-	qer_editorimage        textures/weapons/shotgun/shotgun_d.tga
 	diffusemap	textures/weapons/shotgun/shotgun_d.tga
 	bumpmap	textures/weapons/shotgun/shotgun_n.tga
 	specularmap	textures/weapons/shotgun/shotgun_s.tga

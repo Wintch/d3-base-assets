@@ -10,3 +10,4 @@
  * Team DM makes no sense until skinning is done
  * LAG can and will make playing DM5 painful
  * fx's are not played client-side, may be related to PVS (you will see many effects only if you are the server of that game)
+ * shotgun_muzzleflash is not working as it should

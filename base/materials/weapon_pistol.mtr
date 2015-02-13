@@ -5,17 +5,16 @@ table rotate90_pi { snap { 0, 0.25, 0.5, 0.75 } }
 table table4_pi { snap { 0, 1, 2, 3 } }
 table light_particle { { 1.1, 0.9, 0.85, 1.2, 0.7, 1.02, 0.94 } }
 
+// Light around the shot zone
 textures/weapon/pistol_muzzleflash {
-        {
-                map   _spotlight // FIX!
-                //map textures/light/round
-                zeroClamp
-                colored
-
-                red     muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm0
-                green   muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm1
-                blue    muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm2
-        }
+	{	
+		map textures/light/round.tga
+		zeroClamp
+		colored
+		red     muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm0
+		green   muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm1
+		blue    muzzleflashrandom_pi[ time * 3.33 ] * muzzleflashtable_pi[ (time + parm4) * 4 * Parm3 ] * Parm2
+	}
 }
 
 // Impact hole
