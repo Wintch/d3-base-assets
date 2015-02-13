@@ -98,3 +98,15 @@ models/characters/player/arm2_invis {
 		translate       time * 0 , time * 0.6
 	}
 }
+
+armorvieweffect {
+	{
+		blend blend
+		map makealpha( textures/common/armorvieweffect.tga )
+		clamp
+		red 1.0
+		green 0.0
+		blue 0.0
+		alpha parm3
+	}
+}

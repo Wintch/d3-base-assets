@@ -273,8 +273,8 @@ models/weapons/baretta/pistol {
 models/weapons/pistol/w_pistol {
 	ricochet
 	noselfShadow
-	diffusemap	textures/weapons/pistol/w_pistol.tga
-	bumpmap	textures/weapons/pistol/w_pistol_local.tga
+	diffusemap	textures/weapons/pistol/w_pistol_d.tga
+	bumpmap	textures/weapons/pistol/w_pistol_n.tga
 	specularmap	textures/weapons/pistol/w_pistol_s.tga
 }
 

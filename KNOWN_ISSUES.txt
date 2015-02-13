@@ -5,6 +5,8 @@
  * Latin American keyboard layout disables the console usage
  * Some assets are missing (were not rewritten or merged yet)
  * Grenades decals sometimes are not shown
- * On some intel videocards you may have troubles with shadows. Just turn them off in that case
+ * On some intel video-cards you may have troubles with shadows. Just turn them off in that case
  * Shadows in MP are wrong on the hands models (1st person view)
  * Team DM makes no sense until skinning is done
+ * LAG can and will make playing DM5 painful
+ * fx's are not played client-side, may be related to PVS (you will see many effects only if you are the server of that game)

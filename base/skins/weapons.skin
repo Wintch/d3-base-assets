@@ -12,14 +12,12 @@ skin skins/pistol_invis {
 skin skins/shotgun_invis {
 	models/weapons/shotgun/shotgun2 models/weapons/shotgun/shotgun2_invis
 	models/characters/player/arm2   models/characters/player/arm2_invis
-	models/weapons/shotgun/w_shotgun2 models/weapons/shotgun/w_shotgun2_invis
 	models/weapons/shell1/sshell models/weapons/shell1/sshell_invis
 }
 
 skin skins/machinegun_invis {
 	models/weapons/machinegun/machinegun models/weapons/machinegun/machinegun_invis
 	models/characters/player/arm2   models/characters/player/arm2_invis
-	models/weapons/machinegun/w_machinegun models/weapons/machinegun/w_machinegun_invis
 }
 
 // Grenades

@@ -5,6 +5,15 @@ Files that ARE or CAN be still covered by original Doom3 EULA:
 	base/glprogs/*
 	base/fonts/*
 	base/models/md5/*
+	
+################################################################################
+
+Some of these files were made by bladeghost. URL for downloading :
+http://www.moddb.com/mods/blade-yautja/addons/weapon-ops-for-doom-3-v1
+
+	base\models\md5\weapons
+	
+Still can be considered public domain
 
 ################################################################################
 

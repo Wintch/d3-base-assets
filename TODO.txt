@@ -1,17 +1,23 @@
- * Some models and most animations
+ * Some models and most animations must be rewritten to avoid Doom3 EULA
  
- * A lot of bug fixing/testing is required
+ * A lot of testing is required (cross platform as an example)
  
- * Working dedicated server
+ * Dedicated server is not working and therefore binary is not provided (you can compile it at any time)
  
- * DPmaster will be developed in separate project
+ * DPmaster will be developed in separate project, not working yet
  
- * OpenGL Shaders to replace the stuff from Doom3's glprogs/ directory
-   (maybe one of the GLSL implementations + shaders could be improved)
+ * OpenGL ARB programs to replace the ones from Doom3's glprogs/ directory
+   (maybe one of the GLSL implementations + shaders could be improved to achieve that)
 
- * Music is missing, listen to http://dnbradio.com instead :)
+ * Music is missing, http://dnbradio.com/player is our choice :)
  
- * Key binding is missing in GUI
+ * Key binding are missing in GUI. Not tricky at all, but tedious
+ 
+ * HD pack is not ready yet (TGA textures instead of DDS compressed ones)
+ 
+ * Substances, .blend files and original (RAW) images will be available, maybe on some FTP server later
+ 
+ * Not all of the content was merged from private SVN yet
 
 Everything in this SDK MUST be under a free license that also allows commercial
 use, e.g. WTFPL (http://sam.zoy.org/wtfpl/), a BSD-like license or a permissive
