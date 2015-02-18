@@ -1,5 +1,5 @@
 If you want to collaborate on this project, please take into account:
 
- * You are ready to make your changes free. Only WTFPL and similar Public Domain allowed
+ * You are ready to make your changes free. Only WTFPL and similar Public Domain licenses are allowed
  * You are not going to be paid
  * You will be credited for your work

@@ -1,0 +1,5 @@
+textures/player/head {
+	diffusemap	textures/sp_characters/sp_head_d.tga
+	specularmap	textures/sp_characters/sp_head_s.tga
+	bumpmap	textures/sp_characters/sp_head_n.tga
+}

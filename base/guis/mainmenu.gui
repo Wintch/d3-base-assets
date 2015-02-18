@@ -227,8 +227,8 @@ WindowDef Desktop {
 			choiceDef si_map {
 				rect	0, 60, 200, 20
 				cvar	"si_map"
-				choices	"dm1;dm3;dm5"
-				values	"dm1.map;dm3.map;dm5.map"
+				choices	"dm5"
+				values	"dm5.map"
 				choiceType	1
 				textscale	0.25
 			}
