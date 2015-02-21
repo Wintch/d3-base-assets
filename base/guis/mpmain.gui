@@ -176,6 +176,11 @@ windowDef Desktop{
 				text	"#str_11018"
 				textscale       0.30
 			}
+			windowDef brass {
+				rect    0, 300, 220, 20
+				text	"#str_11019"
+				textscale       0.30
+			}
 		}
 		windowDef ConfValues {
 			// window for configuration values
@@ -303,10 +308,18 @@ windowDef Desktop{
 				thumbShader     "guis/assets/slider_bar"
 				background	"guis/assets/slider_bg"
 			}
-			choiceDef AutoReloadWeapons {
+			choiceDef shadows {
 				rect	0, 280, 40, 20
 				choices		"#str_04221"
 				cvar		"r_shadows"
+				choiceType	0
+				textalign	1
+				textscale       0.30
+			}
+			choiceDef brass {
+				rect    0, 300, 40, 20
+				choices		"#str_04221"
+				cvar		"g_showbrass"
 				choiceType	0
 				textalign	1
 				textscale       0.30
