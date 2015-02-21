@@ -92,8 +92,10 @@ entityDef weapon_pistol {
 	"hide_distance"				"-15"								// distance to offset weapon when talking to npcs or looking at guis
 
 	"smoke_muzzle"				"weapon_pistol_muzzlesmoke.prt"
-	"def_ejectBrass"			"debris_pistolbrass"	//changed from original D3
-	"ejectBrassDelay"			"10"
+	"def_ejectBrass"			"debris_pistolbrass"	// changed from original D3
+	"def_ejectMagazine"			"debris_shotgunbrass"	// replace for magazine model later
+	"ejectBrassDelay"			"40"
+	"ejectMagazineDelay"	"150"
 	
 	"snd_acquire"				"sound_weapon_acquire"
 	"snd_respawn"				"sound_weapon_respawn"

@@ -82,8 +82,8 @@ entityDef weapon_shotgun {
 	"hide_distance"				"-15"								// distance to offset weapon when talking to npcs or looking at guis
 
 	"smoke_muzzle"				"weapon_sg_muzzlesmoke.prt"
-	"def_ejectBrass"			"debris_shotgunbrass"
-	"ejectBrassDelay"			"450"
+	"def_ejectMagazine"			"debris_shotgunbrass"
+	"ejectMagazineDelay"	"150"
 
 	"snd_acquire"				"sound_weapon_acquire"
 	"snd_respawn"				"sound_weapon_respawn"
