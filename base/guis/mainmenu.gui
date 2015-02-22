@@ -121,7 +121,7 @@ WindowDef Desktop {
 	// --- From this point: menues ---
 	windowDef SpawnServerWindow {
 		rect    20, 10, 600, 400
-		backcolor       0.5, 0.6, 0.6, 0.3
+		//backcolor       0.5, 0.6, 0.6, 0.3
 		textalign       1
 		text    "#str_10032"
 		onTime 0 {
@@ -153,17 +153,19 @@ WindowDef Desktop {
 		}
 		// Textaligh will not work in this case, in editdef is useless
 		editDef si_name {
-			rect	200, 20, 260, 20 // To avoid text scrolling horizontally
+			rect	200, 40, 200, 20 // To avoid text scrolling horizontally
 			cvar	"si_name"
-			maxchars	24
+			backcolor       0.5, 0.6, 0.6, 0.3
+			bordersize	1
+			bordercolor     1, 1, 1, 0.5
+			maxchars	18
 			textscale	0.25
-			forecolor	1, 1, 1, 1
 			hovercolor      1, 0, 0, 1
 		}
 		// Left side
 		windowDef leftside {
-			rect    0, 40, 200, 300
-			backcolor       1,0,0,0.3
+			rect    0, 80, 140, 300
+			//backcolor       1,0,0,0.3
 			windowDef servertypet {
 				rect	0, 0, 400, 20
 				text	"#str_10040"
@@ -197,8 +199,8 @@ WindowDef Desktop {
 		}
 		// Right side
 		windowDef rightside {
-			rect    200, 40, 200, 300
-			backcolor       1,0,0,0.8
+			rect    200, 80, 140, 300
+			//backcolor       1,0,0,0.8
 			choiceDef servertype {
 				rect	0, 0, 200, 20
 				choices         "#str_10030"
@@ -227,8 +229,8 @@ WindowDef Desktop {
 			choiceDef si_map {
 				rect	0, 60, 200, 20
 				cvar	"si_map"
-				choices	"dm5"
-				values	"dm5.map"
+				choices	"dm1;dm5"
+				values	"dm1.map;dm5.map"
 				choiceType	1
 				textscale	0.25
 			}
