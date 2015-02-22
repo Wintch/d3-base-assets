@@ -266,16 +266,6 @@ particles/weapon_sg/sg_blood_drop1 {
   }
 }
 
-// Temporal model from moddb
-// models/md5/weapons/newshotgun_world/newshotgun_world.md5mesh
-// models/md5/weapons/newshotgun_view/newshotgun.md5mesh
-models/md5/weapons/newshotgun_view/newshotgun {
-	noselfShadow
-	diffusemap	textures/weapons/shotgun/newshotgun_d.tga
-	bumpmap	textures/weapons/shotgun/newshotgun_n.tga
-	specularmap	textures/weapons/shotgun/newshotgun_s.tga
-}
-
 particles/weapon_sg/sg_ricochet1 {
   {
     blend add
@@ -329,14 +319,6 @@ models/weapons/shotgun/shotgun_mflash {
 	}
 }
 
-models/weapons/shotgun {
-	ricochet
-	noselfShadow
-	diffusemap	textures/weapons/shotgun/shotgun_d.tga
-	bumpmap	textures/weapons/shotgun/shotgun_n.tga
-	specularmap	textures/weapons/shotgun/shotgun_s.tga
-}
-
 models/weapons/shotgun_shell {
 	// tiny, dont need normal
 	diffusemap	textures/weapons/shotgun/shotgun_shell_d.tga
@@ -351,4 +333,13 @@ models/weapons/hands/hand {
 	diffusemap	textures/characters/arm2_d.tga
 	bumpmap	textures/characters/arm2_n.tga
 	specularmap	textures/characters/arm2_s.tga
+}
+
+models/weapons/shotgun_view {
+	// md5 model
+	noselfShadow
+	ricochet // not needed, can delete it since no impact is possible
+	diffusemap	textures/weapons/shotgun/newshotgun_d.tga
+	specularmap	textures/weapons/shotgun/newshotgun_s.tga
+	bumpmap	textures/weapons/shotgun/newshotgun_n.tga
 }
