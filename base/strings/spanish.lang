@@ -98,6 +98,7 @@
 	"#str_06732"    "Equilibrio a ultimo segundo!"
 	"#str_06780"	"El sistema de video no soporta todas las caracteristicas necesarias" //neo/renderer/RenderSystem_init.cpp
 	"#str_06737"	"Estado del jugador"
+	"#str_06747"	"No se permite chusmear"
 	// Find and get rid of theese strings
 	"#str_07188"	"str_07188"
 	"#str_07189"	"str_07189"
@@ -107,6 +108,7 @@
 	"#str_04221"	"\"No\";\"Si\""
 	"#str_04232"	"\"Deshabilitado\";2x;4x;8x;16x"
 	// mainmenu.gui
+	"#str_10200"	"Iniciar Servidor"
     "#str_10000"    "Jugar en nube"
     "#str_10001"    "Jugar en LAN"
     "#str_10002"    "Opciones"
@@ -137,6 +139,8 @@
     "#str_10043"    "Nombre de mapa"
     "#str_10044"    "Tipo de juego"
     "#str_10045"    "Danio de companieros"
+	"#str_10046"	"Maximo de jugadores"
+	"#str_10047"	"Permitir Chusmas"
 	"#str_10101"	"D.R.A.P. se hizo por:"
 	"#str_10102"    "Roman - Modelos 3D\nKosmix - arte 2D\nDimasFN - Iluminacion de niveles\nWintch - todo lo demas\n"
 	"#str_10103"	"Proyecto disponible en:\n https://github.com/Wintch/"

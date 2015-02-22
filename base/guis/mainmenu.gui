@@ -17,11 +17,19 @@ WindowDef Desktop {
 		set "SpawnServerWindow::visible" "0"; // Spawnserver is invisible
 		set "TitleWindow::visible" "0" // Quit is invisible
 	}
+	renderDef RenderWindow {
+		rect            0, 0, 640, 480
+		model           "models/weapons/shotgun.ase"
+		modelRotate     0, time * 0.040, time * 0.040, 0 // Horizontal rotation; Vertical rotation; Z rotation;
+		modelOrigin     -100,0,0,0
+		lightOrigin     -230,0,0,0
+		lightColor      1, 1, 1, 1
+	}
 	windowDef Mainmenu {
 		rect        198, 120, 244, 300 // 122+396+122=640 or 244+198*2
 		windowDef SpawnServerAct {
 			rect        0, 0, 244, 50
-			text        "spawnserver"
+			text        "#str_10200"
 			textscale   0.5
 			textalign   1
 			shadow      1
@@ -164,7 +172,7 @@ WindowDef Desktop {
 		}
 		// Left side
 		windowDef leftside {
-			rect    0, 80, 140, 300
+			rect    0, 80, 200, 300
 			//backcolor       1,0,0,0.3
 			windowDef servertypet {
 				rect	0, 0, 400, 20
@@ -191,16 +199,25 @@ WindowDef Desktop {
                 text	"#str_10044"
 				textscale       0.25
 			}
+			windowDef maxplayers {
+				rect    0, 100, 200, 20
+				text	"#str_10046"
+				textscale       0.25
+			}
+			windowDef stalkers {
+				rect    0, 120, 200, 20
+				text	"#str_10047"
+				textscale       0.25
+			}
 			windowDef teamdamaget {
-				rect    0, 100, 400, 20
+				rect    0, 140, 200, 20
 				text	"#str_10045"
 				textscale       0.25
 			}
 		}
 		// Right side
 		windowDef rightside {
-			rect    200, 80, 140, 300
-			//backcolor       1,0,0,0.8
+			rect    200, 80, 220, 300
 			choiceDef servertype {
 				rect	0, 0, 200, 20
 				choices         "#str_10030"
@@ -235,7 +252,7 @@ WindowDef Desktop {
 				textscale	0.25
 			}
 			choiceDef si_gametype {
-				rect    0, 80, 200, 20
+				rect    0, 80, 220, 20
 				values  "Deathmatch;Tourney;Team DM;Last Man"
 				choices "#str_10031" // Creative translation
 				// you can use both cvar and gui, gui is in choiceType 0 all the time so it works with scripts
@@ -248,8 +265,24 @@ WindowDef Desktop {
 					resetTime "SpawnServerWindow" "0"; // Refresh all the window to 0, so we can disable MP Team damage
 				}
 			}
-			choiceDef si_teamdamage {
+			editDef si_maxplayers {
 				rect            0, 100, 200, 20
+				cvar            "si_maxplayers"
+				maxchars        2
+				textscale       0.25
+				//textaligny      -6
+				forecolor       0.6, 0.8, 0.8, 1
+			}
+			choiceDef si_spectators {
+				rect            0, 120, 200, 20
+				choices         "#str_04221"
+				cvar            "si_spectators"
+				choiceType      0
+				textscale       0.25
+				forecolor       0.6, 0.8, 0.8, 0.4
+			}
+			choiceDef si_teamdamage {
+				rect            0, 140, 200, 20
 				choices         "#str_04221"
 				cvar            "si_teamDamage"
 				choiceType      0

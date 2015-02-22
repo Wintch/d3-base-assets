@@ -99,6 +99,7 @@
 	"#str_06732"    "Last second equilibrium!"
 	"#str_06780"	"Video system does not support all the necessary features" //neo/renderer/RenderSystem_init.cpp
 	"#str_06737"	"Player Status"
+	"#str_06747"	"No Stalkers are allowed"
 	// Find and get rid of these strings
 	"#str_07188"	"str_07188"
 	"#str_07189"	"str_07189"
@@ -108,6 +109,7 @@
 	"#str_04221"	"\"No\";\"Yes\""
 	"#str_04232"	"\"Disabled\";2x;4x;8x;16x"
 	// mainmenu.gui
+	"#str_10200"	"Spawn Server"
 	"#str_10000"    "Join Cloud"
 	"#str_10001"	"Join LAN"
 	"#str_10002"	"Options"
@@ -138,6 +140,8 @@
 	"#str_10043"	"Map Name"
 	"#str_10044"	"Game Type"
 	"#str_10045"	"Team Damage"
+	"#str_10046"	"Max players"
+	"#str_10047"	"Allow Stalkers"
     "#str_10101"    "D.R.A.P. made by:"
     "#str_10102"    "Roman - 3D models\nKosmix - 2D art\nDimasFN - Level lighting\nWintch - everything else\n"
     "#str_10103"    "Fork us on:\n https://github.com/Wintch/"
