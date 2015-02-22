@@ -93,7 +93,7 @@ entityDef weapon_pistol {
 
 	"smoke_muzzle"				"weapon_pistol_muzzlesmoke.prt"
 	"def_ejectBrass"			"debris_pistolbrass"	// changed from original D3
-	"def_ejectMagazine"			"debris_shotgunbrass"	// replace for magazine model later
+	"def_ejectMagazine"			"debris_pistolmagazine"
 	"ejectBrassDelay"			"40"
 	"ejectMagazineDelay"	"150"
 	
@@ -271,6 +271,31 @@ entityDef debris_pistolbrass {
 	"mins"	"-1 -1 -1"
 	"maxs"	"1 1 1"
 	"model"	"models/weapons/pistol_shell.ase"	// machinegun debris!
+	"health"	"0"	// amount of damage projectile can take if damaged (0 means it cant be destroyed)
+	"velocity"	"0 -100 120"	// how fast the projectile leaves the gun (or distance if fuse is 0)
+	"angular_velocity"	"0 0 0"	// how the projectile is rotating when it leaves the gun
+	"thrust"	"0"	// the rate of acceleration (always in the direction of the projectiles model)
+	"thrust_start"	"0"	// when to start accelerating
+	"thrust_end"	"0"	// when to stop accelerating
+	"linear_friction"	"0.6"	// "air" friction
+	"angular_friction"	"0.4"
+	"contact_friction"	"0.1"
+	"bounce"	"2"	// how much speed a projectile retains when it bounces off of objects (coefficient of restitution).  0 means no bounce.
+	"mass"	"2"
+	"gravity"	"666"	// how much gravity affects the trajectory.  gravity direction is same as the entity that fired it.
+	"fuse"	"20"	// how long before the projectile is removed or self-detonates.  Use 0 for beam weapons (velocity == distance). Less projectiles - much the value
+	"detonate_on_fuse"			"1"					// whether projectile should detonate when its fuse runs out
+	"detonate_on_death"			"0"					// whether projectile should detonate when its "killed" (health runs out)
+	"detonate_on_world"			"0"					// whether projectile should detonate when it hits an obstacle
+	"detonate_on_actor"			"0"					// whether projectile should detonate when it hits a character in the game
+	"snd_bounce"				"casings_small_mix"
+}
+
+entityDef debris_pistolmagazine {
+	"spawnclass"	"idDebris"
+	"mins"	"-1 -1 -1"
+	"maxs"	"1 1 1"
+	"model"	"models/weapons/pistol_magazine.ase"
 	"health"	"0"	// amount of damage projectile can take if damaged (0 means it cant be destroyed)
 	"velocity"	"0 -100 120"	// how fast the projectile leaves the gun (or distance if fuse is 0)
 	"angular_velocity"	"0 0 0"	// how the projectile is rotating when it leaves the gun

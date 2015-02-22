@@ -73,7 +73,7 @@ entityDef weapon_machinegun {
 	"hide_distance"				"-15"								// distance to offset weapon when talking to npcs or looking at guis
 	"smoke_muzzle"				"weapon_mg_muzzlesmoke.prt"
 	"def_ejectBrass"			"debris_machinegunbrass"	// changed from original D3
-	"def_ejectMagazine"			"debris_shotgunbrass"	// replace for magazine model later
+	"def_ejectMagazine"			"debris_machinegunmagazine"
 	"ejectBrassDelay"	"200"	// Not instant
 	"ejectMagazineDelay"	"150"
 	"snd_acquire"				"sound_weapon_acquire"
@@ -244,6 +244,32 @@ entityDef debris_machinegunbrass {
 	"mins"	"-10 -10 -10"
 	"maxs"	"10 10 10"
 	"model"	"models/weapons/machinegun_shell.ase" // machinegun debris!
+	"health"	"0"	// amount of damage projectile can take if damaged (0 means it cant be destroyed)
+	"velocity"	"0 -100 140"	// Starting position: -up/+down : -right/+left : +forward/-backward : reloadDecls, reload map
+	"angular_velocity"	"0 0 0"	// how the projectile is rotating when it leaves the gun> Check!
+	"thrust"	"10"	// the rate of acceleration (always in the direction of the projectiles model)
+	"thrust_start"	"0"	// when to start accelerating
+	"thrust_end"	"0"	// when to stop accelerating
+	"linear_friction"	"0.3"	// "air" friction. Check later!
+	"angular_friction"	"0.4"	// makes change the angle, once on the ground
+	"contact_friction"	"0.1"	// to stop the shell once in the floor. Making it dependant on surface would be nice
+	"bounce"	"4"	// how much speed a projectile retains when it bounces off of objects (coefficient of restitution).  0 means no bounce.
+	"mass"	"2"	// shell mass
+	"gravity"	"666"	// how much gravity affects the trajectory.  gravity direction is same as the entity that fired it. > matrix
+	"fuse"	"10"	// how long before the projectile is removed or self-detonates.  Use 0 for beam weapons (velocity == distance).
+	"detonate_on_fuse"	"1"	// whether projectile should detonate when its fuse runs out
+	"detonate_on_death"	"0"	// whether projectile should detonate when its "killed" (health runs out)
+	"detonate_on_world"	"0"	// whether projectile should detonate when it hits an obstacle
+	"detonate_on_actor"	"0"	// whether projectile should detonate when it hits a character in the game
+	"snd_bounce"	"casings_small_mix"
+}
+
+entityDef debris_machinegunmagazine {
+	// machinegun shell
+	"spawnclass"	"idDebris"
+	"mins"	"-10 -10 -10"
+	"maxs"	"10 10 10"
+	"model"	"models/weapons/pistol_magazine.ase" // replace with specific for mg
 	"health"	"0"	// amount of damage projectile can take if damaged (0 means it cant be destroyed)
 	"velocity"	"0 -100 140"	// Starting position: -up/+down : -right/+left : +forward/-backward : reloadDecls, reload map
 	"angular_velocity"	"0 0 0"	// how the projectile is rotating when it leaves the gun> Check!

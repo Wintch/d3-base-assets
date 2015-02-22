@@ -397,3 +397,10 @@ particles/weapon_pistol/imp_wood1 {
 		map	textures/particles/weapon_pistol/imp_wood1_d.tga
 	}
 }
+
+textures/weapons/pistol_magazine {
+	metal
+	diffusemap	textures/weapons/pistol/pistol_magazine_d.tga
+	bumpmap	textures/weapons/pistol/pistol_magazine_n.tga
+	specularmap	textures/weapons/pistol/pistol_magazine_s.tga
+}
