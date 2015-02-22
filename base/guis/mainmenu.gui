@@ -224,23 +224,20 @@ WindowDef Desktop {
 				gui             "server_type"
 				choiceType      0
 				textscale       0.25
-				textaligny      -6
 				forecolor       0.6, 0.8, 0.8, 1
 			}
 			editDef si_fraglimit {
 				rect            0, 20, 200, 20
 				cvar            "si_fragLimit"
-					maxchars        3
-					textscale       0.25
-					textaligny      -6
-					forecolor       0.6, 0.8, 0.8, 1
+				maxchars        3
+				textscale       0.25
+				forecolor       0.6, 0.8, 0.8, 1
 			}
 			editDef si_timelimit {
 				rect            0, 40, 200, 20
 				cvar            "si_timeLimit"
 				maxchars        2
 				textscale       0.25
-				textaligny      -6
 				forecolor       0.6, 0.8, 0.8, 1
 			}
 			choiceDef si_map {
@@ -250,6 +247,7 @@ WindowDef Desktop {
 				values	"dm1.map;dm5.map"
 				choiceType	1
 				textscale	0.25
+				forecolor       0.6, 0.8, 0.8, 1
 			}
 			choiceDef si_gametype {
 				rect    0, 80, 220, 20
@@ -279,7 +277,7 @@ WindowDef Desktop {
 				cvar            "si_spectators"
 				choiceType      0
 				textscale       0.25
-				forecolor       0.6, 0.8, 0.8, 0.4
+				forecolor       0.6, 0.8, 0.8, 1
 			}
 			choiceDef si_teamdamage {
 				rect            0, 140, 200, 20
@@ -287,7 +285,7 @@ WindowDef Desktop {
 				cvar            "si_teamDamage"
 				choiceType      0
 				textscale       0.25
-				forecolor       0.6, 0.8, 0.8, 0.4
+				forecolor       0.6, 0.8, 0.8, 1
 			}
 		}
 	}
@@ -404,12 +402,12 @@ WindowDef Desktop {
 	}
 	//Window displaying Options, all the rest deactivated
 	windowDef OptionsWindow {
-		rect        120, 40, 400, 300
+		rect        120, 20, 400, 300
 		//backcolor	0.5, 0.6, 0.6, 0.3
 		textalign	1 //center
 		text        "#str_10002"
 		windowDef OptionRestart {
-			rect	0, 240, 180, 20
+			rect	0, 280, 180, 20
 			text	"#str_10006"
 			forecolor   0, 1, 0, 1
 			textalign	0
@@ -421,12 +419,12 @@ WindowDef Desktop {
 			}
 		}
 		windowDef Resolution {
-				rect	0, 20, 200, 20
+				rect	0, 40, 200, 20
 				text	"#str_10009"
 				textscale	0.30
 		}
 		windowDef Width {
-			rect    0, 40, 200, 20
+			rect    0, 60, 200, 20
 			text    "#str_10010"
 			textscale       0.30
 			onTime 0 {
@@ -438,47 +436,47 @@ WindowDef Desktop {
 			}
 		}
 		windowDef Height {
-				rect	0, 60, 200, 20
+				rect	0, 80, 200, 20
 				text	"#str_10011"
 				textscale	0.30
 		}
 		windowDef Multisampling {
-				rect	0, 80, 200, 20
+				rect	0, 100, 200, 20
 				text	"#str_10012"
 				textscale	0.30
 		}
 		windowDef Fullscreen {
-				rect	0, 100, 200, 20
+				rect	0, 120, 200, 20
 				text	"#str_10013"
 				textscale	0.30
 		}
 		windowDef UseDDS {
-				rect	0, 120, 200, 20
+				rect	0, 140, 200, 20
 				text	"#str_10014"
 				textscale	0.30
 		}
 		windowDef onlinecompress {
-				rect	0, 140, 200, 20
+				rect	0, 160, 200, 20
 				text	"#str_10015"
 				textscale	0.30
 		}
 		windowDef snumber {
-				rect    0, 160, 200, 20
+				rect    0, 180, 200, 20
 				text    "#str_10016"
 				textscale       0.30
 		}
 		windowDef sefx {
-				rect    0, 180, 200, 20
+				rect    0, 200, 200, 20
 				text    "#str_10017"
 				textscale       0.30
 		}
 		windowDef language {
-				rect	0, 200, 200, 20
+				rect	0, 220, 200, 20
 				text	"#str_10018"
 				textscale	0.30
 		}
 		windowDef OptionsWindowAct {
-			rect        300, 0, 120, 300
+			rect        300, 20, 120, 300
 			choiceDef ResolutionAct {
 				rect	0, 20, 120, 20
 				choices	"1024x768;1280x1024;1366x768;1920x1080;custom"
@@ -486,6 +484,7 @@ WindowDef Desktop {
 				cvar	"r_mode"
 				choiceType	1
 				textscale	0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
 					set "OptionRestart::forecolor"	"1, 0, 0, 1";
@@ -496,6 +495,7 @@ WindowDef Desktop {
 				cvar		"r_customwidth"
 				maxchars	4 // Never more than 9999x9999 px
 				textscale	0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "ResolutionAct::visible" "0" ;
 					set "OptionRestart::text" "#str_10019" ;
@@ -507,6 +507,7 @@ WindowDef Desktop {
 				cvar		"r_customheight"
 				maxchars	4
 				textscale	0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "ResolutionAct::visible" "0" ; //works
 					set "OptionRestart::text" "#str_10019" ;
@@ -520,6 +521,7 @@ WindowDef Desktop {
 				cvar		"r_multisamples"
 				choiceType	1
 				textscale	0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
 					set "OptionRestart::forecolor"	"1, 0, 0, 1";
@@ -532,6 +534,7 @@ WindowDef Desktop {
 				cvar		"r_fullscreen"
 				choiceType	1
 				textscale	0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
 					set "OptionRestart::forecolor"	"1, 0, 0, 1";
@@ -544,6 +547,7 @@ WindowDef Desktop {
 				cvar		"image_usePrecompressedTextures"
 				choiceType	1
 				textscale	0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
 					set "OptionRestart::forecolor"	"1, 0, 0, 1";
@@ -557,6 +561,7 @@ WindowDef Desktop {
 				cvar		"image_useCompression"
 				choiceType	1
 				textscale	0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
 					set "OptionRestart::forecolor"	"1, 0, 0, 1";
@@ -569,6 +574,7 @@ WindowDef Desktop {
 				cvar            "s_numberofspeakers"
 				choiceType      1
 				textscale       0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
 					set "OptionRestart::forecolor"  "1, 0, 0, 1";
@@ -581,6 +587,7 @@ WindowDef Desktop {
 				cvar            "s_useeaxreverb"
 				choiceType      1
 				textscale       0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "OptionRestart::text" "#str_10019";
 					set "OptionRestart::forecolor"  "1, 0, 0, 1";
@@ -593,6 +600,7 @@ WindowDef Desktop {
 				cvar	"sys_lang"
 				choiceType      1
 				textscale       0.30
+				forecolor       0.6, 0.8, 0.8, 1
 				onAction {
 					set "OptionRestart::text" "#str_10019" ;
 					set "OptionRestart::forecolor"  "1, 0, 0, 1";
