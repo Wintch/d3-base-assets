@@ -259,22 +259,13 @@ particles/weapon_pistol/pistol_blood_drop1
   }
 }
 
-// Temporal pistol from moddb
+// rename
 models/weapons/baretta/pistol {
 	noselfShadow
 	noShadows
 	diffusemap               textures/weapons/pistol/pistol2_d.tga
 	bumpmap                  textures/weapons/pistol/pistol2_n.tga
 	specularmap              textures/weapons/pistol/pistol2_s.tga
-}
-
-// Because of: models/md5/weapons/pistol_world/worldpistol.md5mesh
-models/weapons/pistol/w_pistol {
-	ricochet
-	noselfShadow
-	diffusemap	textures/weapons/pistol/w_pistol_d.tga
-	bumpmap	textures/weapons/pistol/w_pistol_n.tga
-	specularmap	textures/weapons/pistol/w_pistol_s.tga
 }
 
 models/weapons/pistol/w_pistol_invis {
@@ -286,15 +277,6 @@ models/weapons/pistol/w_pistol_invis {
 		map     textures/weapons/invis_s.tga
 		translate       time * 0 , time * 0.6
 	}
-}
-
-models/weapons/pistol {
-	// used in mp and sp as a model on the floor
-	ricochet
-	noselfShadow
-	diffusemap	textures/weapons/pistol/pistol_d.tga
-	bumpmap	textures/weapons/pistol/pistol_n.tga
-	specularmap	textures/weapons/pistol/pistol_s.tga
 }
 
 models/weapons/pistol/pistol_shell {
