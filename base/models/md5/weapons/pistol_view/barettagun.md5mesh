@@ -3100,7 +3100,7 @@ mesh {
 }
 
 mesh {
-	shader "models/characters/players/arm2"
+	shader "models/characters/player/arm2"
 
 	numverts 740
 	vert 0 ( 0.425979 0.886630 ) 0 2

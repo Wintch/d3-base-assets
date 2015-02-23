@@ -14,7 +14,7 @@ joints {
 }
 
 mesh {
-	shader "textures/weapons/pistol_mflash2"
+	shader "models/weapons/pistol/pistol_mflash2"
 
 	numverts 4
 	vert 0 ( 1.000000 1.000000 ) 0 1
@@ -34,7 +34,7 @@ mesh {
 }
 
 mesh {
-	shader "textures/weapons/pistol_mflash"
+	shader "models/weapons/pistol/pistol_mflash"
 
 	numverts 4
 	vert 0 ( 1.000000 1.000000 ) 0 1
