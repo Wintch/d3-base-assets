@@ -15,6 +15,7 @@ skin skins/characters/player/marine_mp_death {
 
 skin skins/characters/player/marine_mp_blue {
 	textures/player/mp_skeleton textures/common/nodraw
+	textures/player/mp_body textures/player/mp_body_blue
 }
 
 skin skins/characters/player/marine_mp_blue_death {
@@ -24,6 +25,7 @@ skin skins/characters/player/marine_mp_blue_death {
 
 skin skins/characters/player/marine_mp_green {
 	textures/player/mp_skeleton textures/common/nodraw
+	textures/player/mp_body textures/player/mp_body_green
 }
 
 skin skins/characters/player/marine_mp_green_death {
@@ -33,6 +35,7 @@ skin skins/characters/player/marine_mp_green_death {
 
 skin skins/characters/player/marine_mp_red {
 	textures/player/mp_skeleton textures/common/nodraw
+	textures/player/mp_body textures/player/mp_body_red
 }
 
 skin skins/characters/player/marine_mp_red_death {
@@ -42,6 +45,12 @@ skin skins/characters/player/marine_mp_red_death {
 
 skin skins/characters/player/marine_mp_yellow {
 	textures/player/mp_skeleton textures/common/nodraw
+	textures/player/mp_body textures/player/mp_body_yellow
+}
+
+skin skins/characters/player/marine_mp_sadist {
+	textures/player/mp_skeleton textures/common/nodraw
+	textures/player/mp_body textures/player/mp_body_sadist
 }
 
 skin skins/characters/player/marine_mp_yellow_death {
