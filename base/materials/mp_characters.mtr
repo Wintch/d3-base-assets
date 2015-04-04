@@ -66,11 +66,12 @@ textures/player/mp_body_green {
 	specularmap   textures/characters/mp_body_s.tga
 }
 
+// new custom skin -- test
 textures/player/mp_body_sadist {
 	noselfShadow
 	diffusemap	textures/characters/mp_body_sadist_d.tga
-	bumpmap	textures/characters/mp_body_n.tga
-	specularmap   textures/characters/mp_body_s.tga
+	bumpmap	textures/characters/mp_body_sadist_n.tga
+	specularmap   textures/characters/mp_body_sadist_s.tga
 }
 
 textures/player/mp_skeleton {
