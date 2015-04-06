@@ -1,13 +1,19 @@
+	Assets
+
  * Connecting to LAN server is a bit tricky, make sure you are selecting the server. Use console when possible
- * Serverlist on LAN search is only visible for some time, use the console to see the scanned IPs and "connect IP" to any
- * Dedicated server is not working properly. Only listen servers are fine at the moment
- * Lagometer is not working (can't be enabled on client site)
- * Latin American keyboard layout disables the console usage
  * Some assets are missing (were not rewritten or merged yet)
  * Grenades decals sometimes are not shown
- * On some intel video-cards you may have troubles with shadows. Just turn them off in that case
- * Shadows in MP are wrong on the hands models (1st person view)
- * Team DM makes no sense until skinning is done
- * LAG can and will make playing DM5 painful
- * fx's are not played client-side, may be related to PVS (you will see many effects only if you are the server of that game)
  * shotgun_muzzleflash is not working as it should
+
+	Engine
+
+ * fx's are not played client-side, may be related to PVS (you will see many effects only if you are the server of that game)
+ * LAG can and will make playing DM5 painful
+ * On some intel video-cards you may have troubles with shadows. Just turn them off in that case
+ * Latin American keyboard layout disables the console usage
+ * Dedicated server is not working properly. Only listen servers are fine at the moment
+
+	Undefined
+
+ * Serverlist on LAN search is only visible for some time, use the console to see the scanned IPs and "connect IP" to any
+ * Lagometer is not working (can't be enabled on client site)
