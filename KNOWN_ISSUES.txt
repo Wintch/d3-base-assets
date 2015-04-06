@@ -4,6 +4,7 @@
  * Some assets are missing (were not rewritten or merged yet)
  * Grenades decals sometimes are not shown
  * shotgun_muzzleflash is not working as it should
+ * Game may refuse tu run (tested on MAC). Lowering the resolution with r_mode 0 fixes that, but better default is needed
 
 	Engine
 
