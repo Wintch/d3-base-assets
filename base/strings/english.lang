@@ -100,6 +100,8 @@
 	"#str_06780"	"Video system does not support all the necessary features" //neo/renderer/RenderSystem_init.cpp
 	"#str_06737"	"Player Status"
 	"#str_06747"	"No Stalkers are allowed"
+	"#str_07198"	"Your Doom3 CD Key is already in use"
+	"#str_07199"	"Your Doom3 RoE Key is already in use"
 	// Find and get rid of these strings
 	"#str_07188"	"str_07188"
 	"#str_07189"	"str_07189"

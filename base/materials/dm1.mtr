@@ -1,0 +1,69 @@
+// All the materials for dm1 map
+
+textures/dm1/metal_stair1 {
+	metal
+	diffusemap	textures/dm1/metal_stair1_d.tga
+	bumpmap	textures/dm1/metal_stair1_n.tga
+	specularmap	textures/dm1/metal_stair1_s.tga
+	qer_editorimage	textures/dm1/metal_stair1_e.tga
+	description	"floor 512px*256px"
+}
+
+textures/dm1/cobblestone6 {
+	stone
+	diffusemap	textures/dm1/cobblestone6_d.tga
+	bumpmap	textures/dm1/cobblestone6_n.tga
+	specularmap	textures/dm1/cobblestone6_s.tga
+	qer_editorimage	textures/dm1/cobblestone6_e.tga
+	description	"cobblestone2 256px*256px"
+}
+
+textures/dm1/conc_gr2 {
+	stone
+	diffusemap	textures/dm1/conc_gr2_d.tga
+	bumpmap	textures/dm1/conc_gr2_n.tga
+	qer_editorimage	textures/dm1/conc_gr2_e.tga
+	description	"roof 1024*1024"
+}
+
+textures/dm1/cobblestone9 {
+	stone
+	diffusemap	textures/dm1/cobblestone9_d.tga
+	bumpmap	textures/dm1/cobblestone9_n.tga
+	specularmap	textures/dm1/cobblestone9_s.tga
+	qer_editorimage	textures/dm1/cobblestone9_e.tga
+	description	"floor 256px*256px"
+}
+
+textures/dm1/cobblestone10 {
+	stone
+	diffusemap	textures/dm1/cobblestone10_d.tga
+	bumpmap	textures/dm1/cobblestone10_n.tga
+	specularmap	textures/dm1/cobblestone10_s.tga
+	qer_editorimage	textures/dm1/cobblestone10_e.tga
+	description	"wall 512px*512px"
+}
+
+textures/dm1/graf2 {
+	polygonOffset 1	// Avoid z flickering
+	noimpact
+	qer_editorimage textures/dm1/graf2_e.tga
+	{
+		blend filter
+		map textures/dm1/graf2_d.tga
+	}
+}
+
+textures/dm1/lamp1 {
+	metal
+	diffusemap	textures/dm1/lamp1_d.tga
+	specularmap	textures/dm1/lamp1_s.tga
+	bumpmap	textures/dm1/lamp1_n.tga
+	qer_editorimage	textures/dm1/lamp1_e.tga
+	{
+		blend	add
+		map	textures/dm1/lamp1_l.tga
+		colored
+	}
+	description	"Simple lamp"
+}
