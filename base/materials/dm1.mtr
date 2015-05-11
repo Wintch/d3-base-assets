@@ -67,3 +67,65 @@ textures/dm1/lamp1 {
 	}
 	description	"Simple lamp"
 }
+
+textures/dm1/lamp_tube1 {
+	metal
+	diffusemap	textures/dm1/lamp_tube1_d.tga
+	specularmap	textures/dm1/lamp_tube1_s.tga
+	bumpmap	textures/dm1/lamp_tube1_n.tga
+	qer_editorimage	textures/dm1/lamp_tube1_e.tga
+	{
+		blend	add
+		map	textures/dm1/lamp_tube1_l.tga
+		colored
+	}
+	description	"Simple lamp tube"
+}
+
+textures/dm1/box1 {
+	cardboard
+	diffusemap	textures/dm1/box1_d.tga
+	bumpmap	textures/dm1/box1_n.tga
+	qer_editorimage	textures/dm1/box1_e.tga
+	description	"Moveable box"
+}
+
+textures/dm1/blood1 {
+	polygonOffset 1	// Avoid z flickering
+	noimpact
+	qer_editorimage textures/dm1/blood1_e.tga
+	{
+		blend filter
+		map textures/dm1/blood1_d.tga
+	}
+}
+
+textures/dm1/blood2 {
+	polygonOffset 1	// Avoid z flickering
+	noimpact
+	qer_editorimage textures/dm1/blood2_e.tga
+	{
+		blend filter
+		map textures/dm1/blood2_d.tga
+	}
+}
+
+textures/dm1/scraches1 {
+	polygonOffset 1	// Avoid z flickering
+	noimpact
+	qer_editorimage textures/dm1/scraches1_e.tga
+	{
+		blend filter
+		map textures/dm1/scraches1_d.tga
+	}
+}
+
+textures/dm1/exit1 {
+	polygonOffset 1	// Avoid z flickering
+	noimpact
+	qer_editorimage textures/dm1/exit1_e.tga
+	{
+		blend gl_one,gl_zero
+		map textures/dm1/exit1_d.tga
+	}
+}
