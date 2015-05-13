@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "-657.07 -290.239 159.943"
-"editor_drLastCameraAngle" "-22.5 305.7 0"
+"editor_drLastCameraPos" "-525.622 -317.011 99.9948"
+"editor_drLastCameraAngle" "-27.6 276.6 0"
 // primitive 0
 {
 brushDef3
@@ -1096,8 +1096,8 @@ brushDef3
 // entity 81
 {
 "classname" "light"
-"name" "light_58"
-"_color" "0.05 0.05 0.05"
+"name" "ambient_light"
+"_color" "0.10 0.10 0.10"
 "light_center" "0 0 0"
 "light_radius" "1002 1006 415"
 "nodiffuse" "0"
@@ -1124,17 +1124,4 @@ brushDef3
 "classname" "weapon_handgrenade_mp"
 "name" "weapon_handgrenade_mp_3"
 "origin" "446 320 -48"
-}
-// entity 85
-{
-"classname" "light"
-"name" "light_59"
-"_color" "0.91 0.42 0.98"
-"light_center" "281 123 142"
-"light_radius" "347 338 164"
-"nodiffuse" "0"
-"noshadows" "0"
-"nospecular" "0"
-"origin" "-87 -96 41"
-"parallel" "0"
 }

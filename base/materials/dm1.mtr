@@ -129,3 +129,62 @@ textures/dm1/exit1 {
 		map textures/dm1/exit1_d.tga
 	}
 }
+
+textures/dm1/conc_gr3 {
+	stone
+	diffusemap	textures/dm1/conc_gr3_d.tga
+	bumpmap	textures/dm1/conc_gr3_n.tga
+	qer_editorimage	textures/dm1/conc_gr3_e.tga
+	description	"1024*1024"
+}
+
+textures/dm1/cobblestone1 {
+	stone
+	diffusemap	textures/dm1/cobblestone1_d.tga
+	bumpmap	textures/dm1/cobblestone1_n.tga
+	qer_editorimage	textures/dm1/cobblestone1_e.tga
+	specularmap textures/dm1/cobblestone1_s.tga
+	description	"512px*512px"
+}
+
+textures/dm1/cobblestone4 {
+	stone
+	diffusemap	textures/dm1/cobblestone4_d.tga
+	bumpmap	textures/dm1/cobblestone4_n.tga
+	qer_editorimage	textures/dm1/cobblestone4_e.tga
+	description	"512px*512px"
+}
+
+textures/dm1/wood1 {
+	wood
+	diffusemap	textures/dm1/wood1_d.tga
+	bumpmap	textures/dm1/wood1_n.tga
+	qer_editorimage	textures/dm1/wood1_e.tga
+	description	"1024px*1024px"
+}
+
+textures/dm1/metal_grid1 {
+	metal
+	diffusemap	textures/dm1/metal_grid1_d.tga
+	bumpmap	textures/dm1/metal_grid1_n.tga
+	specularmap	textures/dm1/metal_grid1_s.tga
+	qer_editorimage	textures/dm1/metal_grid1_e.tga
+	description	"2048px*1024px"
+}
+
+textures/dm1/concrete1 {
+	stone
+	diffusemap	textures/dm1/concrete1_d.tga
+	bumpmap	textures/dm1/concrete1_n.tga
+	qer_editorimage	textures/dm1/concrete1_e.tga
+	description	"1024*1024"
+}
+
+textures/dm1/glass1 {
+	qer_editorimage	textures/dm1/glass1_e.tga
+	diffusemap	textures/dm1/glass1_d.tga
+	//specularmap	textures/dm1/glass1_s.tga
+	glass
+	translucent
+	forceoverlays
+}
