@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "1261.83 -112.531 231.458"
-"editor_drLastCameraAngle" "-5.09999 149.7 0"
+"editor_drLastCameraPos" "1262.95 -102.242 175.998"
+"editor_drLastCameraAngle" "0.300012 171.9 0"
 // primitive 0
 {
 brushDef3
@@ -3111,7 +3111,7 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_3"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "122.411 -26 252.458"
+"origin" "122.411 -26 232.458"
 "rotation" "-0.0165141 0 -0.999864 0 1 0 0.999864 0 -0.0165141"
 }
 // entity 39
@@ -3336,7 +3336,7 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_14"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "-754.589 27 133.458"
+"origin" "-754.589 27 110.458"
 "rotation" "-0.0165141 0 -0.999864 0 1 0 0.999864 0 -0.0165141"
 }
 // entity 56
@@ -3344,7 +3344,7 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_15"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "-753.589 -710 133.458"
+"origin" "-753.589 -710 110.458"
 "rotation" "-0.0165141 0 -0.999864 0 1 0 0.999864 0 -0.0165141"
 }
 // entity 57
@@ -3391,7 +3391,7 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_16"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "120.411 -370 252.458"
+"origin" "120.411 -370 232.458"
 "rotation" "-0.0165141 0 -0.999864 0 1 0 0.999864 0 -0.0165141"
 }
 // entity 61
@@ -3399,7 +3399,7 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_17"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "506.411 -369 252.458"
+"origin" "506.411 -369 232.458"
 "rotation" "-0.0165141 0 -0.999864 0 1 0 0.999864 0 -0.0165141"
 }
 // entity 62
@@ -3407,7 +3407,7 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_18"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "507.411 -23 252.458"
+"origin" "507.411 -23 232.458"
 "rotation" "-0.0165141 0 -0.999864 0 1 0 0.999864 0 -0.0165141"
 }
 // entity 63
@@ -3495,24 +3495,24 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_19"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "1035.92 -819.184 122"
-"rotation" "0.000287125 -1 0 1 0.000287125 0 0 0 1"
+"origin" "1035.99 -819.792 122"
+"rotation" "-0.00320051 0.999995 0 -0.999995 -0.00320051 0 0 0 1"
 }
 // entity 72
 {
 "classname" "func_static"
 "name" "func_static_20"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "1267.92 -819.184 122"
-"rotation" "0.000287125 -1 0 1 0.000287125 0 0 0 1"
+"origin" "1268.09 -819.793 122"
+"rotation" "0.00684121 0.999977 0 -0.999977 0.00684121 0 0 0 1"
 }
 // entity 73
 {
 "classname" "func_static"
 "name" "func_static_21"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "1394.99 -638.04 122"
-"rotation" "0.999992 0.00399209 0 -0.00399209 0.999992 0 0 0 1"
+"origin" "1395.6 -637.946 121.992"
+"rotation" "-0.999997 0.00258122 -0.000922376 -0.00258123 -0.999997 5.10883e-005 -0.000922241 5.34689e-005 1"
 }
 // entity 74
 {
@@ -3652,7 +3652,7 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_26"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "547.942 543.612 253.509"
+"origin" "547.942 543.612 242.509"
 "rotation" "2.16825e-005 -0.00446527 -0.99999 0.999988 0.00485576 -8.67362e-019 0.00485571 -0.999978 0.00446532"
 }
 // entity 88
@@ -3660,7 +3660,7 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_27"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "833.942 542.612 253.509"
+"origin" "833.942 542.612 242.509"
 "rotation" "2.16825e-005 -0.00446527 -0.99999 0.999988 0.00485576 -8.67362e-019 0.00485571 -0.999978 0.00446532"
 }
 // entity 89
@@ -3787,16 +3787,16 @@ brushDef3
 "classname" "func_static"
 "name" "func_static_28"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "-1139.25 -345.18 17"
-"rotation" "-0.999978 0.00660811 0 -0.00660811 -0.999978 0 0 0 1"
+"origin" "-1139.86 -345.323 17"
+"rotation" "0.999996 0.00267482 0 -0.00267482 0.999996 0 0 0 1"
 }
 // entity 106
 {
 "classname" "func_static"
 "name" "func_static_29"
 "model" "models/dm1/lamp_tube1.ase"
-"origin" "-1138.25 257.82 17"
-"rotation" "-0.999978 0.00660811 0 -0.00660811 -0.999978 0 0 0 1"
+"origin" "-1139.86 257.645 17"
+"rotation" "1 -0.000856703 0 0.000856703 1 0 0 0 1"
 }
 // entity 107
 {
@@ -3828,23 +3828,44 @@ brushDef3
 {
 "classname" "light"
 "name" "light_34"
-"origin" "1202 -305 286"
+"_color" "0.85 0.87 0.27"
 "light_center" "0 0 0"
 "light_radius" "50 21 42"
-"_color" "0.85 0.87 0.27"
-"parallel" "0"
-"nospecular" "0"
 "nodiffuse" "0"
 "noshadows" "1"
+"nospecular" "0"
+"origin" "1202 -305 286"
+"parallel" "0"
 }
 // entity 110
 {
 "classname" "light"
 "name" "light_35"
-"origin" "1104 180 286"
+"_color" "0.85 0.87 0.27"
 "light_center" "0 0 0"
 "light_radius" "50 21 42"
-"_color" "0.85 0.87 0.27"
+"nodiffuse" "0"
+"noshadows" "1"
+"nospecular" "0"
+"origin" "1104 180 286"
+"parallel" "0"
+}
+// entity 111
+{
+"classname" "func_static"
+"name" "func_static_30"
+"origin" "882.565 -96 235.023"
+"model" "models/dm1/lamp_tube1.ase"
+"rotation" "-0.00297367 0 -0.999996 0 1 0 0.999996 0 -0.00297367"
+}
+// entity 112
+{
+"classname" "light"
+"name" "light_36"
+"origin" "880 -96 150"
+"light_center" "6 0 69"
+"light_radius" "157 200 100"
+"_color" "0.72 0.71 0.37"
 "parallel" "0"
 "nospecular" "0"
 "nodiffuse" "0"
