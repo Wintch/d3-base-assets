@@ -1,0 +1,17 @@
+Version 1 // To avoid an error message
+
+reverb "room1" {
+	"room"	-1000 // No reverb at all
+}
+
+reverb "room2" {
+	"room"	-500 // No reverb at all
+}
+
+reverb "room3" {
+	"room"	0 // No reverb at all
+}
+
+reverb "room4" {
+	"room"	1000 // No reverb at all
+}

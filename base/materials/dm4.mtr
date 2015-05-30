@@ -1,0 +1,29 @@
+textures/dm4/brick1 {
+	stone
+	qer_editorimage	textures/dm4/brick1_e.tga
+	diffusemap      textures/dm4/brick1_d.tga
+	bumpmap	textures/dm4/brick1_n.tga
+	specularmap	textures/dm4/brick1_s.tga
+}
+
+textures/dm4/cobblestone2 {
+	stone
+	qer_editorimage	textures/dm4/cobblestone2_e.tga
+	diffusemap      textures/dm4/cobblestone2_d.tga
+	bumpmap	textures/dm4/cobblestone2_n.tga
+	specularmap	textures/dm4/cobblestone2_s.tga
+}
+
+textures/dm4/cobblestone4 {
+	stone
+	qer_editorimage	textures/dm4/cobblestone4_e.tga
+	diffusemap      textures/dm4/cobblestone4_d.tga
+	bumpmap	textures/dm4/cobblestone4_n.tga
+}
+
+textures/dm4/cobblestone6 {
+	stone
+	qer_editorimage	textures/dm4/cobblestone6_e.tga
+	diffusemap      textures/dm4/cobblestone6_d.tga
+	bumpmap	textures/dm4/cobblestone6_n.tga
+}
