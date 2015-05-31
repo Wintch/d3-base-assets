@@ -1,17 +1,20 @@
+// EFX file for DM5 map
+// Only 4 main rooms, similar size
+
 Version 1 // To avoid an error message
 
 reverb "room1" {
-	"room"	-1000 // No reverb at all
+	"room" -1000
 }
 
 reverb "room2" {
-	"room"	-500 // No reverb at all
+	"room" -1200
 }
 
 reverb "room3" {
-	"room"	0 // No reverb at all
+	"room" -1200
 }
 
 reverb "room4" {
-	"room"	1000 // No reverb at all
+	"room" -1400
 }

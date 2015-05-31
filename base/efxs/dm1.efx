@@ -1,0 +1,40 @@
+// Particular EFX for DM1 map
+// Several small rooms and some big ones
+
+Version 1 // To avoid an error message
+
+reverb "hole1" {
+	"room" -800
+}
+
+reverb "uproom1" {
+	"room" -1600
+}
+
+reverb "uproom2" {
+	"room" -1200
+}
+
+reverb "uproom3" {
+	"room" -1400
+}
+
+reverb "main" {
+	"room" -600
+}
+
+reverb "corridor1" {
+	"room" -1000
+}
+
+reverb "small_l5" {
+	"room" -1500
+}
+
+reverb "hole2" {
+	"room" -800
+}
+
+reverb "camper" {
+	"room" -2000
+}

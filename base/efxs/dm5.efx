@@ -1,5 +1,8 @@
-// Only one location
+// Specific EFX file for DM5 map
+// Only one location without reverb as we are in space
+
 Version 1 // To avoid an error message
-reverb "mainroom" {
-	"room"	-1000 // No reverb at all
+
+reverb "space" {
+	"room"	-10000 // No reverb at all
 }

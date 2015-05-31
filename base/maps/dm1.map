@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "1262.95 -102.242 175.998"
-"editor_drLastCameraAngle" "0.300012 171.9 0"
+"editor_drLastCameraPos" "195.741 -284.176 96.3868"
+"editor_drLastCameraAngle" "-8.39998 82.5 0"
 // primitive 0
 {
 brushDef3
@@ -2745,6 +2745,18 @@ brushDef3
 ( -1 0 0 -1520 ) ( ( 0.3125 0 63.6875 ) ( 0 0.3125 0 ) ) "textures/common/caulk" 0 0 0
 }
 }
+// primitive 228
+{
+brushDef3
+{
+( 0 0 1 -224 ) ( ( 0.03125 0 0 ) ( 0 0.03125 0 ) ) "textures/common/nodraw" 0 0 0
+( 0 1 0 -64 ) ( ( 0.03125 0 0 ) ( 0 0.03125 0 ) ) "textures/common/nodraw" 0 0 0
+( 1 0 0 -1048 ) ( ( 0.03125 0 0 ) ( 0 0.03125 0 ) ) "textures/editor/visportal" 0 0 0
+( 0 0 -1 64 ) ( ( 0.03125 0 0 ) ( 0 0.03125 0 ) ) "textures/common/nodraw" 0 0 0
+( 0 -1 0 -256 ) ( ( 0.03125 0 0 ) ( 0 0.03125 0 ) ) "textures/common/nodraw" 0 0 0
+( -1 0 0 1032 ) ( ( 0.03125 0 0 ) ( 0 0.03125 0 ) ) "textures/common/nodraw" 0 0 0
+}
+}
 }
 // entity 1
 {
@@ -2805,7 +2817,7 @@ brushDef3
 // entity 6
 {
 "classname" "info_location"
-"name" "small_stair1"
+"name" "uproom3"
 "origin" "1173 -112 79"
 }
 // entity 7
@@ -2944,7 +2956,7 @@ brushDef3
 // entity 23
 {
 "classname" "info_location"
-"name" "info_location_3"
+"name" "uproom2"
 "origin" "938 -653 156"
 }
 // entity 24
@@ -3723,7 +3735,7 @@ brushDef3
 // entity 97
 {
 "classname" "info_location"
-"name" "coridor1"
+"name" "corridor1"
 "origin" "459 -747 104"
 }
 // entity 98
@@ -3854,20 +3866,32 @@ brushDef3
 {
 "classname" "func_static"
 "name" "func_static_30"
-"origin" "882.565 -96 235.023"
 "model" "models/dm1/lamp_tube1.ase"
+"origin" "882.565 -96 235.023"
 "rotation" "-0.00297367 0 -0.999996 0 1 0 0.999996 0 -0.00297367"
 }
 // entity 112
 {
 "classname" "light"
 "name" "light_36"
-"origin" "880 -96 150"
+"_color" "0.72 0.71 0.37"
 "light_center" "6 0 69"
 "light_radius" "157 200 100"
-"_color" "0.72 0.71 0.37"
-"parallel" "0"
-"nospecular" "0"
 "nodiffuse" "0"
 "noshadows" "1"
+"nospecular" "0"
+"origin" "880 -96 150"
+"parallel" "0"
+}
+// entity 113
+{
+"classname" "info_locationseparator"
+"name" "info_locationseparator_18"
+"origin" "1040 22 207"
+}
+// entity 114
+{
+"classname" "info_location"
+"name" "uproom1"
+"origin" "784 -128 207"
 }
