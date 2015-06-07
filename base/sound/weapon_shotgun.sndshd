@@ -58,3 +58,11 @@ player_shotgun_putaway  {
 	volume		-6
 	sound/weapons/shotgun/putaway_01.ogg
 }
+
+casings_shotgun {
+	minDistance	10
+	maxDistance	30
+	volume		9
+	sound/weapons/shotgun/casing_01.ogg
+	sound/weapons/shotgun/casing_02.ogg
+}

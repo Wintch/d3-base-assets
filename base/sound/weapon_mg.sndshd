@@ -9,7 +9,7 @@ player_machinegun_raise  {
 player_machinegun_mech {
 	minDistance	5
 	maxDistance	30
-	volume	4
+	volume	9
 	sound/weapons/machinegun/mech_01.ogg
 }
 
@@ -47,4 +47,12 @@ player_machinegun_lowammo  {
 	volume	 	12
 	private
 	sound/weapons/machinegun/lowammo_01.ogg
+}
+
+casings_small_mix {
+	// make separate def for pistol
+	minDistance	5
+	maxDistance	30
+	volume	14
+	sound/weapons/machinegun/casing_01.ogg
 }

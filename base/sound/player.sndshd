@@ -367,3 +367,10 @@ teleport_full {
 	volume	-7
 	sound/teleport_tube.ogg
 }
+
+mp_spawn { //remake!
+	minDistance	2
+	maxDistance	15
+	volume	-7
+	sound/teleport_tube.ogg
+}

@@ -188,7 +188,7 @@ entityDef player_doommarine_mp {
 	"snd_berserk_third"					"player_sounds_berserk_third"
 	"snd_hit_feedback"					"player_sounds_hitlo"
 	
-	"fx_spawn"							"fx/teleporterplayer.fx"	//fix this!
+	"fx_spawn"							"fx/mp_spawn.fx"	//fix this!
 
     "mtr_icon_lag"						"textures/common/lagsprite" 
     "mtr_icon_chat"						"textures/common/chatsprite"
