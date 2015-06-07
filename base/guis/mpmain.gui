@@ -68,6 +68,7 @@ windowDef Desktop{
 			if ("ConfigurationAct::visible" == 0) {
 				set "ConfigurationAct::visible" "1";
 				set "CallvoteWindow::visible"	"0";
+				set "SkinChoiceWindow::visible"	"0";
 				set "TitleText::text" "#str_11002";
 			}
 			else {
@@ -326,6 +327,57 @@ windowDef Desktop{
 			}
 		}
 	}
+	windowDef SkinChoiceWindow {
+		rect    800,340,200,140
+		onTime 0 {
+			transition	rect	"-100, 340, 200, 140"	"420, 340, 200, 140"	"200";
+		}
+		windowDef default_skin {
+			rect    0,0,200,20
+			text	"Default"
+			textalign   0
+			textscale       0.40
+			onActionRelease{
+				set "cmd"	"mpSkin skins/characters/player/marine_mp";
+			}
+		}
+		windowDef red_skin {
+			rect    0,20,200,20
+			text	"Red"
+			textalign   0
+			textscale       0.40
+			onActionRelease{
+				set "cmd"	"mpSkin skins/characters/player/marine_mp_red";
+			}
+		}
+		windowDef blue_skin {
+			rect    0,40,200,20
+			text	"Blue"
+			textalign   0
+			textscale       0.40
+			onActionRelease{
+				set "cmd"	"mpSkin skins/characters/player/marine_mp_blue";
+			}
+		}
+		windowDef green_skin {
+			rect    0,60,200,20
+			text	"Green"
+			textalign   0
+			textscale       0.40
+			onActionRelease{
+				set "cmd"	"mpSkin skins/characters/player/marine_mp_green";
+			}
+		}
+		windowDef yellow_skin {
+			rect    0,80,200,20
+			text	"Yellow"
+			textalign   0
+			textscale       0.40
+			onActionRelease{
+				set "cmd"	"mpSkin skins/characters/player/marine_mp_yellow";
+			}
+		}
+	}
 	onESC {
 		// If we quit, reset all botton timers to 0
 		resetTime	"CallVote"	"0";
@@ -334,9 +386,11 @@ windowDef Desktop{
 		resetTime	"ConfigurationAct"	"0";
 		resetTime	"SpectateWin"	"0";
 		resetTime	"StateWin"	"0";
+		resetTime	"SkinChoiceWindow"	"0";
 		set	"TitleText::text"	"Multiplayer Menu";
 		set	"ConfigurationAct::visible"	"0";
 		set	"CallvoteWindow::visible"	"0";
+		//set "SkinChoiceWindow::visible"	"0";
 		set	"cmd"	"close";
 	}
 }

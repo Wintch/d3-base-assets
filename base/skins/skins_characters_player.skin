@@ -49,6 +49,7 @@ skin skins/characters/player/marine_mp_yellow {
 }
 
 skin skins/characters/player/marine_mp_sadist {
+	// test skin, not in ui_skins yet
 	textures/player/mp_skeleton textures/common/nodraw
 	textures/player/mp_body textures/player/mp_body_sadist
 }

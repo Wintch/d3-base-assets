@@ -57,6 +57,15 @@ windowDef Desktop {
 	// Main window
 	windowDef MainWindow {
 		rect    0 ,400 ,640 ,80
+		windowDef team {
+			rect    80 ,0 ,80 ,80
+			visible	"gui::team"
+			noevents 1
+			//backcolor 1,1,1,0.1
+			matcolor 0.75,0,0,0.8
+			//text "gui::timer"
+			//backcolor       "gui::rank1_color1", "gui::rank1_color2", "gui::rank1_color3", 1
+		}
 		windowDef TimerWin {
 			// Windows users look always to the right bottom side for the clock
 			rect	440, 20, 180, 20

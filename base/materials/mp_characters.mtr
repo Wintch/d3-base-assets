@@ -33,6 +33,7 @@ textures/player/mp_head {
 
 textures/player/mp_body {
 	noselfShadow
+	flesh
 	diffusemap	textures/characters/mp_body_d.tga
 	bumpmap	textures/characters/mp_body_n.tga
 	specularmap   textures/characters/mp_body_s.tga
@@ -40,6 +41,7 @@ textures/player/mp_body {
 
 textures/player/mp_body_blue {
 	noselfShadow
+	flesh
 	diffusemap	textures/characters/mp_body_blue_d.tga
 	bumpmap	textures/characters/mp_body_n.tga
 	specularmap   textures/characters/mp_body_s.tga
@@ -47,6 +49,7 @@ textures/player/mp_body_blue {
 
 textures/player/mp_body_red {
 	noselfShadow
+	flesh
 	diffusemap	textures/characters/mp_body_red_d.tga
 	bumpmap	textures/characters/mp_body_n.tga
 	specularmap   textures/characters/mp_body_s.tga
@@ -54,6 +57,7 @@ textures/player/mp_body_red {
 
 textures/player/mp_body_yellow {
 	noselfShadow
+	flesh
 	diffusemap	textures/characters/mp_body_yellow_d.tga
 	bumpmap	textures/characters/mp_body_n.tga
 	specularmap   textures/characters/mp_body_s.tga
@@ -61,6 +65,7 @@ textures/player/mp_body_yellow {
 
 textures/player/mp_body_green {
 	noselfShadow
+	flesh
 	diffusemap	textures/characters/mp_body_green_d.tga
 	bumpmap	textures/characters/mp_body_n.tga
 	specularmap   textures/characters/mp_body_s.tga
@@ -69,6 +74,7 @@ textures/player/mp_body_green {
 // new custom skin -- test
 textures/player/mp_body_sadist {
 	noselfShadow
+	flesh
 	diffusemap	textures/characters/mp_body_sadist_d.tga
 	bumpmap	textures/characters/mp_body_sadist_n.tga
 	specularmap   textures/characters/mp_body_sadist_s.tga
@@ -84,7 +90,6 @@ textures/player/mp_skeleton {
 // remove
 models/monsters/skeleton/skeleton01head {
 	unsmoothedTangents
-	flesh
 	clamp
 	{	// burning corpse effect
 		if	parm7			// only when dead	
@@ -102,7 +107,6 @@ models/monsters/skeleton/skeleton01head {
 
 models/monsters/skeleton/skeleton01 {
 	unsmoothedTangents
-	flesh
 	clamp
 	{	// burning corpse effect
 		if	parm7			// only when dead
@@ -119,6 +123,7 @@ models/monsters/skeleton/skeleton01 {
 }
 
 models/characters/player/arm2 {
+	flesh
 	noselfShadow
 	noShadows
 	clamp
