@@ -479,8 +479,8 @@ WindowDef Desktop {
 			rect        300, 20, 120, 300
 			choiceDef ResolutionAct {
 				rect	0, 20, 120, 20
-				choices	"1024x768;1280x1024;1366x768;1920x1080;custom"
-				values	"0;1;2;3;-1"
+				choices	"1024x768;1280x800;1280x1024;1366x768;1920x1080;2560x1600;2880x1800;3840x2160;custom"
+				values	"0;1;2;3;4;5;6;7;-1"
 				cvar	"r_mode"
 				choiceType	1
 				textscale	0.30
