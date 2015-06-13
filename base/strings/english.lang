@@ -5,6 +5,8 @@
 	"#str_04350"	"Loading the engine"	//neo/framework/Common.cpp
 	"#str_04351"	"Getting into main menu"	//neo/framework/Common.cpp
 	"#str_02911"	"No portals defined!"	//neo/game/Player.cpp
+	"#str_04341"	"YES"	//framework/Session_menu.cpp
+	"#str_04342"	"NO"	//framework/Session_menu.cpp
 	"#str_04344"	"Events"	//neo/framework/Common.cpp
 	"#str_04345"	"Scripts"	//neo/framework/Common.cpp
 	"#str_04346"	"Sound"	//neo/framework/Common.cpp

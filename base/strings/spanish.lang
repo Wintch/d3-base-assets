@@ -5,6 +5,8 @@
 	"#str_04350"	"Cargando el motor grafico"	//neo/framework/Common.cpp
 	"#str_04351"	"Cargando el menu principal"	//neo/framework/Common.cpp
 	"#str_02911"	"No hay portales definidos!"	//neo/game/Player.cpp
+        "#str_04341"    "SI"   //framework/Session_menu.cpp
+        "#str_04342"    "NO"    //framework/Session_menu.cpp
 	"#str_04344"	"Eventos"	//neo/framework/Common.cpp
 	"#str_04345"	"Scripts"	//neo/framework/Common.cpp
 	"#str_04346"	"Sonido"	//neo/framework/Common.cpp
