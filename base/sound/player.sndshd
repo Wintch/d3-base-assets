@@ -231,7 +231,7 @@ player_footstep_cardboard {
 player_footstep_stone {
 	minDistance	1
 	maxDistance	30
-	volume		-1
+	volume		-6
 	no_dups
 	sound/player/step_stone1.ogg
 	sound/player/step_stone2.ogg
@@ -271,7 +271,7 @@ player_sounds_pain_medium {
 	maxDistance 10
 	volume 8
 	sound/player/pain_medium1.ogg
-	sound/player/pain_medium2.ogg
+	//sound/player/pain_medium2.ogg
 }
 
 player_sounds_pain_big {
@@ -365,12 +365,12 @@ teleport_full {
 	minDistance	2
 	maxDistance	15
 	volume	-7
-	sound/teleport_tube.ogg
+	sound/player/teleport_tube.ogg
 }
 
-mp_spawn { //remake!
+mp_spawn {
 	minDistance	2
 	maxDistance	15
-	volume	-7
-	sound/teleport_tube.ogg
+	volume	0
+	sound/player/spawn.ogg
 }

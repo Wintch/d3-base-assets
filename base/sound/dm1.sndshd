@@ -1,0 +1,7 @@
+// All Dm1 sounds
+dm1_platform1_move {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/dm1/dm1_platform1_move.ogg
+}

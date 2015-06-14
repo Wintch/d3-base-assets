@@ -1,0 +1,45 @@
+// All common sounds in the game
+sound_weapon_respawn {
+	minDistance	1
+	maxDistance	15
+	volume		0
+	omnidirectional
+	sound/common/sound_weapon_respawn.ogg
+}
+
+sound_weapon_acquire {
+	minDistance	1
+	maxDistance	15
+	volume		0
+	omnidirectional
+	sound/common/sound_weapon_acquire.ogg
+}
+
+default_door_close {
+	minDistance	1
+	maxDistance	15
+	volume		0
+	omnidirectional
+	sound/common/default_door_close.ogg
+}
+default_door_locked {
+	minDistance	1
+	maxDistance	15
+	volume		0
+	omnidirectional
+	sound/common/default_door_locked.ogg
+}
+default_door_open {
+	minDistance	1
+	maxDistance	15
+	volume		0
+	omnidirectional
+	sound/common/default_door_open.ogg
+}
+default_door_unlocked {
+	minDistance	1
+	maxDistance	15
+	volume		0
+	omnidirectional
+	sound/common/default_door_unlocked.ogg
+}
