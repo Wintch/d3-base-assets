@@ -7,8 +7,9 @@ windowDef Desktop {
 	windowDef commonWindow {
 		rect	120, 100, 400, 200
 		border 1
-		bordersize 1
+		bordersize 2
 		bordercolor	1,0,0,1
+		backcolor	0, 0, 0, 1
 		windowDef titleText {
 			rect	0, 0, 400, 20
 			backcolor	1, 0, 0, 1
@@ -17,8 +18,7 @@ windowDef Desktop {
 			textscale	0.25
 		}
 		windowDef messageText {
-			rect	0, 20, 400, 140
-			backcolor	1, 1, 1, 0.1
+			rect	0, 20, 396, 140
 			text    "gui::message"
 			textscale	0.25
 		}

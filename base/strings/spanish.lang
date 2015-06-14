@@ -103,8 +103,8 @@
 	"#str_06747"	"No se permite chusmear"
 	"#str_07198"	"Tu clave de Doom3 CD ya esta en uso"
 	"#str_07199"	"Tu clave de Doom3 RoE ya esta en uso"
-        "#Str_00100625" "Dedicated server is recommended for game servers with more than 4 players. Continue anyway?"
-        "#Str_00100626" "Bad network experience"
+	"#str_00100625" "Se recomienda un servidor dedicado para mas de 4 jugadores. Continuar de todos modos?"
+	"#str_00100626" "Mala experienca en red"
 	// Find and get rid of theese strings
 	"#str_07188"	"str_07188"
 	"#str_07189"	"str_07189"

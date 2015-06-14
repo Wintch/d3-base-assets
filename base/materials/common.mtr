@@ -381,3 +381,15 @@ textures/developer/ricochet {
 	ricochet
 	description	"Ricochet"
 }
+
+textures/sfx/lagometer {
+	translucent
+	noShadows
+	{
+		nearest
+		nopicmip
+		colored
+		blend add
+		map textures/sfx/lagometer.tga
+	}
+}
