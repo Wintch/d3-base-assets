@@ -161,17 +161,21 @@ player_sounds_objectivedown {
 }
 
 player_sounds_thud  {
-	minDistance 2
+	minDistance 5
 	maxDistance 15
 	volume 0
+	no_dups
 	sound/player/thud_01.ogg
+	sound/player/thud_02.ogg
+	sound/player/thud_03.ogg
+	sound/player/thud_04.ogg
 }
 
 player_elevator_sounds_footstep {
 	// REMAKE!
 	minDistance	1
 	maxDistance	30
-	volume		-1
+	volume		0
 	no_dups
 	sound/player/step_concrete1.ogg
 	sound/player/step_concrete2.ogg
@@ -183,7 +187,7 @@ player_elevator_sounds_footstep {
 player_sounds_footstep {
 	minDistance	1
 	maxDistance	30
-	volume		-1
+	volume		0
 	no_dups
 	sound/player/step_concrete1.ogg
 	sound/player/step_concrete2.ogg

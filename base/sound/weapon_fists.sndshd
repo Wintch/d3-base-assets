@@ -2,7 +2,8 @@ fist_raise {
 	minDistance	5
 	maxDistance	30
 	volume		0
-	sound/weapons/fists/raise_fists_01.ogg	
+	private
+	sound/weapons/fists/raise01.ogg	
 }
 
 fist_impact_flesh {

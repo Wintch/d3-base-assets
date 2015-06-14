@@ -43,3 +43,11 @@ default_door_unlocked {
 	omnidirectional
 	sound/common/default_door_unlocked.ogg
 }
+
+snd_bounce {
+	minDistance	1
+	maxDistance	15
+	volume		0
+	omnidirectional
+	sound/common/snd_bounce.ogg
+}

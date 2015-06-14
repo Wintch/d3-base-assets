@@ -1,39 +1,40 @@
 // Shotgun sounds
 player_shotgun_raise  {
-	minDistance	10
-	maxDistance	30
+	minDistance	1
+	maxDistance	10
 	volume		3
 	sound/weapons/shotgun/raise_01.ogg
 }
 
 player_shotgun_fire {
-	minDistance	10
+	minDistance	8
 	maxDistance	30
-	volume		9
+	volume		0
 	//no_dups
 	sound/weapons/shotgun/fire_01.ogg
+	sound/weapons/shotgun/fire_02.ogg
 }
 
 player_shotgun_pump  {
-	minDistance	10
-	maxDistance	30
+	minDistance	1
+	maxDistance	10
 	volume		0
 	sound/weapons/shotgun/pump_01.ogg
 }
 
 // shotgun on its side
 player_shotgun_reload_start {
-	minDistance	10
-	maxDistance	30
-	volume		3
+	minDistance	1
+	maxDistance	10
+	volume		0
 	sound/weapons/shotgun/reload_start.ogg
 }
 
 // each shell being loaded
 player_shotgun_reload  {
-	minDistance	10
-	maxDistance	30
-	volume		2
+	minDistance	1
+	maxDistance	10
+	volume		0
 	sound/weapons/shotgun/addshell.ogg
 }
 
