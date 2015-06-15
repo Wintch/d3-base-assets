@@ -1,7 +1,7 @@
 bullet_impact_metal {
 	minDistance	1
 	maxDistance	25
-	volume		-3
+	volume		0
 	sound/impacts/metal_02.ogg
 }
 
@@ -22,14 +22,14 @@ bullet_impact_wood {
 bullet_impact_cardboard {
 	minDistance	1
 	maxDistance	25
-	volume		3
+	volume		0
 	sound/impacts/cardboard_01.ogg
 }
 
 bullet_impact_glass {
 	minDistance	3
 	maxDistance	25
-	volume		2
+	volume		0
 	sound/impacts/glass_01.ogg
 }
 

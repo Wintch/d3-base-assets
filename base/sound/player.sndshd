@@ -77,8 +77,8 @@ player_sounds_airGasp {
 	minDistance	5
 	maxDistance	35
 	volume		3
-	unclamped
-	sound/player/gasp_04.ogg
+	//unclamped
+	sound/player/gasp_01.ogg
 }
 
 
