@@ -13,8 +13,9 @@ player_handgrenade_throw {
 player_handgrenade_explode {
 	minDistance     10
 	maxDistance     60
-	volume          0
+	volume          30
 	sound/weapons/grenades/explode_01.ogg
+	sound/weapons/grenades/explode_02.ogg
 }
 
 player_handgrenade_bounce {

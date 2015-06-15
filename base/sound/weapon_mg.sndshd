@@ -9,14 +9,14 @@ player_machinegun_raise  {
 player_machinegun_mech {
 	minDistance	5
 	maxDistance	30
-	volume	9
+	volume	0
 	sound/weapons/machinegun/mech_01.ogg
 }
 
 player_machinegun_fire {
 	minDistance	5
 	maxDistance	30
-	volume	14
+	volume	10
 	sound/weapons/machinegun/fire_01.ogg
 }
 
@@ -30,21 +30,21 @@ player_machinegun_empty  {
 player_machinegun_reload {
 	minDistance	10
 	maxDistance	30
-	volume		2.5
+	volume		0
 	sound/weapons/machinegun/reload_01.ogg
 }
 
 player_machinegun_putaway  {
 	minDistance	10
 	maxDistance	30
-	volume		-6
+	volume		0
 	sound/weapons/machinegun/putaway_01.ogg
 }
 
 player_machinegun_lowammo  {
 	minDistance	10
 	maxDistance	30
-	volume	 	12
+	volume	 	0
 	private
 	sound/weapons/machinegun/lowammo_01.ogg
 }
@@ -53,6 +53,6 @@ casings_small_mix {
 	// make separate def for pistol
 	minDistance	5
 	maxDistance	30
-	volume	14
+	volume	0
 	sound/weapons/machinegun/casing_01.ogg
 }

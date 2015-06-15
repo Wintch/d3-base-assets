@@ -51,3 +51,11 @@ snd_bounce {
 	omnidirectional
 	sound/common/snd_bounce.ogg
 }
+
+bullet_flight {
+	minDistance	1
+	maxDistance	15
+	volume		0
+	omnidirectional
+	sound/common/bullet_flight.ogg
+}

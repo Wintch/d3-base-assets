@@ -2,14 +2,14 @@
 player_shotgun_raise  {
 	minDistance	1
 	maxDistance	10
-	volume		3
+	volume		0
 	sound/weapons/shotgun/raise_01.ogg
 }
 
 player_shotgun_fire {
 	minDistance	8
 	maxDistance	30
-	volume		0
+	volume		10
 	//no_dups
 	sound/weapons/shotgun/fire_01.ogg
 	sound/weapons/shotgun/fire_02.ogg
@@ -42,28 +42,28 @@ player_shotgun_reload  {
 player_shotgun_reload_end  {
 	minDistance	10
 	maxDistance	30
-	volume		-4
+	volume		0
 	sound/weapons/shotgun/reload_end.ogg
 }
 
 player_shotgun_empty  {
 	minDistance	10
 	maxDistance	30
-	volume		5
+	volume		0
 	sound/weapons/shotgun/empty_01.ogg
 }
 
 player_shotgun_putaway  {
 	minDistance	10
 	maxDistance	30
-	volume		-6
+	volume		0
 	sound/weapons/shotgun/putaway_01.ogg
 }
 
 casings_shotgun {
 	minDistance	10
 	maxDistance	30
-	volume		9
+	volume		0
 	sound/weapons/shotgun/casing_01.ogg
 	sound/weapons/shotgun/casing_02.ogg
 }

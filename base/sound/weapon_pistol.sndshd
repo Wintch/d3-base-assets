@@ -1,42 +1,42 @@
 // Pistol sounds
 /*player_pistol_raise  {
-	minDistance	10
-	maxDistance	30
-	volume		-1
+	minDistance	2
+	maxDistance	10
+	volume		0
 	sound/weapons/pistol/raise01.ogg
 }*/
 
 player_pistol_raise_01 {
-	minDistance	10
-	maxDistance	30
-	volume		1
+	minDistance	2
+	maxDistance	10
+	volume		0
 	sound/weapons/pistol/raise01.ogg
 }
 
 player_pistol_fire {
 	minDistance	10
 	maxDistance	30
-	volume		13
+	volume		10
 	sound/weapons/pistol/fire_01.ogg
 }
 
 player_pistol_reload {
-	minDistance	10
-	maxDistance	30
-	volume		4.5
+	minDistance	2
+	maxDistance	10
+	volume		0
 	sound/weapons/pistol/reload_01.ogg
 }
 
 player_pistol_empty {
-	minDistance	10
-	maxDistance	30
-	volume		6
+	minDistance	2
+	maxDistance	10
+	volume		0
 	sound/weapons/pistol/empty_01.ogg
 }
 
 player_pistol_putaway  {
-	minDistance	10
-	maxDistance	30
-	volume		-6
+	minDistance	2
+	maxDistance	10
+	volume		0
 	sound/weapons/pistol/putaway_01.ogg
 }
