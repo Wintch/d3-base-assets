@@ -5,8 +5,8 @@
 	"#str_04350"	"Cargando el motor grafico"	//neo/framework/Common.cpp
 	"#str_04351"	"Cargando el menu principal"	//neo/framework/Common.cpp
 	"#str_02911"	"No hay portales definidos!"	//neo/game/Player.cpp
-        "#str_04341"    "SI"   //framework/Session_menu.cpp
-        "#str_04342"    "NO"    //framework/Session_menu.cpp
+	"#str_04341"    "SI"   //framework/Session_menu.cpp
+	"#str_04342"    "NO"    //framework/Session_menu.cpp
 	"#str_04344"	"Eventos"	//neo/framework/Common.cpp
 	"#str_04345"	"Scripts"	//neo/framework/Common.cpp
 	"#str_04346"	"Sonido"	//neo/framework/Common.cpp
@@ -105,6 +105,7 @@
 	"#str_07199"	"Tu clave de Doom3 RoE ya esta en uso"
 	"#str_00100625" "Se recomienda un servidor dedicado para mas de 4 jugadores. Continuar de todos modos?"
 	"#str_00100626" "Mala experienca en red"
+	"#str_04840"	"Mala respuesta del servidor.\n"
 	// Find and get rid of theese strings
 	"#str_07188"	"str_07188"
 	"#str_07189"	"str_07189"

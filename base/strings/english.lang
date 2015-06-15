@@ -106,6 +106,7 @@
 	"#str_07199"	"Your Doom3 RoE Key is already in use"
 	"#str_00100625"	"Dedicated server is recommended for game servers with more than 4 players. Continue anyway?"
 	"#str_00100626" "Bad network experience"
+	"#str_04840"	"Bad server response.\n"
 	// Find and get rid of these strings
 	"#str_07188"	"str_07188"
 	"#str_07189"	"str_07189"
