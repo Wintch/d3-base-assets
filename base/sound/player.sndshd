@@ -1,20 +1,11 @@
 // Player sounds, use nodups!
-player_takehealth {
-	minDistance	1
-	maxDistance	15
-	volume		-2
-	omnidirectional
-	
-	sound/player/st_takehealth.ogg
-}
-
-player_climb_ladder {
+player_step_ladder {
 	minDistance	1
 	maxDistance	20
 	volume		-4
 	//no_dups
 	
-	sound/player/ladder/step_ladder_01.ogg
+	sound/player/step_ladder_01.ogg
 	//sound/player/ladder/step_ladder_02.ogg
 	//sound/player/ladder/step_ladder_03.ogg
 	//sound/player/ladder/step_ladder_04.ogg
@@ -27,7 +18,7 @@ player_cough {
 	volume		0
 	//no_dups
 
-	sound/player/coughs/cough_01.ogg
+	sound/player/cough_01.ogg
 	//sound/player/coughs/cough_02.ogg
 	//sound/player/coughs/cough_03.ogg
 	//sound/player/coughs/cough_04.ogg
@@ -40,22 +31,6 @@ player_sounds_teleport {
 	
 }
 
-player_sounds_teleportStart {
-	minDistance	1
-	maxDistance	20
-	soundClass 1
-	shakes 0.1
-	sound/player/teleport_start.ogg
-	volume 20
-}
-
-player_sounds_teleportExit {
-	minDistance	5
-	maxDistance	30
-	sound/player/teleport_out.ogg
-	volume 0
-}
-
 player_sounds_hitFlesh {
 	minDistance	1
 	maxDistance	35
@@ -64,50 +39,8 @@ player_sounds_hitFlesh {
 	sound/impacts/flesh_04.ogg
 }
 
-player_sounds_noAir {
-	minDistance	1
-	maxDistance	35
-	volume		-4
-	looping
-	sound/player/player_rebreather.ogg
-}
-
-
-player_sounds_airGasp {
-	minDistance	5
-	maxDistance	35
-	volume		3
-	//unclamped
-	sound/player/gasp_01.ogg
-}
-
-
-player_sounds_teleport_enter {
-	sound/player/teleport_in.ogg
-	minDistance 5
-	maxDistance	30
-	volume 0
-}
-
-player_sounds_teleport_exit {
-	minDistance 5
-	maxDistance	30
-	volume 0
-	sound/player/teleport_out.ogg
-}
-
 player_sounds_weapon_switch {
 	sound/weapons/weapon_switch.ogg
-}
-
-player_sounds_guienter {
-	volume		-5
-	sound/gui/twobeep_test1.ogg
-}
-
-player_sounds_guiexit {
-	volume		-5
-	sound/gui/twobeep_test3.ogg
 }
 
 player_sounds_hitArmor {
@@ -124,43 +57,21 @@ player_sounds_healthpulse {
 	sound/player/healthpulse_01.ogg
 }
 
-player_sounds_heartbeat {
+player_heartbeat {
 	minDistance	5
 	maxDistance	20
 	volume		0
 	sound/player/heartbeat_01.ogg
 }
 
-player_sounds_heartbeat_dying {
+player_heartbeat_dying {
 	minDistance	5
 	maxDistance	20
 	volume		0
 	sound/player/heartbeat_dying_01.ogg
 }
 
-
-player_sounds_skipcinematic {
-	minDistance	10
-	maxDistance	10
-	volume		6
-	sound/gui/skipcinematic_01.ogg
-}
-
-player_sounds_objectiveup {
-	minDistance	10
-	maxDistance	10
-	volume		6
-	sound/gui/objectiveup_01.ogg
-}
-
-player_sounds_objectivedown {
-	minDistance	10
-	maxDistance	10
-	volume		6
-	sound/gui/objectivedown_01.ogg
-}
-
-player_sounds_thud  {
+player_thud  {
 	minDistance 5
 	maxDistance 15
 	volume 0
@@ -171,49 +82,22 @@ player_sounds_thud  {
 	sound/player/thud_04.ogg
 }
 
-player_elevator_sounds_footstep {
-	// REMAKE!
-	minDistance	1
-	maxDistance	30
-	volume		0
-	no_dups
-	sound/player/step_concrete1.ogg
-	sound/player/step_concrete2.ogg
-	sound/player/step_concrete3.ogg
-	sound/player/step_concrete4.ogg
-	sound/player/step_concrete5.ogg
-}
-
-player_sounds_footstep {
-	minDistance	1
-	maxDistance	30
-	volume		0
-	no_dups
-	sound/player/step_concrete1.ogg
-	sound/player/step_concrete2.ogg
-	sound/player/step_concrete3.ogg
-	sound/player/step_concrete4.ogg
-	sound/player/step_concrete5.ogg
-}
-
-player_footstep_dirt {
+player_step_dirt {
 	minDistance	1
 	maxDistance	15
 	volume		0
-	//no_dups
-	sound/player/steps/dirt_01.ogg
+	sound/player/step_dirt_01.ogg
 }
 
-player_footstep_metal {
+player_step_metal {
 	minDistance	1
 	maxDistance	30
 	volume		-1
-	no_dups
 	sound/player/step_metal1.ogg
 	sound/player/step_metal2.ogg
 }
 
-player_footstep_wood {
+player_step_wood {
 	minDistance	1
 	maxDistance	30
 	volume		-1
@@ -222,7 +106,7 @@ player_footstep_wood {
 	sound/player/step_wood2.ogg
 }
 
-player_footstep_cardboard {
+player_step_cardboard {
 	minDistance	1
 	maxDistance	30
 	volume		-1
@@ -232,7 +116,7 @@ player_footstep_cardboard {
 	sound/player/step_cardboard3.ogg
 }
 
-player_footstep_stone {
+player_step_stone {
 	minDistance	1
 	maxDistance	30
 	volume		-6
@@ -243,7 +127,7 @@ player_footstep_stone {
 	sound/player/step_stone4.ogg
 }
 
-player_sounds_death {
+player_death {
 	minDistance 10
 	maxDistance 10
 	volume 2
@@ -251,41 +135,31 @@ player_sounds_death {
 	sound/player/death_01.ogg
 }
 
-player_sounds_doublevision {
-	minDistance	10
-	maxDistance	10
-	volume		6
-	plain
-	sound/player/dvision_01.ogg
-}
-
-
-player_sounds_pain_small {
+player_pain_small {
 	minDistance 10
 	maxDistance 10
-	volume 8
+	volume 0
 	sound/player/pain_small1.ogg
 	sound/player/pain_small2.ogg
 	sound/player/pain_small3.ogg
 	sound/player/pain_small4.ogg
 }
 
-player_sounds_pain_medium {
+player_pain_medium {
 	minDistance 10
 	maxDistance 10
-	volume 8
+	volume 4
 	sound/player/pain_medium1.ogg
-	//sound/player/pain_medium2.ogg
 }
 
-player_sounds_pain_big {
+player_pain_big {
 	minDistance 10
 	maxDistance 10
 	volume 8
 	sound/player/pain_large1.ogg
 }
 
-player_sounds_pain_huge {
+player_pain_huge {
 	minDistance 10
 	maxDistance 10
 	volume 8
@@ -293,7 +167,7 @@ player_sounds_pain_huge {
 	sound/player/pain_huge1.ogg
 }
 
-player_sounds_jump {
+player_jump_run {
 	// While running
 	minDistance 3
 	maxDistance 20
@@ -304,7 +178,7 @@ player_sounds_jump {
 	sound/player/jump_run5.ogg
 }
 
-player_sounds_jump_small {
+player_jump_small {
 	//While walking
 	minDistance 3
 	maxDistance 20
@@ -312,7 +186,7 @@ player_sounds_jump_small {
 	sound/player/jump_small_01.ogg
 }
 
-player_sounds_land {
+player_land_soft {
 	minDistance 3
 	maxDistance 20
 	//no_dups
@@ -321,7 +195,7 @@ player_sounds_land {
 	sound/player/land_medium1.ogg
 }
 
-player_sounds_fall {
+player_land_hard {
 	minDistance 3
 	maxDistance 25
 	//no_dups
@@ -330,7 +204,7 @@ player_sounds_fall {
 	sound/player/land_large1.ogg
 }
 
-player_sounds_fastlanding {
+player_fastlanding {
 	// Standard landing sound where the player does not take pain
 	minDistance	2
 	maxDistance	15
@@ -342,34 +216,11 @@ player_sounds_fastlanding {
 	sound/player/land_small4.ogg
 }
 
-player_sounds_decompress {
-	// fix
-	minDistance	2
-	maxDistance	15
-	volume	-7
-	sound/player/decompress.ogg
-}
-
-player_sounds_recompress {
-	// fix
-	minDistance	2
-	maxDistance	15
-	volume	-7
-	sound/player/recompress.ogg
-}
-
 player_sounds_hitlo {
 	minDistance	2
 	maxDistance	15
 	volume	-7
 	sound/player/hitlo.ogg
-}
-
-teleport_full {
-	minDistance	2
-	maxDistance	15
-	volume	-7
-	sound/player/teleport_tube.ogg
 }
 
 mp_spawn {

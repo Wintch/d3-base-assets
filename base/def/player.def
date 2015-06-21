@@ -497,11 +497,11 @@ model model_sp_marine {
 	}
 	anim jump							models/md5/characters/npcs/playermoves/walkjump1.md5anim {
 		prevent_idle_override
-		frame 1							sound_body player_sounds_jump_small
+		frame 1							sound_body player_jump_small
 	}
 	anim run_jump						models/md5/characters/npcs/playermoves/walkjump1.md5anim {
 		prevent_idle_override
-		frame 1							sound_body player_sounds_jump
+		frame 1							sound_body player_jump_run
 	}
 	anim soft_land						models/md5/characters/npcs/playermoves/soft_land.md5anim {
 		prevent_idle_override
@@ -747,7 +747,7 @@ entityDef player_base {
 	"maxhealth"							"100"
 	"stamina"							"120"
 	"armor"								"0"
-	"maxarmor"							"125"
+	"maxarmor"							"100"
 
 	// ammo
 	"ammo_shells"						"100"
@@ -833,43 +833,43 @@ entityDef player_base {
 	"ik_hand1"							"Rfings2"
 	"ik_hand2"							"Lfings2"
 	
-	"snd_stepladder"					"player_climb_ladder"
+	"snd_stepladder"					"player_step_ladder"
 	"snd_weapon_switch"					"player_sounds_weapon_switch"
-	"snd_footstep"						"player_sounds_footstep"
-	"snd_footstep_metal"	"player_footstep_metal"
-	"snd_footstep_wood"	"player_footstep_wood"
-	"snd_footstep_cardboard"	"player_footstep_cardboard"
-	"snd_footstep_stone"	"player_footstep_stone"
-	"snd_death"							"player_sounds_death"
-	"snd_fall"							"player_sounds_fall"
-	"snd_pain_small"					"player_sounds_pain_small"
-	"snd_pain_medium"					"player_sounds_pain_medium"
-	"snd_pain_large"					"player_sounds_pain_big"
-	"snd_pain_huge"						"player_sounds_pain_huge"
-	"snd_land_soft"						"player_sounds_fastlanding"
-	"snd_land_hard"						"player_sounds_thud"
-	"snd_objectiveup"					"player_sounds_objectiveup"
-	"snd_objectivedown"					"player_sounds_objectivedown"
-	"snd_doublevision"					"player_sounds_doublevision"
-	"snd_thud"							"player_sounds_thud"
-	"snd_heartbeat"						"player_sounds_heartbeat"
-	"snd_heartbeat_dying"				"player_sounds_heartbeat_dying"
-	"snd_skipcinematic"					"player_sounds_skipcinematic"
-	"snd_guienter"						"player_sounds_guienter"
-	"snd_guiexit"						"player_sounds_guiexit"
-	"snd_soulcube_ready"				"soulcube_energize"
-	"snd_healthpulse"					"soulcube_givehealth"
-	"snd_hitArmor"						"player_sounds_hitArmor"
-	"snd_hitFlesh"						"player_sounds_hitFlesh"
-	"snd_airGasp"						"player_sounds_airGasp"
-	"snd_noAir"							"player_sounds_noAir"
-	"snd_berserk_third"					"player_sounds_berserk"
-	"snd_teleport_exit"					"player_sounds_teleportExit"
-	"snd_teleport_start"				"player_sounds_teleportStart"
-	"snd_burn"							"sizzle"
-	"snd_invisibility"					"invisibility_pickup"
-	"snd_megahealth"					"megasphere_pickup"
-	"snd_healthtake"					"player_takehealth"
+	//"snd_footstep"						"player_sounds_footstep"
+	"snd_footstep_metal"	"player_step_metal"
+	"snd_footstep_wood"	"player_step_wood"
+	"snd_footstep_cardboard"	"player_step_cardboard"
+	"snd_footstep_stone"	"player_step_stone"
+	"snd_death"							"player_death"
+	"snd_fall"							"player_fall"
+	"snd_pain_small"					"player_pain_small"
+	"snd_pain_medium"					"player_pain_medium"
+	"snd_pain_large"					"player_pain_big"
+	"snd_pain_huge"						"player_pain_huge"
+	"snd_land_soft"						"player_land_soft"
+	"snd_land_hard"						"player_land_hard"
+	//"snd_objectiveup"					"player_sounds_objectiveup"
+	//"snd_objectivedown"					"player_sounds_objectivedown"
+	//"snd_doublevision"					"player_sounds_doublevision"
+	"snd_thud"							"player_thud"
+	"snd_heartbeat"						"player_heartbeat"
+	"snd_heartbeat_dying"				"player_heartbeat_dying"
+	//"snd_skipcinematic"					"player_sounds_skipcinematic"
+	//"snd_guienter"						"player_sounds_guienter"
+	//"snd_guiexit"						"player_sounds_guiexit"
+	//"snd_soulcube_ready"				"soulcube_energize"
+	//"snd_healthpulse"					"soulcube_givehealth"
+	"snd_hitArmor"						"player_hit_armor"
+	"snd_hitFlesh"						"player_hit_flesh"
+	//"snd_airGasp"						"player_sounds_airGasp"
+	//"snd_noAir"							"player_sounds_noAir"
+	//"snd_berserk_third"					"player_sounds_berserk"
+	//"snd_teleport_exit"					"player_sounds_teleportExit"
+	//"snd_teleport_start"				"player_sounds_teleportStart"
+	//"snd_burn"							"sizzle"
+	//"snd_invisibility"					"invisibility_pickup"
+	//"snd_megahealth"					"megasphere_pickup"
+	//"snd_healthtake"					"player_takehealth"
 }
 
 /***********************************************************************
@@ -883,9 +883,9 @@ entityDef player_base {
 entityDef player_doommarine {
 	"inherit"							"player_base"
 	"model"								"model_sp_marine"
-	"snd_decompress"					"player_sounds_decompress"
-	"snd_recompress"					"player_sounds_recompress"
-	"snd_airless"						"player_sounds_noAir"
+	//"snd_decompress"					"player_sounds_decompress"
+	//"snd_recompress"					"player_sounds_recompress"
+	//"snd_airless"						"player_sounds_noAir"
 	"def_head"							"head_player"
 	"head_joint"						"Shoulders"
 	"copy_joint neckcontrol"			"neckcontrol"
