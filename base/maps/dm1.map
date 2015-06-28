@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "1037.14 -90.5483 187.481"
-"editor_drLastCameraAngle" "5.10001 181.8 0"
+"editor_drLastCameraPos" "437.81 -199.229 135.346"
+"editor_drLastCameraAngle" "-32.4 120.9 0"
 // primitive 0
 {
 brushDef3
@@ -2922,6 +2922,7 @@ brushDef3
 "movedir" "-1"
 "origin" "288 138 28"
 "speed" "160"
+"target" "func_emitter_10"
 // primitive 0
 {
 brushDef3
@@ -3970,4 +3971,19 @@ brushDef3
 "name" "func_emitter_9"
 "origin" "-749 -711 103"
 "model" "dm1_light1.prt"
+}
+// entity 125
+{
+"classname" "func_emitter"
+"name" "func_emitter_10"
+"origin" "292 103 -42"
+"model" "dm1_dooropen.prt"
+"start_off" "1"
+}
+// entity 126
+{
+"classname" "func_emitter"
+"name" "func_emitter_11"
+"origin" "286 40 -42"
+"model" "dm1_fly.prt"
 }

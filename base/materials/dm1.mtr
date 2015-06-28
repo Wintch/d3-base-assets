@@ -201,3 +201,16 @@ particles/dm1/light1 {
 	translucent
 	diffusemap	textures/dm1/light1_p.tga
 }
+
+particles/dm1/dooropen {
+	translucent
+	diffusemap	textures/dm1/dooropen_p.tga
+}
+
+particles/dm1/fly {
+	translucent
+	{
+		blend filter
+		map textures/dm1/fly_p.tga
+	}
+}
