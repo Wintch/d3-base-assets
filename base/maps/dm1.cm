@@ -1,6 +1,6 @@
 CM "1.00"
 
-221021045
+221020734
 
 collisionModel "worldMap" {
 	vertices { /* numVertices = */ 807
@@ -3671,7 +3671,7 @@ collisionModel "worldMap" {
 	( -1 0 )
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 29232 {
+	polygons /* polygonMemory = */ 30856 {
 	4 ( 822 823 -818 824 ) ( -1 0 0 ) -1152 ( 1152 640 128 ) ( 1152 768 256 ) "textures/dm1/cobblestone1"
 	4 ( 779 780 781 782 ) ( -1 0 0 ) -1152 ( 1152 320 64 ) ( 1152 640 256 ) "textures/dm1/conc_gr3"
 	4 ( 775 776 777 778 ) ( 0 -1 0 ) -320 ( 1152 320 64 ) ( 1408 320 288 ) "textures/dm1/conc_gr3"
@@ -3701,7 +3701,7 @@ collisionModel "worldMap" {
 	4 ( 1157 1158 -1156 1159 ) ( -1 0 0 ) -1353 ( 1353 -320 320 ) ( 1353 192 384 ) "textures/dm1/metal_stair1"
 	4 ( 1153 1154 1155 1156 ) ( 0 0 -1 ) -320 ( 1353 -320 320 ) ( 1408 192 320 ) "textures/dm1/conc_gr2"
 	4 ( 1149 1150 1151 1152 ) ( -1 0 0 ) -1408 ( 1408 0 64 ) ( 1408 320 320 ) "textures/dm1/conc_gr3"
-	4 ( -1130 1131 1132 1133 ) ( 0 -1 0 ) -192 ( 1152 192 288 ) ( 1408 192 320 ) "textures/developer/stone"
+	4 ( -1130 1131 1132 1133 ) ( 0 -1 0 ) -192 ( 1152 192 288 ) ( 1408 192 320 ) "textures/dm1/conc_gr3"
 	4 ( -777 1129 1130 -176 ) ( 0 0 -1 ) -288 ( 1152 192 288 ) ( 1408 320 288 ) "textures/dm1/conc_gr2"
 	4 ( -1162 1164 1165 1166 ) ( 0 -1 0 ) -64 ( 1280 64 320 ) ( 1353 64 384 ) "textures/dm1/metal_stair1"
 	4 ( 1160 1161 1162 1163 ) ( 0 0 -1 ) -320 ( 1280 64 320 ) ( 1353 192 320 ) "textures/dm1/conc_gr2"
@@ -3796,10 +3796,10 @@ collisionModel "worldMap" {
 	4 ( 201 202 203 204 ) ( 0 1 0 ) 192 ( 384 192 -56 ) ( 512 192 248 ) "textures/dm1/conc_gr3"
 	4 ( 212 -204 213 -211 ) ( -1 0 0 ) -384 ( 384 128 -56 ) ( 384 192 248 ) "textures/dm1/conc_gr3"
 	4 ( -197 199 -182 200 ) ( 0 -1 0 ) -128 ( 192 128 128 ) ( 384 128 248 ) "textures/dm1/conc_gr3"
-	4 ( -194 196 197 198 ) ( 0 0 -1 ) -128 ( 192 128 128 ) ( 384 152 128 ) "textures/developer/stone"
+	4 ( -194 196 197 198 ) ( 0 0 -1 ) -128 ( 192 128 128 ) ( 384 152 128 ) "textures/common/caulk"
 	4 ( 192 193 194 195 ) ( 0 1 0 ) 152 ( 192 152 128 ) ( 384 152 248 ) "textures/dm1/conc_gr3"
 	4 ( 1305 1 1304 183 ) ( 0 0 -1 ) -248 ( -142 -512 248 ) ( 704 128 248 ) "textures/dm1/conc_gr2"
-	4 ( 1319 805 1318 792 ) ( 0 0 1 ) 128 ( 192 120 128 ) ( 384 128 128 ) "textures/developer/stone"
+	4 ( 1319 805 1318 792 ) ( 0 0 1 ) 128 ( 192 120 128 ) ( 384 128 128 ) "textures/dm1/plastic1"
 	4 ( -350 360 -358 361 ) ( 0 -1 0 ) -192 ( 576 192 -24 ) ( 704 192 -16 ) "textures/dm1/metal_stair1"
 	4 ( 356 357 358 359 ) ( 0 0 1 ) -16 ( 576 192 -16 ) ( 704 320 -16 ) "textures/dm1/cobblestone6"
 	4 ( -344 354 -352 355 ) ( 0 -1 0 ) -176 ( 576 176 -32 ) ( 704 176 -24 ) "textures/dm1/metal_stair1"
@@ -3812,32 +3812,32 @@ collisionModel "worldMap" {
 	4 ( 335 336 -333 337 ) ( 0 -1 0 ) -128 ( 576 128 -56 ) ( 704 128 -48 ) "textures/dm1/metal_stair1"
 	4 ( 331 332 333 334 ) ( 0 0 1 ) -48 ( 576 128 -48 ) ( 704 144 -48 ) "textures/dm1/metal_stair1"
 	4 ( 1258 1259 1260 1261 ) ( 0 -0 1 ) -56 ( 192 -0 -56 ) ( 384 128 -56 ) "textures/dm1/blood1"
-	4 ( 800 801 802 803 ) ( -1 0 0 ) -368 ( 368 120 -56 ) ( 368 128 112 ) "textures/developer/stone"
-	4 ( 798 -797 -791 799 ) ( 0 -1 0 ) -120 ( 368 120 -56 ) ( 384 120 128 ) "textures/developer/stone"
-	4 ( 796 -793 -792 797 ) ( 1 0 0 ) 384 ( 384 120 -56 ) ( 384 128 128 ) "textures/developer/stone"
-	4 ( -790 793 794 795 ) ( 0 1 0 ) 128 ( 368 128 -56 ) ( 384 128 128 ) "textures/developer/stone"
+	4 ( 800 801 802 803 ) ( -1 0 0 ) -368 ( 368 120 -56 ) ( 368 128 112 ) "textures/dm1/plastic1"
+	4 ( 798 -797 -791 799 ) ( 0 -1 0 ) -120 ( 368 120 -56 ) ( 384 120 128 ) "textures/dm1/plastic1"
+	4 ( 796 -793 -792 797 ) ( 1 0 0 ) 384 ( 384 120 -56 ) ( 384 128 128 ) "textures/dm1/plastic1"
+	4 ( -790 793 794 795 ) ( 0 1 0 ) 128 ( 368 128 -56 ) ( 384 128 128 ) "textures/dm1/plastic1"
 	4 ( 318 319 320 321 ) ( 1 0 0 ) 368 ( 368 128 112 ) ( 368 144 128 ) "textures/developer/stone"
-	4 ( 309 310 311 312 ) ( -1 0 0 ) -368 ( 368 144 -56 ) ( 368 152 112 ) "textures/developer/stone"
-	4 ( 305 306 307 308 ) ( 0 -1 0 ) -144 ( 368 144 -56 ) ( 384 144 128 ) "textures/developer/stone"
-	4 ( 301 302 303 304 ) ( 0 1 0 ) 152 ( 368 152 -56 ) ( 384 152 128 ) "textures/developer/stone"
+	4 ( 309 310 311 312 ) ( -1 0 0 ) -368 ( 368 144 -56 ) ( 368 152 112 ) "textures/dm1/plastic1"
+	4 ( 305 306 307 308 ) ( 0 -1 0 ) -144 ( 368 144 -56 ) ( 384 144 128 ) "textures/dm1/plastic1"
+	4 ( 301 302 303 304 ) ( 0 1 0 ) 152 ( 368 152 -56 ) ( 384 152 128 ) "textures/dm1/plastic1"
 	4 ( 184 185 186 187 ) ( 0 0 1 ) -56 ( 192 -608 -56 ) ( 384 192 -56 ) "textures/dm1/conc_gr2"
-	4 ( 809 810 811 812 ) ( 1 0 0 ) 208 ( 208 120 -56 ) ( 208 128 112 ) "textures/developer/stone"
+	4 ( 809 810 811 812 ) ( 1 0 0 ) 208 ( 208 120 -56 ) ( 208 128 112 ) "textures/dm1/plastic1"
 	4 ( 327 328 329 330 ) ( -1 0 0 ) -208 ( 208 128 112 ) ( 208 144 128 ) "textures/developer/stone"
-	4 ( -323 325 -313 326 ) ( 0 -1 0 ) -120 ( 208 120 112 ) ( 368 120 128 ) "textures/developer/stone"
-	4 ( -316 322 323 324 ) ( 0 0 -1 ) -112 ( 208 120 112 ) ( 368 152 112 ) "textures/developer/stone"
-	4 ( 314 315 316 317 ) ( 0 1 0 ) 152 ( 208 152 112 ) ( 368 152 128 ) "textures/developer/stone"
-	4 ( 293 294 295 296 ) ( 1 0 0 ) 208 ( 208 144 -56 ) ( 208 152 112 ) "textures/developer/stone"
+	4 ( -323 325 -313 326 ) ( 0 -1 0 ) -120 ( 208 120 112 ) ( 368 120 128 ) "textures/dm1/plastic1"
+	4 ( -316 322 323 324 ) ( 0 0 -1 ) -112 ( 208 120 112 ) ( 368 152 112 ) "textures/dm1/plastic1"
+	4 ( 314 315 316 317 ) ( 0 1 0 ) 152 ( 208 152 112 ) ( 368 152 128 ) "textures/dm1/plastic1"
+	4 ( 293 294 295 296 ) ( 1 0 0 ) 208 ( 208 144 -56 ) ( 208 152 112 ) "textures/dm1/plastic1"
 	4 ( 153 154 155 156 ) ( 0 -1 0 ) -128 ( -128 128 -56 ) ( 192 128 248 ) "textures/dm1/conc_gr3"
 	4 ( 1313 1226 1312 874 ) ( 1 0 0 ) -128 ( -128 -480 -56 ) ( -128 -64 144 ) "textures/dm1/cobblestone10"
 	4 ( 875 876 877 -50 ) ( 1 0 0 ) -128 ( -128 -512 144 ) ( -128 -64 248 ) "textures/dm1/conc_gr3"
 	4 ( 71 72 73 74 ) ( 1 0 0 ) -128 ( -128 -64 128 ) ( -128 128 248 ) "textures/dm1/conc_gr3"
 	4 ( 224 225 226 227 ) ( 0 0 1 ) -56 ( 0 -64 -56 ) ( 192 128 -56 ) "textures/dm1/conc_gr2"
-	4 ( -805 816 817 -815 ) ( -1 0 0 ) -192 ( 192 120 -56 ) ( 192 128 128 ) "textures/developer/stone"
-	4 ( 813 814 -806 815 ) ( 0 -1 0 ) -120 ( 192 120 -56 ) ( 208 120 128 ) "textures/developer/stone"
-	4 ( -804 807 808 -152 ) ( 0 1 0 ) 128 ( 192 128 -56 ) ( 208 128 128 ) "textures/developer/stone"
-	4 ( 297 298 299 300 ) ( 0 -1 0 ) -144 ( 192 144 -56 ) ( 208 144 128 ) "textures/developer/stone"
-	4 ( 289 290 291 292 ) ( 0 1 0 ) 152 ( 192 152 -56 ) ( 208 152 128 ) "textures/developer/stone"
-	4 ( 149 150 151 152 ) ( 1 0 0 ) 192 ( 192 128 -56 ) ( 192 136 128 ) "textures/developer/stone"
+	4 ( -805 816 817 -815 ) ( -1 0 0 ) -192 ( 192 120 -56 ) ( 192 128 128 ) "textures/dm1/plastic1"
+	4 ( 813 814 -806 815 ) ( 0 -1 0 ) -120 ( 192 120 -56 ) ( 208 120 128 ) "textures/dm1/plastic1"
+	4 ( -804 807 808 -152 ) ( 0 1 0 ) 128 ( 192 128 -56 ) ( 208 128 128 ) "textures/dm1/plastic1"
+	4 ( 297 298 299 300 ) ( 0 -1 0 ) -144 ( 192 144 -56 ) ( 208 144 128 ) "textures/dm1/plastic1"
+	4 ( 289 290 291 292 ) ( 0 1 0 ) 152 ( 192 152 -56 ) ( 208 152 128 ) "textures/dm1/plastic1"
+	4 ( 149 150 151 152 ) ( 1 0 0 ) 192 ( 192 128 -56 ) ( 192 136 128 ) "textures/dm1/plastic1"
 	4 ( -225 228 229 -7 ) ( -1 0 0 ) -0 ( 0 -64 -64 ) ( 0 128 -56 ) "textures/dm1/metal_stair1"
 	4 ( 277 278 279 280 ) ( 0 -1 0 ) -128 ( -128 128 -120 ) ( 0 128 -56 ) "textures/dm1/cobblestone1"
 	4 ( -249 251 252 253 ) ( -1 0 0 ) 64 ( -64 -64 -96 ) ( -64 128 -88 ) "textures/dm1/metal_stair1"
@@ -3856,7 +3856,7 @@ collisionModel "worldMap" {
 	4 ( -255 257 258 259 ) ( -1 0 0 ) 80 ( -80 -64 -104 ) ( -80 128 -96 ) "textures/dm1/metal_stair1"
 	4 ( 254 255 256 -252 ) ( 0 0 1 ) -96 ( -80 -64 -96 ) ( -64 128 -96 ) "textures/dm1/metal_stair1"
 	4 ( -273 275 -31 276 ) ( -1 0 0 ) 128 ( -128 -64 -128 ) ( -128 128 -120 ) "textures/dm1/metal_stair1"
-	4 ( 1317 281 1316 6 ) ( 0 1 0 ) -64 ( -128 -64 -120 ) ( 0 -64 -56 ) "textures/dm1/cobblestone1"
+	4 ( 1317 281 1316 6 ) ( 0 1 0 ) -64 ( -128 -64 -120 ) ( -0 -64 -56 ) "textures/dm1/cobblestone1"
 	4 ( 2 3 4 5 ) ( 0 0 1 ) -56 ( -128 -608 -56 ) ( 192 -64 -56 ) "textures/dm1/conc_gr2"
 	4 ( 939 940 941 942 ) ( -1 0 0 ) -1408 ( 1408 -832 24 ) ( 1408 -256 320 ) "textures/dm1/conc_gr3"
 	4 ( 1134 1135 1136 1137 ) ( 0 1 0 ) -320 ( 1056 -320 248 ) ( 1408 -320 320 ) "textures/dm1/conc_gr3"
@@ -4079,7 +4079,7 @@ collisionModel "worldMap" {
 	4 ( 1301 682 1300 642 ) ( 0 1 0 ) -816 ( -1728 -816 -128 ) ( -1520 -816 64 ) "textures/dm1/conc_gr3"
 	4 ( -679 -683 684 -682 ) ( 1 0 0 ) -1728 ( -1728 -816 -128 ) ( -1728 -640 64 ) "textures/dm1/conc_gr3"
 	}
-	brushes /* brushMemory = */ 28840 {
+	brushes /* brushMemory = */ 29664 {
 	6 {
 		( 0 0 1 ) 320
 		( 0 1 0 ) 896
@@ -5759,7 +5759,7 @@ collisionModel "func_door_1" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 4 ( -4 -167 -42 ) ( -4 167 43 ) "textures/dm1/metal_grid1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 167 ( -4 -167 -42 ) ( 4 -167 43 ) "textures/common/caulk"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 42 ( -4 -167 -42 ) ( 4 167 -42 ) "textures/dm1/metal_grid1"
@@ -5767,7 +5767,7 @@ collisionModel "func_door_1" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 167 ( -4 167 -42 ) ( 4 167 43 ) "textures/common/caulk"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 43 ( -4 -167 43 ) ( 4 167 43 ) "textures/common/caulk"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 43
 		( 0 1 0 ) 167
@@ -5807,7 +5807,7 @@ collisionModel "func_plat_1" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 32 ( -32 -64 -4 ) ( -32 64 4 ) "textures/dm1/metal_stair1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 64 ( -32 -64 -4 ) ( 32 -64 4 ) "textures/dm1/metal_stair1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 4 ( -32 -64 -4 ) ( 32 64 -4 ) "textures/dm1/metal_stair1"
@@ -5815,7 +5815,7 @@ collisionModel "func_plat_1" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 64 ( -32 64 -4 ) ( 32 64 4 ) "textures/dm1/metal_stair1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 4 ( -32 -64 4 ) ( 32 64 4 ) "textures/dm1/metal_stair1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 4
 		( 0 1 0 ) 64
@@ -5855,7 +5855,7 @@ collisionModel "func_door_2" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 96 ( -96 -8 -84 ) ( -96 8 84 ) "textures/common/caulk"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 8 ( -96 -8 -84 ) ( 96 -8 84 ) "textures/dm1/metal_grid1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 84 ( -96 -8 -84 ) ( 96 8 -84 ) "textures/dm1/metal_stair1"
@@ -5863,7 +5863,7 @@ collisionModel "func_door_2" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 8 ( -96 8 -84 ) ( 96 8 84 ) "textures/dm1/metal_grid1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 84 ( -96 -8 84 ) ( 96 8 84 ) "textures/common/caulk"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 84
 		( 0 1 0 ) 8
@@ -5903,7 +5903,7 @@ collisionModel "func_static_2" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -5911,7 +5911,7 @@ collisionModel "func_static_2" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -5951,7 +5951,7 @@ collisionModel "func_static_11" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -5959,7 +5959,7 @@ collisionModel "func_static_11" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -5999,7 +5999,7 @@ collisionModel "func_static_4" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -6007,7 +6007,7 @@ collisionModel "func_static_4" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -6047,7 +6047,7 @@ collisionModel "func_static_5" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -6055,7 +6055,7 @@ collisionModel "func_static_5" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -6095,7 +6095,7 @@ collisionModel "func_static_6" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -6103,7 +6103,7 @@ collisionModel "func_static_6" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -6143,7 +6143,7 @@ collisionModel "func_static_7" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -6151,7 +6151,7 @@ collisionModel "func_static_7" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -6191,7 +6191,7 @@ collisionModel "func_static_8" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -6199,7 +6199,7 @@ collisionModel "func_static_8" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -6239,7 +6239,7 @@ collisionModel "func_static_10" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -6247,7 +6247,7 @@ collisionModel "func_static_10" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -6287,7 +6287,7 @@ collisionModel "func_static_12" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -6295,7 +6295,7 @@ collisionModel "func_static_12" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16
@@ -6335,7 +6335,7 @@ collisionModel "func_static_13" {
 	nodes {
 	( -1 0 )
 	}
-	polygons /* polygonMemory = */ 432 {
+	polygons /* polygonMemory = */ 456 {
 	4 ( -2 -7 -11 -12 ) ( -1 0 0 ) 16 ( -16 -16 -16 ) ( -16 16 16 ) "textures/dm1/box1"
 	4 ( -10 -9 -3 12 ) ( 0 -1 0 ) 16 ( -16 -16 -16 ) ( 16 -16 16 ) "textures/dm1/box1"
 	4 ( -6 -8 10 11 ) ( 0 0 -1 ) 16 ( -16 -16 -16 ) ( 16 16 -16 ) "textures/dm1/box1"
@@ -6343,7 +6343,7 @@ collisionModel "func_static_13" {
 	4 ( -1 5 6 7 ) ( 0 1 0 ) 16 ( -16 16 -16 ) ( 16 16 16 ) "textures/dm1/box1"
 	4 ( 1 2 3 4 ) ( 0 0 1 ) 16 ( -16 -16 16 ) ( 16 16 16 ) "textures/dm1/box1"
 	}
-	brushes /* brushMemory = */ 140 {
+	brushes /* brushMemory = */ 144 {
 	6 {
 		( 0 0 1 ) 16
 		( 0 1 0 ) 16

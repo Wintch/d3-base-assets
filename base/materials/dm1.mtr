@@ -188,3 +188,11 @@ textures/dm1/glass1 {
 	translucent
 	forceoverlays
 }
+
+textures/dm1/plastic1 {
+	plastic
+	diffusemap	textures/dm1/plastic1_d.tga
+	bumpmap	textures/dm1/plastic1_n.tga
+	qer_editorimage	textures/dm1/plastic1_e.tga
+	description	"1024*1024"
+}
