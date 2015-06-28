@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "585.911 -252.046 83.7487"
-"editor_drLastCameraAngle" "-1.2 187.5 0"
+"editor_drLastCameraPos" "1037.14 -90.5483 187.481"
+"editor_drLastCameraAngle" "5.10001 181.8 0"
 // primitive 0
 {
 brushDef3
@@ -3907,4 +3907,67 @@ brushDef3
 "nospecular" "0"
 "nodiffuse" "0"
 "noshadows" "1"
+}
+// entity 116
+{
+"classname" "func_emitter"
+"name" "func_emitter_1"
+"origin" "126 -25 217"
+"model" "dm1_light1.prt"
+}
+// entity 117
+{
+"classname" "func_emitter"
+"name" "func_emitter_2"
+"origin" "125 -371 217"
+"model" "dm1_light1.prt"
+}
+// entity 118
+{
+"classname" "func_emitter"
+"name" "func_emitter_3"
+"origin" "509 -369 217"
+"model" "dm1_light1.prt"
+}
+// entity 119
+{
+"classname" "func_emitter"
+"name" "func_emitter_4"
+"origin" "510 -23 217"
+"model" "dm1_light1.prt"
+}
+// entity 120
+{
+"classname" "func_emitter"
+"name" "func_emitter_5"
+"origin" "887 -95 217"
+"model" "dm1_light1.prt"
+}
+// entity 121
+{
+"classname" "func_emitter"
+"name" "func_emitter_6"
+"origin" "835 541 229"
+"model" "dm1_light1.prt"
+}
+// entity 122
+{
+"classname" "func_emitter"
+"name" "func_emitter_7"
+"origin" "549 540 230"
+"model" "dm1_light1.prt"
+}
+// entity 123
+{
+"classname" "func_emitter"
+"name" "func_emitter_8"
+"origin" "-750 27 103"
+"model" "dm1_light1.prt"
+}
+// entity 124
+{
+"classname" "func_emitter"
+"name" "func_emitter_9"
+"origin" "-749 -711 103"
+"model" "dm1_light1.prt"
 }

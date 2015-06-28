@@ -196,3 +196,8 @@ textures/dm1/plastic1 {
 	qer_editorimage	textures/dm1/plastic1_e.tga
 	description	"1024*1024"
 }
+
+particles/dm1/light1 {
+	translucent
+	diffusemap	textures/dm1/light1_p.tga
+}
