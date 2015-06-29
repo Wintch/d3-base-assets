@@ -27,21 +27,40 @@ textures/weapon/handgrenade_muzzleflash {
 
 // Grenade explosion effects
 particles/weapon_grenade/grenade_explosion1 {
-  {
-    forceHighQuality	// For players trying to avoid smoke by setting low graphix
-    blend add
-    map	textures/particles/weapon_grenade/grenade_explode_d.tga
-  }
+	nonsolid
+	noshadows
+	translucent
+	{
+		forceHighQuality	// For players trying to avoid smoke by setting low graphix
+		blend blend
+		map	textures/particles/weapon_grenade/grenade_explode_d.tga
+		vertexcolor
+	}
 }
 
 // grenade explosion smoke
 particles/weapon_grenade/grenade_explosion2 {
-  //diffusemap	textures/particles/weapon_grenade/grenade_smoke_d.tga
-  {
-    //forceHighQuality
-    blend add
-    map	textures/particles/weapon_grenade/grenade_smoke_d.tga
-  }
+	nonsolid
+	noshadows
+	translucent
+	{
+		forceHighQuality	// For players trying to avoid smoke by setting low graphix
+		blend blend
+		map	textures/particles/weapon_grenade/grenade_smoke_d.tga
+		vertexcolor
+	}
+}
+
+particles/weapon_grenade/grenade_spark1 {
+	nonsolid
+	noshadows
+	translucent
+	{
+		forceHighQuality	// For players trying to avoid smoke by setting low graphix
+		blend blend
+		map	textures/particles/weapon_grenade/grenade_spark_p.tga
+		vertexcolor
+	}
 }
 
 // grenade explosion deformation
@@ -58,14 +77,16 @@ particles/weapon_grenade/grenade_explosion3 {
 }
 
 //grenade trail smoke
-particles/weapon_grenade/grenade_trail1
-{
-  //diffusemap	textures/particles/weapon_grenade/grenade_smoke_d.tga
-  {
-    //forceHighQuality
-    blend add
-    map	textures/particles/weapon_grenade/grenade_trail_d.tga
-  }
+particles/weapon_grenade/grenade_trail1 {
+	nonsolid
+	noshadows
+	translucent
+	{
+		forceHighQuality
+		blend blend
+		map	textures/particles/weapon_grenade/grenade_trail_d.tga
+		vertexcolor
+	}
 }
 
 particles/weapon_grenade/grenade_wound1
