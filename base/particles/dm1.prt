@@ -3,24 +3,49 @@
 */
 particle dm1_light1 { 
 	{
-		count 				8
+		count 				6
 		material 			particles/dm1/light1
-		time 				2.000
+		time 				4.000
 		cycles 				0.000
 		timeOffset 			0.000
-		bunching 			0.000
-		distribution 		rect 8.000 8.000 8.000
+		bunching 			1.000
+		distribution 		rect 12.000 12.000 4.000
 		direction 			cone 90.000
 		orientation 		view
-		speed 				"1.000" to "1.500"
-		size 				"2.000"
+		speed 				"1.000" to "2.000"
+		size 				"3.000"
 		aspect 				"1.000"
 		rotation 			"0.000"
 		randomDistribution 	1
 		boundsExpansion 	0.000
-		fadeIn 				0.430
-		fadeOut 			0.600
-		fadeIndex 			0.820
+		fadeIn 				0.680
+		fadeOut 			0.670
+		fadeIndex 			0.000
+		color 				1.000 1.000 1.000 1.000
+		fadeColor 			0.000 0.000 0.000 0.000
+		offset 				0.000 0.000 0.000
+		gravity 			0.000
+		entityColor 		1
+	}
+	{
+		count 				4
+		material 			particles/dm1/light1
+		time 				4.000
+		cycles 				0.000
+		timeOffset 			0.000
+		bunching 			1.000
+		distribution 		rect 16.000 16.000 6.000
+		direction 			cone 90.000
+		orientation 		view
+		speed 				"1.000" to "2.000"
+		size 				"1.000"
+		aspect 				"1.000"
+		rotation 			"0.000"
+		randomDistribution 	1
+		boundsExpansion 	0.000
+		fadeIn 				0.680
+		fadeOut 			0.670
+		fadeIndex 			0.000
 		color 				1.000 1.000 1.000 1.000
 		fadeColor 			0.000 0.000 0.000 0.000
 		offset 				0.000 0.000 0.000
@@ -66,12 +91,12 @@ particle dm1_dooropen {
 */
 particle dm1_fly { 
 	{
-		count 				4
+		count 				8
 		material 			particles/dm1/fly
-		time 				2.000
+		time 				5.000
 		cycles 				0.000
 		timeOffset 			0.000
-		bunching 			0.000
+		bunching 			1.000
 		distribution 		rect 8.000 8.000 8.000
 		direction 			cone 90.000
 		orientation 		view
@@ -81,13 +106,12 @@ particle dm1_fly {
 		rotation 			"0.000"
 		randomDistribution 	1
 		boundsExpansion 	0.000
-		fadeIn 				0.000
-		fadeOut 			0.000
+		fadeIn 				0.500
+		fadeOut 			0.200
 		fadeIndex 			0.000
 		color 				1.000 1.000 1.000 1.000
 		fadeColor 			0.000 0.000 0.000 0.000
 		offset 				0.000 0.000 0.000
-		gravity 			-0.500
-		entityColor 		1
+		gravity 			0.000
 	}
 }

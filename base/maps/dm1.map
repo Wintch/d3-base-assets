@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "437.81 -199.229 135.346"
-"editor_drLastCameraAngle" "-32.4 120.9 0"
+"editor_drLastCameraPos" "1001.97 -604.676 244.319"
+"editor_drLastCameraAngle" "-54 99.6 0"
 // primitive 0
 {
 brushDef3
@@ -3900,90 +3900,97 @@ brushDef3
 {
 "classname" "light"
 "name" "light_37"
-"origin" "-45 -271 97"
+"_color" "0.82 0.82 0.82"
 "light_center" "74 3 88"
 "light_radius" "93 320 170"
-"_color" "0.82 0.82 0.82"
-"parallel" "0"
-"nospecular" "0"
 "nodiffuse" "0"
 "noshadows" "1"
+"nospecular" "0"
+"origin" "-45 -271 97"
+"parallel" "0"
 }
 // entity 116
 {
 "classname" "func_emitter"
 "name" "func_emitter_1"
-"origin" "126 -25 217"
 "model" "dm1_light1.prt"
+"origin" "126 -25 217"
 }
 // entity 117
 {
 "classname" "func_emitter"
 "name" "func_emitter_2"
-"origin" "125 -371 217"
 "model" "dm1_light1.prt"
+"origin" "125 -371 217"
 }
 // entity 118
 {
 "classname" "func_emitter"
 "name" "func_emitter_3"
-"origin" "509 -369 217"
 "model" "dm1_light1.prt"
+"origin" "509 -369 217"
 }
 // entity 119
 {
 "classname" "func_emitter"
 "name" "func_emitter_4"
-"origin" "510 -23 217"
 "model" "dm1_light1.prt"
+"origin" "510 -23 217"
 }
 // entity 120
 {
 "classname" "func_emitter"
 "name" "func_emitter_5"
-"origin" "887 -95 217"
 "model" "dm1_light1.prt"
+"origin" "887 -95 217"
 }
 // entity 121
 {
 "classname" "func_emitter"
 "name" "func_emitter_6"
-"origin" "835 541 229"
 "model" "dm1_light1.prt"
+"origin" "835 541 229"
 }
 // entity 122
 {
 "classname" "func_emitter"
 "name" "func_emitter_7"
-"origin" "549 540 230"
 "model" "dm1_light1.prt"
+"origin" "549 540 230"
 }
 // entity 123
 {
 "classname" "func_emitter"
 "name" "func_emitter_8"
-"origin" "-750 27 103"
 "model" "dm1_light1.prt"
+"origin" "-750 27 103"
 }
 // entity 124
 {
 "classname" "func_emitter"
 "name" "func_emitter_9"
-"origin" "-749 -711 103"
 "model" "dm1_light1.prt"
+"origin" "-749 -711 103"
 }
 // entity 125
 {
 "classname" "func_emitter"
 "name" "func_emitter_10"
-"origin" "292 103 -42"
 "model" "dm1_dooropen.prt"
+"origin" "292 103 -42"
 "start_off" "1"
 }
 // entity 126
 {
 "classname" "func_emitter"
 "name" "func_emitter_11"
-"origin" "286 40 -42"
 "model" "dm1_fly.prt"
+"origin" "286 40 -42"
+}
+// entity 127
+{
+"classname" "func_emitter"
+"name" "func_emitter_12"
+"model" "dm1_fly.prt"
+"origin" "933 -486 43"
 }

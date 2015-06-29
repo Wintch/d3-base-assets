@@ -198,19 +198,34 @@ textures/dm1/plastic1 {
 }
 
 particles/dm1/light1 {
+	nonsolid
+    noshadows
 	translucent
-	diffusemap	textures/dm1/light1_p.tga
+	{
+		blend blend
+		map	textures/dm1/light1_p.tga
+		vertexcolor
+	}
 }
 
 particles/dm1/dooropen {
+	nonsolid
+    noshadows
 	translucent
-	diffusemap	textures/dm1/dooropen_p.tga
+	{
+		blend blend
+		map	textures/dm1/dooropen_p.tga
+		vertexcolor
+	}
 }
 
 particles/dm1/fly {
+	nonsolid
+    noshadows
 	translucent
 	{
-		blend filter
+		blend blend
 		map textures/dm1/fly_p.tga
+		vertexcolor
 	}
 }
