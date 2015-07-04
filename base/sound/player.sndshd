@@ -219,7 +219,7 @@ player_fastlanding {
 player_sounds_hitlo {
 	minDistance	2
 	maxDistance	15
-	volume	-7
+	volume	0
 	sound/player/hitlo.ogg
 }
 
@@ -228,4 +228,25 @@ mp_spawn {
 	maxDistance	15
 	volume	0
 	sound/player/spawn.ogg
+}
+
+player_fall {
+	minDistance	2
+	maxDistance	15
+	volume	0
+	sound/player/fall.ogg
+}
+
+player_hit_armor {
+	minDistance	2
+	maxDistance	15
+	volume	0
+	sound/player/hit_armor.ogg
+}
+
+player_hit_flesh {
+	minDistance	2
+	maxDistance	15
+	volume	0
+	sound/player/hit_flesh.ogg
 }

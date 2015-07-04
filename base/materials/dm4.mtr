@@ -27,3 +27,10 @@ textures/dm4/cobblestone6 {
 	diffusemap      textures/dm4/cobblestone6_d.tga
 	bumpmap	textures/dm4/cobblestone6_n.tga
 }
+
+textures/dm4/cobblestone7 {
+	stone
+	qer_editorimage	textures/dm4/cobblestone7_e.tga
+	diffusemap      textures/dm4/cobblestone7_d.tga
+	bumpmap	textures/dm4/cobblestone7_n.tga
+}

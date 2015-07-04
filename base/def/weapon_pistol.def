@@ -243,16 +243,15 @@ entityDef projectile_bullet_pistol {
 
 
 	// played on collision with non-damagable entities
-	"snd_plastic"				"bullet_impact_plastic"
-	"snd_cardboard"				"bullet_impact_cardboard"
 	"snd_flesh"					"bullet_impact_flesh"
 	"snd_metal"					"bullet_impact_metal"
 	"snd_stone"					"bullet_impact_stone"
 	"snd_wood"					"bullet_impact_wood"
+	"snd_cardboard"				"bullet_impact_cardboard"
 	"snd_glass"					"bullet_impact_glass"
 	"snd_liquid"				"bullet_impact_liquid"
-	"snd_ricochet"				"bullet_ricochet"
-	//"snd_impact"				"bullet_impact_metal"
+	"snd_ricochet"				"bullet_impact_ricochet"
+	"snd_plastic"				"bullet_impact_plastic"
 								
 	"mtr_light_shader"			"" //"particles/weapon_pistol/pistol_projectile_light"
         "light_color"                           "1 0 0"

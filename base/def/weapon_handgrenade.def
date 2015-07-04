@@ -131,7 +131,7 @@ model viewmodel_grenade {
 entityDef damage_grenadeDirect {
 	"damage"					"150"
 	"push"						"1000"
-	"mtr_wound_flesh"			"textures/weapon/handgrenade_hurt02"
+	"mtr_wound_flesh"			"" // old value textures/weapon/handgrenade_hurt02
 	"mtr_splat_flesh"			""
 	"gib"						"1"
 	"smoke_wound_flesh"			"weapon_grenade_bloodwound.prt"
@@ -225,7 +225,7 @@ entityDef debris_largeshrapnel {
         "mins"                                          "-3 -3 -3"
         "maxs"                                          "3 3 3"
 
-        "model"                                         "models/weapons/shrapnel_large.lwo"
+        "model"                                         "models/weapons/grenade.ase" //large
 
         "health"                                        "0"                                     // amount of damage projectile can take if damaged (0 means it cant be destroyed)
         "velocity"                                      "500 0 40"                      // how fast the projectile leaves the gun (or distance if fuse is 0)
@@ -261,7 +261,7 @@ entityDef debris_shrapnel {
         "mins"                                          "-3 -3 -3"
         "maxs"                                          "3 3 3"
 
-        "model"                                         "models/weapons/shrapnel_small.lwo"
+        "model"                                         "models/weapons/grenade.ase" //small
 
         "health"                                        "0"                                     // amount of damage projectile can take if damaged (0 means it cant be destroyed)
         "velocity"                                      "600 0 40"                      // how fast the projectile leaves the gun (or distance if fuse is 0)

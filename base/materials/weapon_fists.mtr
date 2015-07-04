@@ -13,46 +13,6 @@ textures/weapon/fists_hurt02
 	}
 }
 
-textures/weapon/fists_genericdamage
-{
-        noshadows
-        translucent
-        {
-         blend gl_dst_color,gl_zero
-                //blend  blend
-                map    textures/decals/genericdamage.tga
-                colored
-        }
-		
-        {
-                blend   add
-                map     textures/decals/splat14.tga
-                colored
-
-        }
-        {
-                blend   add
-                map     textures/decals/splat8.tga
-                colored
-
-        }
-        {
-                blend  add
-                map    textures/decals/bloodspray.tga
-                colored
-        }
-        {
-                blend  add
-                map    textures/decals/splat2.tga
-                colored
-        }
-        {
-                blend  add
-                map    textures/decals/slash01.tga
-                colored
-        }
-}
-
 // remove
 particles/weapon_fists/fists_blood_drop1 {
 	diffusemap      textures/characters/fists_d.tga

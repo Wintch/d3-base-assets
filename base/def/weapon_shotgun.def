@@ -180,7 +180,7 @@ entityDef	damage_shotgun {
 	"mtr_splat_flesh2"	"textures/weapon/shotgun_dsplat5"
 	"mtr_splat_flesh3"	"textures/weapon/shotgun_dsplat7"
 	"mtr_splat_flesh4"	"textures/weapon/shotgun_dsplat11"
-	"snd_flesh"			"shotgun_impact_flesh"
+	//"snd_flesh"			"shotgun_impact_flesh"
 
 	"kick_time"			"400"
 	"kick_amplitude"	"1"
@@ -222,7 +222,7 @@ entityDef projectile_bullet_shotgun {
 	//"model" 					"models/items/projectiles/rocket.ase"
 	"scale"						"0.1"
 	"noshadows"					"1"
-								
+	// common sounds
 	"snd_flesh"					"bullet_impact_flesh"
 	"snd_metal"					"bullet_impact_metal"
 	"snd_stone"					"bullet_impact_stone"
@@ -233,7 +233,7 @@ entityDef projectile_bullet_shotgun {
 	"snd_ricochet"				"bullet_impact_ricochet"
 	"snd_plastic"				"bullet_impact_plastic"
 
-	"snd_impact"				"bullet_impact_metal"
+	//"snd_impact"				"bullet_impact_metal"
 
 	"def_damage"				"damage_shotgun"
 
@@ -260,14 +260,14 @@ entityDef projectile_bullet_shotgun {
 	"impact_damage_effect"		"1"
 	"impact_gib"				"1"
 								
-	"mtr_detonate"				"textures/weapon/shotgun_bulleth"
+	//"mtr_detonate"				"textures/weapon/shotgun_bulleth"
 	"mtr_detonate_glass"	"textures/weapon/shotgun_imp_glass"
-        "mtr_detonate_ricochet" "textures/weapon/shotgun_imp_ricochet"
-        "mtr_detonate_metal"    "textures/weapon/shotgun_imp_metal"
-        "mtr_detonate_cardboard"        "textures/weapon/shotgun_imp_cardboard"
-        "mtr_detonate_wood"     "textures/weapon/shotgun_imp_wood"
-        "mtr_detonate_stone"    "textures/weapon/shotgun_imp_stone"
-        "mtr_detonate_plastic"  "textures/weapon/shotgun_imp_plastic"
+	"mtr_detonate_ricochet" "textures/weapon/shotgun_imp_ricochet"
+	"mtr_detonate_metal"    "textures/weapon/shotgun_imp_metal"
+	"mtr_detonate_cardboard"        "textures/weapon/shotgun_imp_cardboard"
+	"mtr_detonate_wood"     "textures/weapon/shotgun_imp_wood"
+	"mtr_detonate_stone"    "textures/weapon/shotgun_imp_stone"
+	"mtr_detonate_plastic"  "textures/weapon/shotgun_imp_plastic"
 
 	"decal_size"				"10"
 	//"model_smokespark"			"weapon_sg_smokeandspark.prt"

@@ -6,22 +6,6 @@ fist_raise {
 	sound/weapons/fists/raise01.ogg	
 }
 
-fist_impact_flesh {
-	minDistance	2
-	maxDistance	30
-	volume		0
-	//no_dups
-	sound/weapons/fists/fist_impact_01.ogg
-}
-
-fist_impact {
-	minDistance	2
-	maxDistance	30
-	volume		0
-	//no_dups
-	sound/weapons/fists/default_punch_01.ogg
-}
-
 fist_gorepunch {
 	minDistance	2
 	maxDistance	30
@@ -36,4 +20,11 @@ fist_whoosh {
 	volume		0
 	//no_dups
 	sound/weapons/fists/whoosh_01.ogg
+}
+
+player_fists_use {
+	minDistance	2
+	maxDistance	15
+	volume		0
+	sound/weapons/fists/use_01.ogg
 }

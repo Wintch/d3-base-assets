@@ -15,18 +15,6 @@ textures/weapon/shotgun_muzzleflash {
 	}
 }
 
-// wall hole
-textures/weapon/shotgun_bulleth {
-	DECAL_MACRO
-	decalInfo 60 1 ( 1 1 1 1 ) ( 0 0 0 0 )
-	{       
-      	blend	gl_zero, gl_one_minus_src_color
-		map		textures/decals/bulleth_shotgun.tga
-		clamp			// we don't want it to tile if the projection extends past the bounds
-		vertexColor		// oblique projections will be slightly faded down
-	}
-}
-
 // same 4 glass
 textures/weapon/shotgun_imp_glass {
 	DECAL_MACRO
@@ -203,45 +191,6 @@ textures/weapon/shotgun_dsplat11 {
 	}
 }
 
-// remove
-textures/weapon/shotgun_genericDamage {
-        noshadows
-        translucent
-        {
-         blend gl_dst_color,gl_zero
-                //blend  blend
-                map    textures/decals/genericdamage.tga
-                colored
-        }
-        {
-                blend   add
-                map     textures/decals/splat14.tga
-                colored
-
-        }
-        {
-                blend   add
-                map     textures/decals/splat8.tga
-                colored
-
-        }
-        {
-                blend  add
-                map    textures/decals/bloodspray.tga
-                colored
-        }
-        {
-                blend  add
-                map    textures/decals/splat2.tga
-                colored
-        }
-        {
-                blend  add
-                map    textures/decals/slash01.tga
-                colored
-        }
-}
-
 //goSG!!!
 particles/weapon_sg/sg_impact1 {
     {
@@ -288,8 +237,9 @@ models/weapons/shotgun/shotgun_mflash2 {
 	}
 }
 
+// From model, remove when possible
 models/weapons/shotgun/shotgun_mflashb {
-	qer_editorimage models/weapons/shotgun/shotgun_mflashb.tga
+	//qer_editorimage models/weapons/shotgun/shotgun_mflashb.tga
 	sort nearest
 	deform sprite
 	{
@@ -320,7 +270,7 @@ models/weapons/shotgun/shotgun_mflash {
 }
 
 models/weapons/shotgun_shell {
-	// tiny, dont need normal
+	// tiny, don't need normal
 	diffusemap	textures/weapons/shotgun/shotgun_shell_d.tga
 	specularmap	textures/weapons/shotgun/shotgun_shell_s.tga
 }

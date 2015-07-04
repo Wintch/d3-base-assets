@@ -43,7 +43,7 @@ entityDef weapon_fists {
 	"hide_time"					"0.3"								// time to hide weapon when talking to npcs or looking at guis
 	"hide_distance"				"-15"								// distance to offset weapon when talking to npcs or looking at guis
 	"impact_damage_effect"		"1"
-	"snd_acquire"				"guisounds_weapon"
+	"snd_acquire"				"player_fists_use"	// exists? Before removing, check sndshd!
 	"skin_invisible"			"skins/fists_invis"	//see weapons.skin
 	"stealing"					"1"					// this weapon steals other player weapon
 }
@@ -86,17 +86,17 @@ entityDef damage_fists {
 
 	"dv_time"			"100"
 
-	"snd_metal"			"fist_imp_metal"
-	"snd_ricochet"		"fist_imp_ricochet"
-	"snd_flesh"			"fist_imp_flesh"
-	"snd_stone"			"fist_imp_stone"
-	"snd_wood"			"fist_imp_wood"
-	"snd_cardboard"		"fist_imp_cardboard"
-	"snd_glass"			"fist_imp_glass"
-	"snd_liquid"		"fist_imp_liquid"
-	"snd_plastic"		"fist_imp_plastic"
-	"snd_shatter"		"fist_imp_shatter"
-	"snd_hit"			"fist_imp_hit"
-	"snd_miss"			"fist_imp_miss"
+	"snd_metal"			"fist_impact_metal"
+	"snd_ricochet"		"fist_impact_ricochet"
+	"snd_flesh"			"fist_impact_flesh"
+	"snd_stone"			"fist_impact_stone"
+	"snd_wood"			"fist_impact_wood"
+	"snd_cardboard"		"fist_impact_cardboard"
+	"snd_glass"			"fist_impact_glass"
+	"snd_liquid"		"fist_impact_liquid"
+	"snd_plastic"		"fist_impact_plastic"
+	"snd_shatter"		"fist_impact_shatter"
+	"snd_hit"			"fist_impact_hit"
+	"snd_miss"			"fist_impact_miss"
 	//"snd_hit_berserk"	"fist_gorepunch"
 }

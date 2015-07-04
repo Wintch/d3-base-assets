@@ -225,8 +225,7 @@ entityDef projectile_bullet_machinegun {
 	"explode_light_radius"		"0"
 	"explode_light_fadetime"	"0"
 	
-	"snd_tracer"				"bullet_flight"
-	"snd_ricochet"				"bullet_ricochet"
+	//"snd_tracer"				"bullet_flight" //in use?
 	"snd_flesh"					"bullet_impact_flesh"
 	"snd_metal"					"bullet_impact_metal"
 	"snd_stone"					"bullet_impact_stone"
@@ -234,8 +233,8 @@ entityDef projectile_bullet_machinegun {
 	"snd_cardboard"				"bullet_impact_cardboard"
 	"snd_glass"					"bullet_impact_glass"
 	"snd_liquid"				"bullet_impact_liquid"
+	"snd_ricochet"				"bullet_impact_ricochet"
 	"snd_plastic"				"bullet_impact_plastic"
-	//"snd_impact"				"bullet_impact_metal"
 }
 
 entityDef debris_machinegunbrass {

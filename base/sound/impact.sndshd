@@ -53,3 +53,96 @@ bullet_impact_flesh {
 	volume		0
 	sound/impacts/flesh_04.ogg
 }
+
+bullet_impact_ricochet {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/ricochet_01.ogg
+}
+
+// Punch sounds different, change sounds!
+fist_impact_metal {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/metal_02.ogg
+}
+
+fist_impact_stone {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/stone_01.ogg
+}
+
+fist_impact_wood {
+	minDistance	2
+	maxDistance	25
+	volume		0
+	sound/impacts/wood_01.ogg
+}
+
+fist_impact_cardboard {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/cardboard_01.ogg
+}
+
+fist_impact_glass {
+	minDistance	3
+	maxDistance	25
+	volume		0
+	sound/impacts/glass_01.ogg
+}
+
+fist_impact_liquid {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/liquid_01.ogg
+}
+
+fist_impact_plastic {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/plastic_01.ogg
+}
+
+fist_impact_flesh {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/flesh_04.ogg
+}
+
+fist_impact_ricochet {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/ricochet_01.ogg
+}
+
+// specific fist impacts
+fist_impact_shatter {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/fist_impact_shatter_01.ogg
+}
+
+fist_impact_hit {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/fist_impact_hit_01.ogg
+}
+
+fist_impact_miss {
+	minDistance	1
+	maxDistance	25
+	volume		0
+	sound/impacts/fist_impact_miss_01.ogg
+}
