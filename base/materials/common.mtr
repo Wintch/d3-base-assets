@@ -329,57 +329,84 @@ textures/common/pda_gui
 // Basic materials for mapping and sound/particles testing
 //============================================================================================================
 textures/developer/metal {
-	diffusemap	textures/common/metal_d.tga
 	metal
 	description	"Metal"
+	qer_editorimage	textures/common/metal_thumb.tga
+	diffusemap	textures/common/metal_d.tga
+	bumpmap	textures/common/metal_n.tga
+	specularmap	textures/common/metal_s.tga
 }
 
 textures/developer/stone {
-	diffusemap	textures/common/stone_d.tga
 	stone
 	description	"Stone"
+	qer_editorimage	textures/common/stone_thumb.tga
+	diffusemap	textures/common/stone_d.tga
+	bumpmap	textures/common/stone_n.tga
+	specularmap	textures/common/stone_s.tga
 }
 
 textures/developer/flesh {
-	diffusemap	textures/common/flesh_d.tga
 	flesh
 	description	"Flesh"
+	qer_editorimage	textures/common/flesh_thumb.tga
+	diffusemap	textures/common/flesh_d.tga
+	bumpmap	textures/common/flesh_n.tga
+	specularmap	textures/common/flesh_s.tga
 }
 
 textures/developer/wood {
-	diffusemap	textures/common/wood_d.tga
 	wood
 	description	"Wood"
+	qer_editorimage	textures/common/wood_thumb.tga
+	diffusemap	textures/common/wood_d.tga
+	bumpmap	textures/common/wood_n.tga
+	specularmap	textures/common/wood_s.tga
 }
 
 textures/developer/cardboard {
-	diffusemap	textures/common/cardboard_d.tga
 	cardboard
 	description	"Cardboard"
+	qer_editorimage	textures/common/cardboard_thumb.tga
+	diffusemap	textures/common/cardboard_d.tga
+	bumpmap	textures/common/cardboard_n.tga
+	specularmap	textures/common/cardboard_s.tga
 }
 
 textures/developer/liquid {
-	diffusemap	textures/common/liquid_d.tga
 	liquid
 	description	"Liquid"
+	qer_editorimage	textures/common/liquid_thumb.tga
+	diffusemap	textures/common/liquid_d.tga
+	bumpmap	textures/common/liquid_n.tga
+	specularmap	textures/common/liquid_s.tga
 }
 
 textures/developer/glass {
-	diffusemap	textures/common/glass_d.tga
 	glass
 	description	"Glass"
+	qer_editorimage	textures/common/glass_thumb.tga
+	diffusemap	textures/common/glass_d.tga
+	bumpmap	textures/common/glass_n.tga
+	specularmap	textures/common/glass_s.tga
 }
 
 textures/developer/plastic {
-	diffusemap	textures/common/plastic_d.tga
 	plastic
 	description	"Plastic"
+	qer_editorimage	textures/common/plastic_thumb.tga
+	diffusemap	textures/common/plastic_d.tga
+	bumpmap	textures/common/plastic_n.tga
+	specularmap	textures/common/plastic_s.tga
 }
 
 textures/developer/ricochet {
-	diffusemap	textures/common/ricochet_d.tga
 	ricochet
 	description	"Ricochet"
+	qer_editorimage	textures/common/ricochet_thumb.tga
+	diffusemap	textures/common/ricochet_d.tga
+	bumpmap	textures/common/ricochet_n.tga
+	specularmap	textures/common/ricochet_s.tga
 }
 
 textures/sfx/lagometer {
