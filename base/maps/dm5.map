@@ -2,8 +2,8 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"editor_drLastCameraPos" "-525.622 -317.011 99.9948"
-"editor_drLastCameraAngle" "-27.6 276.6 0"
+"editor_drLastCameraPos" "-167.347 -703.014 -236.259"
+"editor_drLastCameraAngle" "-11.7273 48.0455 0"
 // primitive 0
 {
 brushDef3
@@ -1124,4 +1124,68 @@ brushDef3
 "classname" "weapon_handgrenade_mp"
 "name" "weapon_handgrenade_mp_3"
 "origin" "446 320 -48"
+}
+// entity 85
+{
+"classname" "func_emitter"
+"name" "func_emitter_1"
+"bind" "bobo_1d"
+"model" "dm5_rocket1.prt"
+"origin" "-960 -960 -352"
+}
+// entity 86
+{
+"classname" "func_emitter"
+"name" "func_emitter_2"
+"bind" "bobo_1a"
+"model" "dm5_rocket1.prt"
+"origin" "-64 -960 -352"
+}
+// entity 87
+{
+"classname" "func_emitter"
+"name" "func_emitter_3"
+"bind" "bobo_1b"
+"model" "dm5_rocket1.prt"
+"origin" "-64 -64 -352"
+}
+// entity 88
+{
+"classname" "func_emitter"
+"name" "func_emitter_4"
+"bind" "bobo_1c"
+"model" "dm5_rocket1.prt"
+"origin" "-960 -64 -352"
+}
+// entity 89
+{
+"classname" "func_emitter"
+"name" "func_emitter_5"
+"bind" "bobo2b"
+"model" "dm5_rocket2.prt"
+"origin" "-512 0 -272"
+}
+// entity 90
+{
+"classname" "func_emitter"
+"name" "func_emitter_6"
+"bind" "bobo2a"
+"model" "dm5_rocket2.prt"
+"origin" "0 -512 -288"
+}
+// entity 91
+{
+"classname" "func_emitter"
+"name" "func_emitter_7"
+"bind" "bobo2d"
+"model" "dm5_rocket2.prt"
+"origin" "-512 -1024 -272"
+}
+// entity 92
+{
+"classname" "func_emitter"
+"name" "func_emitter_8"
+"bind" "bobo2c"
+"model" "dm5_rocket2.prt"
+"origin" "-1024 -512 -272"
 }

@@ -47,3 +47,25 @@ lights/dm5_platform1 {
                 //zeroclamp
         }
 }
+
+particles/dm5/rocket1 {
+	nonsolid
+    noshadows
+	translucent
+	{
+		blend add
+		map textures/dm5/rocket1_p.tga
+		vertexcolor
+	}
+}
+
+particles/dm5/rocket2 {
+	nonsolid
+    noshadows
+	translucent
+	{
+		blend add
+		map textures/dm5/rocket1_p.tga
+		vertexcolor
+	}
+}
