@@ -284,23 +284,71 @@ particle weapon_pistol_imp_plastic {
 */
 particle weapon_pistol_imp_wood { 
 	{
-		count 				1
+		count 				2
 		material 			particles/weapon_pistol/imp_wood1
 		time 				0.200
 		cycles 				1.000
 		timeOffset 			0.000
 		bunching 			0.000
-		distribution 		rect 0.000 0.000 0.000
+		distribution 		rect 0.500 0.500 0.500
 		direction 			cone 90.000
 		orientation 		view
 		speed 				"0.000"
-		size 				"0.000" to "6.000"
+		size 				"0.000" to "1.000"
 		aspect 				"1.000"
 		rotation 			"0.000"
 		randomDistribution 	1
 		boundsExpansion 	0.000
 		fadeIn 				0.100
 		fadeOut 			0.250
+		fadeIndex 			0.000
+		color 				1.000 1.000 1.000 1.000
+		fadeColor 			0.000 0.000 0.000 0.000
+		offset 				0.000 0.000 0.000
+		gravity 			0.000
+	}
+	{
+		count 				1
+		material 			particles/weapon_pistol/imp_wood1
+		time 				0.300
+		cycles 				1.000
+		timeOffset 			0.000
+		bunching 			0.000
+		distribution 		rect 0.000 0.000 0.000
+		direction 			cone 90.000
+		orientation 		z
+		speed 				"0.000"
+		size 				"0.500" to "2.000"
+		aspect 				"1.000"
+		rotation 			"0.000"
+		randomDistribution 	1
+		boundsExpansion 	0.000
+		fadeIn 				0.100
+		fadeOut 			0.250
+		fadeIndex 			0.000
+		color 				1.000 1.000 1.000 1.000
+		fadeColor 			0.000 0.000 0.000 0.000
+		offset 				0.000 0.000 0.000
+		gravity 			0.000
+	}
+	{
+		count 				8
+		material 			particles/weapon_pistol/imp_wood1
+		time 				0.200
+		cycles 				1.000
+		timeOffset 			0.000
+		bunching 			0.000
+		distribution 		rect 2.000 2.000 2.000
+		direction 			cone 90.000
+		orientation 		view
+		speed 				"40.000" to "35.000"
+		size 				"1.000"
+		aspect 				"1.000"
+		rotation 			"0.000"
+		randomDistribution 	1
+		boundsExpansion 	0.000
+		fadeIn 				0.000
+		fadeOut 			0.000
 		fadeIndex 			0.000
 		color 				1.000 1.000 1.000 1.000
 		fadeColor 			0.000 0.000 0.000 0.000

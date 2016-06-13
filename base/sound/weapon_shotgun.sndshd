@@ -12,7 +12,7 @@ player_shotgun_fire {
 	volume		10
 	//no_dups
 	sound/weapons/shotgun/fire_01.ogg
-	sound/weapons/shotgun/fire_02.ogg
+	//sound/weapons/shotgun/fire_02.ogg
 }
 
 player_shotgun_pump  {

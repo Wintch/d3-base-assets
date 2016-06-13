@@ -55,3 +55,66 @@ itemHighlightShell {
 		rgb                     parm4
 	}
 }
+
+// FOGS
+fogs/basicFog
+{
+	fogLight			// tell the engine it is fog and not a light
+	noShadows
+	{
+		map		_fog	// the internal fog image
+		colored			// take rgba from entity shaderparms
+	}
+}
+
+fogs/filter
+{
+	blendLight
+	noShadows
+	lightFalloffImage	textures/light/squarelight1a
+	{
+		blend		GL_ZERO, GL_ONE_MINUS_SRC_COLOR	// get dimmer as the textures get brighter
+		map			textures/light/squarelight1.tga
+		zeroclamp				// make sure it doesn't bleed over the edges
+		colored					// take rgba from entity shaderparms
+	}
+}
+
+fogs/pitFog
+{
+	blendLight
+	noShadows
+	lightFalloffImage		shapes/pitFalloff.tga	// white in color channel, 
+											// alpha ramps from 0 to 255, then stays at 255 a bit,
+											// than has another 0 at the other end
+	{
+		blend		blend		// alpha blend on surfaces
+		map			shapes/alphaSquare.tga		// solid white in color, single pixel alpha border
+		alphazeroclamp			// make sure it doesn't bleed over the edges
+		colored					// take rgba from entity shaderparms
+	}
+}
+
+fogs/pitFog_to_black
+{
+	lightFalloffImage		textures/light/xfalloff.tga
+	fogLight			// tell the engine it is fog and not a light
+	noShadows
+	{
+		map		_fog	// the internal fog image
+		colored			// take rgba from entity shaderparms
+	}
+}
+
+fogs/glare2
+{
+	blendLight
+	noShadows
+	lightFalloffImage	textures/light/squarelight1a
+	{
+		blend		add			// add on top of alpha blend on surfaces
+		map			textures/light/spot01
+		zeroclamp				// make sure it doesn't bleed over the edges
+		colored					// take rgba from entity shaderparms
+	}
+}
