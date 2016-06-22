@@ -1,5 +1,6 @@
 // Same default map loader with slight changes to reflect mapname
 windowDef Desktop {
+	background	"guis/assets/dm1map"
 	menugui	1
 	nocursor	1
 	rect	0,0,640,480
